@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function start() {
+            let a = 7
+            let num = 925
+            var c = document.getElementById('text')
+            // 改变宽度清空画布
+            c.width = c.width
+            var ogc = c.getContext('2d') //返回一个用于在画布上绘图的环境
+            ogc.beginPath() //开始一条路径 背景
+            ogc.arc(40, 40, 35, 0, 2 * Math.PI) // 画圆(x坐标,y坐标,半径,起点(3点钟为0PI))，
+            ogc.strokeStyle = 'rgb(69, 174, 234)' //路径的样式
+            ogc.lineWidth = 10 //线的宽度
+            ogc.stroke() //使用 stroke() 方法在画布上绘制确切的路径。
+
+            var ctx = c.getContext('2d')
+            ctx.beginPath() //高亮环路径
+            ctx.arc(40, 40, 35, -Math.PI / 2, (a * 3.6 - 90) * Math.PI / 180)
+            ctx.strokeStyle = 'rgb(190, 227, 247)'
+            ctx.lineWidth = 10
+            ctx.lineCap = 'butt' //线的端点：butt平直 round圆 square方
+
+            // 设置文字居中但是fillText的第二个参数必须为画布宽度一半
+            ctx.textAlign = 'center' //文字居中
+            ctx.font = 'bold 16px Arial' //文字样式：加粗 16像素 字体Arial
+            ctx.fillStyle = '#F09000' //字体颜色
+            ctx.fillText(a + '%', 40, 35) //fillText里面的可填写的值(文本内容, x坐标, y坐标, 文本最大宽度)
+            ctx.font = '14px Arial'
+            ctx.fillStyle = '#FF9000'
+            ctx.fillText(num + '次', 40, 50)
+            ctx.stroke()
+        }
+    </script>
+</head>
+<body onload="start()">
+<canvas id="text" width="880" height="880"></canvas>
+</body>
+</html>

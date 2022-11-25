@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //数据类型
+    let d1 = {};
+    console.log(typeof d1); //object
+
+    const d2 = (item) => {
+      return item * item;
+    };
+
+    var d3 = {};
+    console.log(typeof d2, typeof d3);  //function object
+    console.log(d2(5));
+
+    const d4 = 123.;
+    d5 = false;
+    console.log(typeof d4, typeof d5); //number boolean
+
+    arr = [];
+    console.log(arr, typeof arr); //object
+
+    //console.log(length(arr)); //Uncaught TypeError: length is not a function
+    console.log(arr.length);  //获取对象的长度
+
+
+
+
+</script>
+</html>

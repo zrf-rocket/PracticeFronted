@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function start() {
+            var ele = document.getElementById("multiObj");
+            var context = ele.getContext("2d");
+
+            // canvas 绘制可以通过 JS 代码来控制（其实应该说 HTML 5  只是提供了个容器，绘制只能在 JS 里完成），而JS提供了两个函数，beginPath() 和 closePath() ，这两
+            // 个函数可以起到类似 <div> 的作用，用它来把每个圆圈包围，就可以绘制不同颜色的图形了。   此处也可以不需要closePath()
+            // 两个函数有所属的对象，此事例中为 context 。
+            context.beginPath();
+            context.fillStyle = "#028CFF";
+            // arc 创建弧/曲线（用于创建圆形或部分圆）
+            context.arc(100, 100, 50, 0, Math.PI * 2, true);
+            // 参数1、2：距离x轴 y轴的位置
+            // 参数3：圆的半径。
+            // 参数4、5：画圆：起始角设置为 0，结束角设置为 2*Math.PI
+            // 参数6：可选。规定应该逆时针还是顺时针绘图。False = 顺时针，true = 逆时针。
+            context.fill(); //填充当前绘图（路径）    使用 stroke() 或 fill() 方法在画布上绘制实际的弧。
+            context.closePath();
+
+            context.beginPath();
+            context.fillStyle = "#FF0350";
+            context.arc(200, 200, 50, 0, Math.PI * 2, true);
+            context.fill()
+            context.closePath();
+
+            context.beginPath();
+            context.fillStyle = "#03FF43";
+            context.arc(300, 300, 50, 0, Math.PI * 2, true);
+            context.fill()
+            context.closePath();
+
+            context.beginPath();
+            context.fillStyle = "#FF5503";
+            context.arc(400, 400, 50, 0, Math.PI * 2, true);
+            context.fill()
+            context.closePath();
+        }
+    </script>
+    <style>
+        #multiObj {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body onload="start()">
+在同一个canvas元素中绘制多个不同颜色的图画
+<canvas id="multiObj" height="1000" width="1000">
+    浏览器不支持canvas
+</canvas>
+</body>
+</html>
+

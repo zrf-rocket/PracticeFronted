@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var imgs;
+
+
+        // 随机色
+        var color = "#" + Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0");
+        // 渐变色
+        // var gradient = context.createLinearGradient(0, 0, canvas.width, 0);
+
+
+        //context.beginPath();
+        context.font = 'bold 30px 微软雅黑';
+
+        // 用于设置填充颜色。
+        context.fillStyle = '#F9EDDF';
+
+        // 使用随机色填充
+        //context.fillStyle = color;
+
+        // 渐变填充
+        /*
+        gradient.addColorStop("0", "magenta");
+        gradient.addColorStop("0.5", "blue");
+        gradient.addColorStop("1.0", "white");
+        context.fillStyle = gradient;
+        */
+
+
+        //
+        name = this.name + '(' + this.name_zh + ')';
+        // 背景方块类型
+        context.fillRect(x2d - halfSize - name.length * 10, y2d - halfSize - 30, name.length * 20, 40);// 绘制被填充的矩形
+
+        context.fillStyle = "#000";
+        // 非背景方块类型
+        context.fillText(name, x2d - halfSize, y2d - halfSize);  // 在画布上绘制"被填充的"文本。
+
+
+        //context.strokeStyle = 'white';  //用于设置图形轮廓的颜色
+        //context.strokeText(this.name, x2d - halfSize, y2d - halfSize); // 在画布上绘制文本（无填充）。 描边的文本
+
+
+        //context.backgroundPositionX = 11;
+        //context.backgroundPositionY = 11;
+
+        //context.shadowOffsetX = 11;
+        //context.shadowOffsetY = 11;
+
+        //context.rect(125, 125, 150, 150);
+        //context.backgroundColor = 'green';
+
+
+        //context.drawImage(this.image, x2d - halfSize, y2d - halfSize, size, size); //向画布上绘制图像、画布或视频。
+        // context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+        // 规定要使用的图像、画布或视频。
+        // 可选。开始剪切的 x 坐标位置。 图片距离x、y的位置
+        // 可选。被剪切图像的宽度。高度。
+        // 在画布上放置图像的 x y坐标位置。
+        // 可选。要使用的图像的宽度 高度。（伸展或缩小图像）
+
+    </script>
+</head>
+<body>
+<canvas id="imgs"></canvas>
+</body>
+</html>

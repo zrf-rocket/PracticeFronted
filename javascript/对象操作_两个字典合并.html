@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+JSON 是 JS 对象的字符串表示法。它使用文本表示一个 JS 对象的信息，（JSON）本质是一个字符串。
+</body>
+<script>
+    var d1 = {
+        name: "javascript",
+        "sex": "M"
+    };
+    var d2 = {
+        age: 22,
+        nums: 12.345,
+        d1
+    };
+
+    console.log(d1, d1.name, d1.sex);
+    console.log(d2, d2.age + d2.nums);
+    console.log(d1 + d2);
+    console.log(d2);
+    //d1.update(d2);  // 错误用法
+
+    // 错误用法
+    // d1.map(function (item){
+    //    console.log(item);
+    // });
+
+
+    //d2[]=
+    //
+    d2.forEach(item=>function (data) {
+        console.log(data);
+    });
+
+    //_.map();
+    //_.reduce();
+
+</script>
+</html>

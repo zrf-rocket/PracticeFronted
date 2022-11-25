@@ -1,0 +1,77 @@
+.loopPlay {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto; /*轮播图居中*/
+    /*background-color: aquamarine;*/
+    overflow: hidden; /*用于隐藏超出展示容器的内容部分*/
+}
+
+.storageContent {
+    /*注释：作为我们的图片存储区域，它的宽度应该是所有图片的宽度之和，高度的话应该和图片的高度一致，这样才能保证图片能够全部存入，又不浪费资源*/
+    width: 6000px;
+    height: 400px;
+    margin: 0 auto;
+    font-size: 0px; /*消除图片间隔*/
+}
+
+.subDiv1 {
+    background-color: #8f1ef7;
+}
+
+.subDiv2 {
+    background-color: #dd02f7;
+}
+
+.subDiv3 {
+    background-color: #0240b4;
+}
+
+.subDiv4 {
+    background-color: #4ddc0f;
+}
+
+.subDiv5 {
+    background-color: #e0350d;
+}
+
+.loopPlay .storageContent .div1 {
+    width: 1200px;
+    height: 300px;
+    float: left; /*注释：这里要为div/图片开启浮动，这样div/图片就会排成一行，以便进行轮播图的横向展示。*/
+}
+
+span {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/*4.为图片设置动画*/
+.storageContent {
+    width: 6000px;
+    height: 400px;
+    margin: 0 auto;
+    animation: text 30s infinite linear;
+    font-size: 0px; /*消除图片间隔*/
+}
+
+@keyframes text { /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+    0%, 10% {
+        margin-left: 0px;
+    }
+    20%, 30% {
+        margin-left: -1200px;
+    }
+    40%, 50% {
+        margin-left: -2400px;
+    }
+    60%, 70% {
+        margin-left: -3600px;
+    }
+    80%, 90% {
+        margin-left: -4800px;
+    }
+}
+
+/*
+注释：这里需要注意的就是动画关键帧的设置，关键帧的设置决定了你的轮播图的播放和暂停。因为我们准备了5张图片，所以我在这里设置了五个范围。
+*/

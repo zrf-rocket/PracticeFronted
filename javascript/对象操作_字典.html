@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var dict = {
+        姓名:"javascript",
+        年龄:22,
+        身高:177
+    }
+    //根据key获取value的方法
+    console.log(typeof dict, dict.姓名, dict.年龄, dict['身高']); // object
+
+    // 获取对象的key组成的对象
+    console.log(Object.keys(dict));
+
+    // 获取对象的value组成的对象
+    console.log(Object.values(dict)); //['javascript', 22, 177]
+
+</script>
+</html>

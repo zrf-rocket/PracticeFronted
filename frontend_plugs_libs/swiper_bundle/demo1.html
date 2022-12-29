@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>类PPT轮播效果</title>
+    <link rel="stylesheet" href="./swiper-bundle.min.css"/>
+    <script src="./swiper-bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .winners-boxs {
+            width: 1000px;
+            height: 600px;
+            text-align: center;
+            border: 1px solid #eee;
+            overflow: hidden;
+            margin: 100px auto 0;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+        }
+
+        .swiper-slide .card {
+            width: 120px;
+            height: 180px;
+            background-color: skyblue;
+            margin: 10px 11px;
+        }
+
+        .settings {
+            width: 1000px;
+            height: 200px;
+            border: 1px solid #eee;
+            margin: 20px auto 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .settings .setting-item {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="winners-boxs">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        </div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+    </div>
+</div>
+<div class="settings">
+    <div class="setting-item">
+        <input class="left-right" name="pageturning" id="horizontal" checked="true" value="horizontal"
+               type="radio"/>左右翻页
+        <input class="up-down" name="pageturning" id="vertical" value="vertical" type="radio"/>上下翻页
+    </div>
+    <div class="setting-item">
+        <input class="stop-time" name="stop-time" type="number" min="1" step="0.5" value="3"/>设置停留时长(s)
+    </div>
+    <div class="setting-item">
+        <input class="switch" name="switch" type="checkbox" checked="true"/>轮播开关
+    </div>
+    <div class="setting-item">
+        <select name="effect" id="effect" onchange="">
+            <option value="">默认</option>
+            <option value="fade">fade</option>
+            <option value="cube">cube</option>
+            <option value="coverflow">coverflow</option>
+            <option value="flip">flip</option>
+            <option value="cards">cards</option>
+        </select>
+        轮播动画效果
+    </div>
+</div>
+</body>
+<script>
+    var settings = {
+        observer: true,
+        direction: "horizontal", // 垂直切换选项  // horizontal 水平切换
+        loop: true, // 循环模式选项
+        autoplay: true, // 自动播放
+        delay: 3000, // 3s切换
+    };
+    var init = {
+        stopTime: 3
+    }
+    var effectMap = {
+        fade: {
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true,
+            },
+        },
+        cube: {
+            effect: "cube",
+            cubeEffect: {
+                slideShadows: true,
+                shadow: true,
+                shadowOffset: 100,
+                shadowScale: 0.6,
+            },
+        },
+        coverflow: {
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 10,
+                depth: 60,
+                modifier: 2,
+                slideShadows: true
+            },
+        },
+        flip: {
+            effect: 'flip',
+            flipEffect: {
+                slideShadows: true,
+                limitRotation: true,
+            }
+        },
+        cards: {
+            effect: 'cards',
+            cardsEffect: {
+                slideShadows: true,
+                //transformEl:'.text',
+            },
+        }
+    };
+    var mySwiper;
+    var swiperSlides
+
+    function generateSwiper(params) {
+        mySwiper = new Swiper(".winners-boxs", params);
+        swiperSlides = document.querySelectorAll(".swiper-slide");
+        var str = "";
+        for (let index = 0; index < 21; index++) {
+            str += `<li class="card">卡片组x</li>`;
+        }
+        Array.from(swiperSlides).forEach((item, index) => {
+            item.innerHTML = str.replaceAll("x", index);
+            item.setAttribute("data-swiper-autoplay", params.delay);
+        });
+    }
+
+    generateSwiper(settings);
+    var settingDom = document.querySelector(".settings");
+    document.querySelector('#effect').addEventListener('change', e => {
+        console.log(e.target.value);
+        document.querySelector('.winners-boxs').remove()
+        const newDom = document.createElement('div')
+        newDom.className = 'winners-boxs'
+        newDom.innerHTML = `<div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- 卡片 -->
+                            </div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                        </div>`
+        document.querySelector('body').prepend(newDom)
+        const params = {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: true,
+            delay: init.stopTime * 1000,
+        }
+        if (e.target.value) {
+            const curSetting = Object.assign(params, effectMap[e.target.value])
+            generateSwiper(curSetting)
+        } else {
+            generateSwiper(params)
+        }
+    })
+    settingDom.addEventListener("click", (e) => {
+        // console.log(e.target.name);
+        switch (e.target.name) {
+            case "switch":
+                if (e.target.checked) {
+                    mySwiper.autoplay.start();
+                } else {
+                    mySwiper.autoplay.stop();
+                }
+                break;
+            case "pageturning":
+                mySwiper.changeDirection();
+                break;
+            case "stop-time":
+                e.target.addEventListener("input", (i) => {
+                    const curTime = i.target.value * 1000;
+                    init.stopTime = i.target.value
+                    swiperSlides.forEach((item) => {
+                        item.setAttribute("data-swiper-autoplay", curTime);
+                    });
+                });
+                break;
+            default:
+                break;
+        }
+    });
+</script>
+</html>

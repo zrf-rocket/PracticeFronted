@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clipboard.js</title>
+    <script src="clipboard.min.js"></script>
+</head>
+<body>
+
+<input id="clipboard" value="安装方式：npm install clipboard --save 如果你不想通过npm命令安装，也可以直接下载文件"/>
+<input class="btn" id="btn" data-clipboard-target="#clipboard" type="button" value="复制"/>
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function (e) {
+        console.info("action", e.action);
+        console.info("Text:", e.text);
+        console.info("trigger", e.trigger);
+        e.clearSelection();
+        document.getElementById("btn").value = "复制成功";
+    });
+
+    clipboard.on('error', function (e) {
+        console.error("action:", e.action);
+        console.error("trigger:", e.trigger);
+        document.getElementById("btn").value("复制失败");
+    });
+</script>
+</body>
+</html>

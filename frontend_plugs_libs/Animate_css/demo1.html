@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
+    <!--    <link rel="stylesheet" href="animate.min.css">-->
+    <!--    <link rel="stylesheet" href="animate.css">-->
+    <style>
+        .box {
+            border-radius: 10px;
+            position: absolute;
+            margin: 0 auto;
+            height: 200px;
+            width: 200px;
+            background-color: #ae00ff;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div style="float: left; width: 300px">
+        <ol>
+            <h2>
+                <li>Attention(晃动效果)</li>
+            </h2>
+            <h4>bounce</h4>
+            <h4>flash</h4>
+            <h4>pulse</h4>
+            <h4>rubberBand</h4>
+            <h4>shakeX</h4>
+            <h4>shakeY</h4>
+            <h4>headShake</h4>
+            <h4>swing</h4>
+            <h4>tada</h4>
+            <h4>wobble</h4>
+            <h4>jello</h4>
+            <h4>heartBeat</h4>
+
+            <h2>
+                <li>Back</li>
+            </h2>
+            <h4>backInDown</h4>
+            <h4>backInLeft</h4>
+            <h4>backInRight</h4>
+            <h4>backInUp</h4>
+            <h4>backOutDown</h4>
+            <h4>backOutLeft</h4>
+            <h4>backOutRight</h4>
+            <h4>backOutUp</h4>
+
+            <h2>
+                <li>bounce(弹性缓冲效果)</li>
+            </h2>
+            <h4>bounceIn</h4>
+            <h4>bounceInDown</h4>
+            <h4>bounceInLeft</h4>
+            <h4>bounceInRight</h4>
+            <h4>bounceInUp</h4>
+            <h4>bounceOut</h4>
+            <h4>bounceOutDown</h4>
+            <h4>bounceOutLeft</h4>
+            <h4>bounceOutRight</h4>
+            <h4>bounceOutUp</h4>
+
+            <h2>
+                <li>fade(透明度变化效果)</li>
+            </h2>
+            <h4>fadeIn</h4>
+            <h4>fadeInDown</h4>
+            <h4>fadeInDownBig</h4>
+            <h4>fadeInLeft</h4>
+            <h4>fadeInLeftBig</h4>
+            <h4>fadeInRight</h4>
+            <h4>fadeInRightBig</h4>
+            <h4>fadeInUp</h4>
+            <h4>fadeInUpBig</h4>
+            <h4>fadeInTopLeft</h4>
+            <h4>fadeInTopRight</h4>
+            <h4>fadeInBottomLeft</h4>
+            <h4>fadeInBottomRight</h4>
+            <h4>fadeOut</h4>
+            <h4>fadeOutDown</h4>
+            <h4>fadeOutDownBig</h4>
+            <h4>fadeOutLeft</h4>
+            <h4>fadeOutLeftBig</h4>
+            <h4>fadeOutRight</h4>
+            <h4>fadeOutRightBig</h4>
+            <h4>fadeOutUp</h4>
+            <h4>fadeOutUpBig</h4>
+            <h4>fadeOutTopLeft</h4>
+            <h4>fadeOutTopRight</h4>
+            <h4>fadeOutBottomRight</h4>
+            <h4>fadeOutBottomLeft</h4>
+
+            <h2>
+                <li>flip(翻转效果)</li>
+            </h2>
+            <h4>flip</h4>
+            <h4>flipInX</h4>
+            <h4>flipInY</h4>
+            <h4>flipOutX</h4>
+            <h4>flipOutY</h4>
+
+            <h2>
+                <li>Lightspeed</li>
+            </h2>
+            <h4>lightSpeedInRight</h4>
+            <h4>lightSpeedInLeft</h4>
+            <h4>lightSpeedOutRight</h4>
+            <h4>lightSpeedOutLeft</h4>
+
+            <h2>
+                <li>rotate(旋转效果)</li>
+            </h2>
+            <h4>rotateIn</h4>
+            <h4>rotateInDownLeft</h4>
+            <h4>rotateInDownRight</h4>
+            <h4>rotateInUpLeft</h4>
+            <h4>rotateInUpRight</h4>
+            <h4>rotateOut</h4>
+            <h4>rotateOutDownLeft</h4>
+            <h4>rotateOutDownRight</h4>
+            <h4>rotateOutUpLeft</h4>
+            <h4>rotateOutUpRight</h4>
+
+            <h2>
+                <li>slide(滑动效果)</li>
+            </h2>
+            <h4>slideInDown</h4>
+            <h4>slideInLeft</h4>
+            <h4>slideInRight</h4>
+            <h4>slideInUp</h4>
+            <h4>slideOutDown</h4>
+            <h4>slideOutLeft</h4>
+            <h4>slideOutRight</h4>
+            <h4>slideOutUp</h4>
+
+            <h2>
+                <li>zoom(变焦效果)</li>
+            </h2>
+            <h4>zoomIn</h4>
+            <h4>zoomInDown</h4>
+            <h4>zoomInLeft</h4>
+            <h4>zoomInRight</h4>
+            <h4>zoomInUp</h4>
+            <h4>zoomOut</h4>
+            <h4>zoomOutDown</h4>
+            <h4>zoomOutLeft</h4>
+            <h4>zoomOutRight</h4>
+            <h4>zoomOutUp</h4>
+
+            <h2>
+                <li>special(特殊效果)</li>
+            </h2>
+            <h4>hinge</h4>
+            <h4>jackInTheBox</h4>
+            <h4>rollIn</h4>
+            <h4>rollOut</h4>
+        </ol>
+    </div>
+    <div style="float: right; background-color: #007aff; width: 70%;">
+        <div class="box animated heartBeat" id="box"></div>
+    </div>
+</div>
+
+
+<script>
+    // 动画持续时间，动画的执行次数
+    // 所有的h4标签添加上点击事件
+    var h4_tags = document.getElementsByTagName("h4");
+    for (let i = 0; i < h4_tags.length; i++) {
+        h4_tags[i].onclick = click
+    }
+    var box = document.getElementById("box");
+
+    function click(e) {
+        box.classList.forEach(function (item, index) {
+            if ((item !== "box") && (item !== "animated"))
+                box.classList.remove(item);
+        });
+        box.classList.add(e.target.innerHTML);
+    }
+
+    //滚动条滚动事件
+    window.onscroll = function () {
+        let top = document.body.scrollTop;
+        if (!top)
+            top = document.documentElement.scrollTop;
+        //每次滚动重新设置div的位置
+        document.getElementById('box').style.top = top + "px";
+    }
+</script>
+</body>
+</html>

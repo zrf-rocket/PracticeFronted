@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+    <!--    主题-->
+    <script src="theme-twilight.js"></script>
+    <script src="theme-xcode.js"></script>
+    <script src="theme-terminal.js"></script>
+    <script src="theme-dreamweaver.js"></script>
+    <!--    输入模式-->
+    <script src="mode-python.js"></script>
+    <script src="mode-javascript.js"></script>
+
+    <style>
+        #editor {
+            position: absolute;
+            width: 900px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<div id="editor">this is ace plugins</div>
+<script>
+    // 创建并初始化
+    var editor = ace.edit("editor", {
+        mode: "ace/mode/python",  //模式配置(方式3)
+        selectionStyle: "text"
+    });
+
+    // 定义主题
+    // editor.setTheme("ace/theme/terminal");
+    // editor.setTheme("ace/theme/twilight");
+    // editor.setTheme("ace/theme/dreamweaver");
+    editor.setTheme("ace/theme/monokai");
+
+    // 设置输入模式(方式1)  默认情况下，输入的是文本编辑器，如果你想要加入 JavaScript 编辑器，需要加入文件，并且设置模式
+    //var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
+    //editor.session.setMode(new JavaScriptMode());
+    // 设置编辑器语言模式(方式2)
+    //editor.getSession().setMode("ace/mode/python");
+
+
+    // 自动提示语法
+    // 方法设置参数多个
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: true // 补全
+    });
+
+    // 方法设置参数单个
+    // editor.setOption();
+
+
+    // 取得单个配置
+    console.log("当前模式", editor.getOption("mode"));
+
+    // 监听内容实时输出 内容变化监听
+    editor.getSession().on('change', function (e, text) {
+        console.info(e.action, e.lines.toString(), e.start, e.end);
+        console.info("输入的内容：", editor.getValue());
+    });
+
+    // 监听光标
+    editor.session.selection.on('changeCursor', function (e) {
+        console.info("鼠标移动");
+    });
+
+    // 监听selection
+    editor.session.selection.on('changeSelection', function (e) {
+        console.info("selection发生变化....");
+    });
+
+    // 设置输入内容
+    editor.setValue("#//请输入内容.......\nprint(\"this is python script\")");
+
+    // 移动光标
+    editor.moveCursorTo(2, 0); // 移动光标至第 2 行，第 0 列
+
+    // 编辑内容搜索
+    editor.execCommand("find");  // 与 ctrl+f 功能一致
+
+    // 取消语言模式的语法检查
+    editor.session.setUseWorker(false);
+    // 或
+    // editor.getSession().setUseWorker(false);
+
+    // 更改编辑器的大小
+    editor.resize();
+
+    // 获取选定的文本
+    var selectedText = editor.getSelectedText();
+    console.log("选择的内容", selectedText);
+    selectedText = editor.session.getTextRange(editor.getSelectionRange());
+    console.log("选择的内容", selectedText);
+
+
+    // 光标处输入信息
+    // editor.insert("#this is cursor content...");
+
+    // 替换范围内的文本
+    //editor.session.replace(new ace.Range(0, 0, 1, 1), "new content");
+
+    // 获取当前光标所在的行和列
+    console.log("光标:", editor.selection.getCursor());
+
+    // 转到一行
+    editor.gotoLine(7);
+
+    // 获取总行数
+    console.log("总行数", editor.session.getLength());
+
+    // 设置默认TAB大小
+    editor.session.setTabSize(4);
+
+    // 设置字体大小
+    document.getElementById("editor").style.fontSize = '15px';
+
+    // （一行内容满后）切换自动换行
+    editor.session.setUseWrapMode(true);
+
+    // 设置行高亮显示
+    editor.setHighlightActiveLine(true);
+
+    // 设置打印边距可见性
+    editor.setShowPrintMargin(false);
+
+    // 将编辑器设置为只读
+    editor.setReadOnly(false);  // true只读   false可读可写
+
+    // 查找
+    editor.find("neddle", {
+        backwards: false,
+        wrap: false,
+        caseSensitive: false,
+        wholeWord: false,
+        regExp: false
+    });
+    // 可以使用以下选项作为搜索参数：
+    // needle：您要查找的字符串或正则表达式
+    // backwards：是否从光标当前位置向后搜索。默认为false。
+    // wrap：搜索到末尾时是否将搜索回头。默认为false。
+    // caseSensitive：搜索是否应该区分大小写。默认为false。
+    // wholeWord：搜索是否仅匹配整个单词。默认为false。
+    // range：该[范围]内搜索。将null整个文档设置为
+    // regExp：搜索是否为正则表达式。默认为false。
+    // start：开始搜索的起始[范围]或光标位置
+    // skipCurrent：是否在搜索中包括当前行。默认为false。
+    // preventScroll：是否将光标移动到下一个匹配项。默认为false。
+
+    //editor.findNext()
+    //editor.findPrevious()
+
+    //查找所有
+    //editor.findAll();
+
+    // 替换的方法
+    //editor.replace("python", "python2");
+
+    // 全部替换
+    //editor.replaceAll();
+
+    //添加新命令和快捷键
+    editor.commands.addCommand({
+        name: "飞快捷键",
+        bindKey: {win: "Ctrl-M", mac: "Command-M"},
+        exec: function (editor) {
+            console.log("快捷键...")
+        },
+        readOnly: true // false 只读模式
+    });
+
+    //销毁
+    //editor.destroy();
+    //editor.container.remove();
+</script>
+</body>
+</html>
+

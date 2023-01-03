@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>识别原生事件</title>
+    <script src="touch.min.js"></script>
+    <style>
+        #target {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: #8f1ef7;
+        }
+    </style>
+</head>
+<body>
+<div id="target"></div>
+</body>
+<script>
+    touch.on('#target', 'touchstart touchmove touchend', function (ev) {
+        console.log("当前事件", ev.type);
+    });
+</script>
+</html>

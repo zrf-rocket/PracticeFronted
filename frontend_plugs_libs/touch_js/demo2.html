@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双指放大与缩小目标.</title>
+    <script src="touch.min.js"></script>
+</head>
+<body>
+<div id="target"></div>
+</body>
+<script>
+    var target = document.getElementById("target");
+    target.style.webkitTransition = 'all ease 0.05s';
+
+    touch.on('#target', 'touchstart', function (ev) {
+        ev.preventDefault();
+    });
+
+    var initialScale = 1;
+    var currentScale;
+
+    touch.on('#target', 'pinchend', function (ev) {
+        currentScale = ev.scale - 1;
+        currentScale = initialScale + currentScale;
+        currentScale = currentScale > 2 ? 2 : currentScale;
+        currentScale = currentScale < 1 ? 1 : currentScale;
+        this.style.webkitTransform = 'scale(' + currentScale + ')';
+        log("当前缩放比例为:" + currentScale + ".");
+    });
+
+    touch.on('#target', 'pinchend', function (ev) {
+        initialScale = currentScale;
+    });
+</script>
+</html>

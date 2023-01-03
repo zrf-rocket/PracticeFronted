@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右滑动.</title>
+    <script src="touch.min.js"></script>
+    <style>
+        #target {
+            height: 200px;
+            width: 200px;
+            background-color: #4ddc0f;
+        }
+    </style>
+</head>
+<body style="background-color: #007aff; width: 100%">
+<div id="target"></div>
+
+</body>
+<script>
+    touch.on("#target", 'touchstart', function (ev) {
+        ev.preventDefault();
+    });
+
+    var target = document.getElementById("target");
+    target.style.webkitTransition = "all ease 0.2s";
+
+    // touch.on(target, 'swipeleft swiperight', function (ev) {
+    //     this.style.webkitTransform = "translate3d(" + "px,0,0)";
+    //     console.log("you have done", ev.type);
+    // });
+
+    touch.on(target, 'swiperight', function (ev) {
+        this.style.webkitTransform = "translate3d(" + this.offsetLeft + "px,0,0)";
+        console.log("向右滑动.", this.offsetLeft);
+    });
+
+    touch.on(target, 'swipeleft', function (ev) {
+        this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
+        console.log("向左滑动.", this.offsetLeft);
+    });
+
+</script>
+</html>

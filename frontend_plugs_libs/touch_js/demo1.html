@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>向左向右转动</title>
+    <script src="touch.min.js"></script>
+    <style>
+        .target {
+            width: 500px;
+            height: 500px;
+            background-color: #007aff;
+        }
+    </style>
+</head>
+<body>
+<div class="target"></div>
+<script>
+    //利用startRotate, 单指触发滚动事件
+    var angle = 0;
+
+    touch.on(".target", 'touchstart', function (ev) {
+        ev.startRotate();
+        ev.preventDefault();
+        console.log("touchstart....");
+    });
+
+    touch.on('.target', 'rotate', function (ev) {
+        var totalAngle = angle + ev.rotation;
+        if (ev.fingerStatus === 'end') {
+            angle = angle + ev.rotation;
+        }
+        this.style.webkitTransform = 'rotate(' + totalAngle + 'deg)';
+        console.log("rotate....", angle, "度", totalAngle);
+    });
+</script>
+</body>
+</html>
+
+

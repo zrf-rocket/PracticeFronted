@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="touch.min.js"></script>
+</head>
+<body>
+<div id="box" style="width:600px;height:600px;border:1px solid red;"></div>
+<script>
+    //定义变量，用于记录坐标和角度
+    var startx, starty, movex, movey, endx, endy, nx, ny, angle;
+
+    //获取DOM标签
+    var box = document.getElementById('box');
+
+    //开始触摸函数，event为触摸对象
+    function touchs(event) {
+        //阻止浏览器默认滚动事件
+        event.preventDefault();
+
+        //通过if语句判断event.type执行了哪个触摸事件
+        if (event.type == "touchstart") {
+
+            console.log('开始');
+
+            //获取开始的位置数组的第一个触摸位置
+            var touch = event.touches[0];
+
+            //获取第一个坐标的X轴
+            startx = Math.floor(touch.pageX);
+
+            //获取第一个坐标的X轴
+            starty = Math.floor(touch.pageY);
+
+            //触摸中的坐标获取
+        } else if (event.type == "touchmove") {
+
+            console.log('滑动中');
+            var touch = event.touches[0];
+            movex = Math.floor(touch.pageX);
+            movey = Math.floor(touch.pageY);
+
+            //当手指离开屏幕或系统取消触摸事件的时候
+        } else if (event.type == "touchend" || event.type == "touchcancel") {
+
+            //获取最后的坐标位置
+            endx = Math.floor(event.changedTouches[0].pageX);
+            endy = Math.floor(event.changedTouches[0].pageY);
+            console.log('结束');
+
+            //获取开始位置和离开位置的距离
+            nx = endx - startx;
+            ny = endy - starty;
+
+            //通过坐标计算角度公式 Math.atan2(y,x)*180/Math.PI
+            angle = Math.atan2(ny, nx) * 180 / Math.PI;
+
+            if (Math.abs(nx) <= 1 || Math.abs(ny) <= 1) {
+                return false;
+                console.log('滑动距离太小');
+            }
+
+            //通过滑动的角度判断触摸的方向
+            if (angle < 45 && angle >= -45) {
+                alert('右滑动');
+                return false;
+            } else if (angle < 135 && angle >= 45) {
+                alert('下滑动');
+                return false;
+            } else if ((angle <= 180 && angle >= 135) || (angle >= -180 && angle < -135)) {
+                alert('左滑动');
+                return false;
+            } else if (angle <= -45 && angle >= -135) {
+                alert('上滑动');
+                return false;
+            }
+        }
+    }
+
+    //添加触摸事件的监听，并直行自定义触摸函数
+    box.addEventListener('touchstart', touchs, false);
+    box.addEventListener('touchmove', touchs, false);
+    box.addEventListener('touchend', touchs, false);
+</script>
+</body>
+</html>

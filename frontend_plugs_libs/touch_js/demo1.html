@@ -18,9 +18,10 @@
     //利用startRotate, 单指触发滚动事件
     var angle = 0;
 
+    // 事件绑定
     touch.on(".target", 'touchstart', function (ev) {
         ev.startRotate();
-        ev.preventDefault();
+        ev.preventDefault();  // 手指移动也会触发滚动屏幕所以这里要阻止默认的屏幕滚动 e.preventDefault();
         console.log("touchstart....");
     });
 

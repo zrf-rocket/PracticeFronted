@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加列默认值</title>
+    <!--  引入样式 -->
+    <link rel="stylesheet" href="css/jquery.dataTables.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="localisation/International.js"></script>
+
+</head>
+<body>
+<table id="table_id" class="display">
+    <thead>
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+        <th>Column 4</th>
+        <th>Column 5</th>
+    </tr>
+    </thead>
+</table>
+</body>
+<!-- 初始化datatables -->
+<script>
+    $(function () {
+        $("#table_id").DataTable({
+            ajax: "data/test.txt",
+            columnDefs: [
+                {
+                    defaultContent: "-",
+                    targets: "_all"
+                }
+            ],
+            columns: [
+                {"data": "name"},
+                {"data": "position"},
+                {"data": "start_date"},
+                {"data": "office"},
+                {"data": "extn"}
+            ],
+            language: dtLanguage
+        });
+    });
+</script>
+</html>

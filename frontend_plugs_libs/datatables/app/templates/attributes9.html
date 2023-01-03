@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>服务器处理</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dataTables.bootstrap.css') }}">
+<script src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.dataTables.bootstrap.js') }}"></script>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.dataTables.css') }}">
+	<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.dataTables.js') }}"></script>
+
+</head>
+<body>
+
+<table id="table_id" class="hover">
+	<thead>
+		<tr>
+			<th>Engine</th>
+			<th>Browser</th>
+			<th>Time</th>
+			<th>Name</th>
+			<th>Number</th>
+		</tr>
+	</thead>
+</table>
+</body>
+</html>
+<script>
+//服务器处理
+    $(function(){
+    $('#table_id').DataTable( {
+        ajax: {
+            //url:"{{ url_for('server_data') }}"
+            url:"/server_data"
+        },
+        columns: [
+            { data: "engine"},//绑定数据源
+            { data: "browser"},
+            { data: "time" },
+            { data: "name" },
+            { data: "number"}
+        ]
+        });
+    });
+</script>

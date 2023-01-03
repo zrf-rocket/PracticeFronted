@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隐藏功能框</title>
+    <link rel="stylesheet" href="css/jquery.dataTables.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="localisation/International.js"></script>
+</head>
+<body>
+<table id="table_id" class="display">
+    <thead>
+    <tr>
+        <th>Column1</th>
+        <th>Column2</th>
+        <th>Column3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Row 1 data 1</td>
+        <td>Row 1 data 2</td>
+        <td>Row 1 data 3</td>
+    </tr>
+    <tr>
+        <td>Row 2 data 1</td>
+        <td>Row 2 data 2</td>
+        <td>Row 2 data 3</td>
+    </tr>
+    <tr>
+        <td>Row 3 data 1</td>
+        <td>Row 3 data 2</td>
+        <td>Row 3 data 3</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        $("#table_id").DataTable({
+            searching: false,//禁用搜索
+            info: false,//隐藏显示从几到几(共几条)
+            ordering: false,//禁用排序功能   自定义序号无效
+            pageLength: 1,//控制每页显示的条数  数字表示条数
+            bPaginate: false,//禁用上页下页翻页  以及指定显示的条数
+            pagingType: "full_numbers",
+            language: dtLanguage
+        });
+    });
+</script>

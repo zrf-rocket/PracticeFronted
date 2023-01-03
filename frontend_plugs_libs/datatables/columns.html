@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax获取对象类型数据</title>
+    <link rel="stylesheet" href="css/jquery.dataTables.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="localisation/International.js"></script>
+</head>
+<body>
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Extn.</th>
+        <th>Start date</th>
+        <th>Salary</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('#example').dataTable({
+            "ajax": "./data/objects.txt",
+            "columns": [
+                {"data": "name"},
+                {"data": "position"},
+                {"data": "office"},
+                {"data": "extn"},
+                {"data": "start_date"},
+                {"data": "salary"}
+            ]
+        });
+    });
+</script>

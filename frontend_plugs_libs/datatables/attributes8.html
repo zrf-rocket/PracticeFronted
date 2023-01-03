@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列渲染</title>
+    <link rel="stylesheet" href="css/jquery.dataTables.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="localisation/International.js"></script>
+</head>
+<body>
+<div id="demo_info">
+
+</div>
+<table id="table_id" style="display">
+    <thead>
+    <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Sex</th>
+        <th>Height</th>
+        <th>Weight</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>
+<script>
+    $(function () {
+        $("#table_id").DataTable({
+            "ajax": "data/arrays8.txt",
+
+            columnDefs: [{
+                render: function (data, type, row) {
+                    return data + '(' + row[2] + ')';
+                },
+                targets: 1
+            },
+                {
+                    visible: false,
+                    targets: [2]
+                }],
+
+            language: dtLanguage
+        });
+    });
+</script>

@@ -241,10 +241,26 @@ css3 做的可平铺纹理。浏览器兼容性不好。
 
 “数据驱动文档”，是一个基于数据操作 DOM 的Javascript库。理解起来，D3跟jQuery 很像，不过D3是面向数据可视化的，数据驱动操作DOM；而jQuery是面向web开发的，直接操作 DOM。
 
-### [datatables]()
+### [datatables](https://www.datatables.net/)
 
 DataTables是jQuery的JavaScript函数库，目的是强化表格操作（如搜索、排序），并自动加入组件引入表格中，使用非常灵活简便。
-官网：https://www.datatables.net/
+
+特点：
+
+	1、Datatables是一款jquery表格插件。它是一个高度灵活的工具，可以将任何HTML表格添加高级的交互功能。
+	2、分页，即时搜索和排序。
+	3、几乎支持任何数据源：DOM，javascript，Ajax 和 服务器处理。
+	4、支持不同主题 DataTables, jQuery UI, Bootstrap, Foundation。
+	5、各式各样的扩展: Editor, TableTools, FixedColumns….
+	6、丰富多样的option和强大的API。
+	7、支持国际化。
+	8、免费开源。
+
+
+库下载地址：http://datatables.net/releases/DataTables-1.10.12.zip  
+官网地址：https://datatables.net/  
+DataTables中文网：http://datatables.club/
+
 
 ### [date-fns](https://date-fns.org/docs/)
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加新列与数据源的绑定</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dataTables.bootstrap.css') }}">
+<script src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.dataTables.bootstrap.js') }}"></script>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.dataTables.css') }}">
+	<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.dataTables.js') }}"></script>
+
+</head>
+<body>
+
+<table id="table_id" class="display">
+	<thead>
+		<tr>
+			<th>序号</th>
+			<th>Engine</th>
+			<th>Browser</th>
+			<th>Time</th>
+			<th>Name</th>
+			<th>Score</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+</table>
+</body>
+</html>
+<script>
+//服务器处理
+    $(function(){
+    //DT 实例化
+    var dts = $('#table_id').DataTable( {
+        ajax: {
+            url:"{{ url_for('server_data') }}"
+        },
+        columns: [
+        	{ data:null },//不绑定数据源
+            { data: "engine"},//绑定数据源
+            { data: "browser"},
+            { data: "time" },
+            { data: "name" },
+            { data: "score"}
+        ],
+		columnDefs:[
+		{
+                targets:6,
+                data:"操作",
+                render:function (data,type,row) {
+                    return "<a title='编辑'  class='btn btn-xs btn-info changetype' href='#' >编辑</a>&nbsp;&nbsp;"+
+                                    "<a title='删除' class='btn btn-xs btn-danger' href='#'>删除</a>";
+                }
+        },
+        {
+        	defaultContent:"",
+        	targets:"_all"
+        }
+		],
+		order:[[5,"asc"]]
+        });
+
+
+     //自定义序号
+    dts.on("order.dt search.dt",function(){
+            dts.column(0,{
+                search:"applied",
+                order:"applied"
+            }).nodes().each(function (cell,i) {
+                cell.innerHTML = i + 1;
+            });
+        }).draw();
+
+
+    });
+
+
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国际化</title>
+    <link rel="stylesheet" href="css/jquery.dataTables.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="localisation/International.js"></script>
+</head>
+<body>
+<table id="table_id" class="display">
+    <thead>
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Row 1 data 1</td>
+        <td>Row 1 data 2</td>
+    </tr>
+    <tr>
+        <td>Row 2 data 1</td>
+        <td>Row 2 data 2</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
+<!-- 初始化datatables -->
+<script>
+    <!--
+    $(function () {-->
+        <!--
+        $("#table_id").DataTable({-->
+            <!--//language:dtLanguage-->
+            <!--
+        });-->
+        <!--
+    });-->
+
+
+    <!--
+    $(document).ready(function () {-->
+        <!--
+        $("#table_id").DataTable({-->
+            <!--language: {-->
+                <!--"sLengthMenu": "显示 _MENU_ 项结果",-->
+                <!--sSearch: "搜索："  //search:"搜索："-->
+                <!--
+            }-->
+            <!--
+        });-->
+        <!--});-->
+
+
+        $(function () {
+            $("#table_id").DataTable({
+                language: {
+                    //url:"./localisation/zh_CN.txt"
+                    url: "./localisation/Chinese.json"
+                }
+            });
+        });
+</script>

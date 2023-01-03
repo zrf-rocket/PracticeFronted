@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加滚动条与分页</title>
+    <link rel="stylesheet" href="css/jquery.dataTables.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="localisation/International.js"></script>
+
+</head>
+<body>
+<table style="display" id="table_id" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Start_date</th>
+        <th>Office</th>
+        <th>Extn</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>
+
+<script>
+    $(function () {
+        $("#table_id").DataTable({
+            "ajax": "data/objects.txt",
+            searching: false,
+            "pagingType": "full_numbers",
+            //paging: false,
+            scrollY: 100,
+            columns: [
+                {"data": "name"},
+                {"data": "position"},
+                {"data": "start_date"},
+                {"data": "office"},
+                {"data": "extn"}
+            ],
+            language: dtLanguage
+        });
+    });
+</script>

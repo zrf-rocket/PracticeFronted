@@ -54,7 +54,7 @@ Ace Admin是一款轻量且功能丰富的管理模板，干净且易于使用�
 
 ### [alertify.js](https://fabien-d.github.io/alertify.js/)
 
-[Github地址](https://github.com/fabien-d/alertify.js.git)
+[Github地址：](https://github.com/fabien-d/alertify.js.git) https://github.com/fabien-d/alertify.js.git  
 
 alertify.js是为了美化通知信息而生的JavaScript框架。
 
@@ -66,8 +66,8 @@ alertify.js是为了美化通知信息而生的JavaScript框架。
 
 ### [Animate.css](https://animate.style/)
 
-[Github地址](https://github.com/animate-css/animate.css.git) (https://github.com/daneden/animate.css) 预设了很多动画。
-这款插件能让你的网页端拥有更加丰富的动画。纯CSS制作的动画效果的CSS集合，无需JavaScript，支持多浏览器的动画特效，即插即用。  
+[Github地址：](https://github.com/animate-css/animate.css.git) https://github.com/daneden/animate.css 预设了很多动画。  
+这款插件能让你的网页端拥有更加丰富的动画。纯CSS制作的动画效果的CSS集合，无需JavaScript，支持多浏览器的动画特效，即插即用。    
 animate.css把不同的动画绑定到了不同的类里，所以想要使用哪种动画，只需要把通用类animated和相应的类添加到元素上就行了。  
 主要包括Attention(晃动效果)、bounce(弹性缓冲效果)、fade(透明度变化效果)、flip(翻转效果)、rotate(旋转效果)、slide(滑动效果)、zoom(变焦效果)、special(特殊效果)这8类
 
@@ -77,7 +77,7 @@ npm install animate.css
 
 ### [AnythingZoomer]()
 
-[GitHub地址](https://github.com/CSS-Tricks/AnythingZoomer/)
+[GitHub地址：](https://github.com/CSS-Tricks/AnythingZoomer/) https://github.com/CSS-Tricks/AnythingZoomer/  
 
 放大镜功能。
 
@@ -87,13 +87,13 @@ npm install animate.css
 
 ### [Async.js]()
 
-[GitHub地址](https://github.com/caolan/async/)
+[GitHub地址：](https://github.com/caolan/async/) https://github.com/caolan/async/  
 
 异步流程控制。
 
 ### [autosize]()
 
-[GitHub地址](https://github.com/jackmoore/autosize)
+[GitHub地址：](https://github.com/jackmoore/autosize) https://github.com/jackmoore/autosize  
 
 让文本域(textarea) 的高度随着文字内容的变高而变高。
 
@@ -111,7 +111,7 @@ npm install animate.css
 
 ### [bacon.js](https://baconjs.github.io/)
 
-GitHub地址：https://github.com/baconjs/bacon.js/  
+[GitHub地址：](https://github.com/baconjs/bacon.js/) https://github.com/baconjs/bacon.js/    
 函数式编程，是一个小型 JavaScript 函数式响应编程库。
 
 ### [basket.js]()
@@ -140,7 +140,7 @@ Lolding组件。
 
 ### [bootstrap](http://getbootstrap.com/)
 
-[Github地址](https://github.com/twbs/bootstrap.git)
+[Github地址：](https://github.com/twbs/bootstrap.git) https://github.com/twbs/bootstrap.git
 
 [Bootstrap](https://www.bootcss.com/)，来自Twitter，是一个用于快速开发 Web 应用程序和网站的前端框架，是目前最受欢迎的前端框架。Bootstrap是基于HTML、CSS、JAVASCRIPT的，它简洁灵活，使得Web开发更加快捷。
 
@@ -177,7 +177,8 @@ Chosen是一个jQuery的插件，目的是让又长又笨重的下拉式选单�
 
 ### [clipboard.js](https://clipboardjs.com/)
 
-[GitHub地址](https://github.com/zenorocha/clipboard.js) Modern copy to clipboard. No Flash. Just 3kb gzipped.  
+[GitHub地址：](https://github.com/zenorocha/clipboard.js) https://github.com/zenorocha/clipboard.js  
+Modern copy to clipboard. No Flash. Just 3kb gzipped.    
 下载地址：https://github.com/zenorocha/clipboard.js/archive/master.zip    
 复制内容到剪切板的小工具，不依赖Flash或任何臃肿的框架，大小只要3KB。
 
@@ -280,7 +281,7 @@ datedropper是微型但功能强大的jQuery时间选择器。内建风格相当
 
 深度合并数组和对象。
 
-## [device.js]()
+### [device.js]()
 
 一个可以检测设备类型的工具，可以让我们根据不同的设备来为其定制响应的Javascript和CSS。
 
@@ -311,7 +312,7 @@ http://editor.md.ipandao.com/
 
 ### [FileAPI]()
 
-GitHub地址：https://github.com/mailru/FileAPI  
+[GitHub地址：](https://github.com/mailru/FileAPI) https://github.com/mailru/FileAPI    
 对文件选择框内的文件的一些处理。前端用户处理文件（拖放、多文件上传等）。
 
 ### [Fine Uploader]()
@@ -326,7 +327,7 @@ Firefox 在浏览器端的实现 —— HTML 版的 Firefox。
 
 Flat-UI: Bootstrap的一款主题，简洁美观。
 
-## [flexible.js]()
+### [flexible.js]()
 
 1. 阿里团队开源的一个库。使用flexible.js轻松搞定各种不同的移动端设备兼容自适应问题。
 2. flexible.js实现了rem自适应，有了flexible.js，就不必再为移动端各种设备兼容烦恼。
@@ -368,13 +369,13 @@ Flat-UI: Bootstrap的一款主题，简洁美观。
 
 生成gif文件。
 
-## [github-cards]()
+### [github-cards]()
 
 用于生成 Github 信息卡片的库。
 
 ### [greensock]()
 
-## [Hammer.js](http://hammerjs.github.io/)
+### [Hammer.js](http://hammerjs.github.io/)
 
 是一个开源的,轻量级的javascript库,它可以在不需要依赖其他东西的情况下识别触摸,鼠标事件。
 
@@ -408,7 +409,7 @@ npm install handlebars
 
 一个适用于现代浏览器的，用于处理 手势、拖放、缩放等的库。
 
-## [iScroll.js](https://www.cnblogs.com/RuMengkai/p/6593709.html)
+### [iScroll.js](https://www.cnblogs.com/RuMengkai/p/6593709.html)
 
 1. iScroll是一个高性能，资源占用少，无依赖，多平台的javascript滚动插件。它可以在桌面，移动设备和智能电视平台上工作。它一直在大力优化性能和文件大小以便在新旧设备上提供最顺畅的体验。
 2. 功能强大，支持各种事件，不依赖任何的库，且插件丰富。
@@ -440,7 +441,7 @@ jQuery 团队开发的用于辅助手机端web app开发的库，基于HTML5。
 
 ### [jquery-qrcode]()
 
-[GitHub地址](https://github.com/jeromeetienne/jquery-qrcode)    
+[GitHub地址：](https://github.com/jeromeetienne/jquery-qrcode) https://github.com/jeromeetienne/jquery-qrcode      
 生成二维码图片的jQuery 插件，很好用。该插件是基于 QR Code Generator 开发的。
 
 ### [jquery-ui]()
@@ -461,11 +462,11 @@ jQuery插件，用于绑定热键。
 
 ### [jquery.scrollTo（平滑滚动）]()
 
-GitHub地址：https://github.com/flesler/jquery.scrollTo  
+[GitHub地址：](https://github.com/flesler/jquery.scrollTo) https://github.com/flesler/jquery.scrollTo    
 在页面上以一个元素为起始以动画的方式移动(ScrollTo)到另一个元素， 支持回退等。  
 能够使得定位的时候更有体验感。
 
-## [jquery.serializeJSON]()
+### [jquery.serializeJSON]()
 
 jQuery 插件，用于将 form 表单序列化成JSON数据。
 
@@ -495,11 +496,11 @@ Javascript 实现的 javascript JIT。
 
 ### [kendo]()
 
-## [knockout]()
+### [knockout]()
 
 前端 MVVM 框架，用于开发富前端应用。
 
-## [lazy.js]()
+### [lazy.js]()
 
 类似于 underscore, 但是会延迟执行，某些场景下，性能会有很大的提升。
 
@@ -569,7 +570,7 @@ Masonry常用于瀑布流布局的插件。
 
 轻量级专门解析、验证、操作、格式化日期的JavaScript函数库，Moment.js是为浏览器和Node.js而设计，所有组件都可以在这两个环境下运行。
 
-## [money.js]()
+### [money.js]()
 
 轻量级货币转换库，web 和 node 皆可用。
 
@@ -583,7 +584,7 @@ Masonry常用于瀑布流布局的插件。
 
 ### [mustache](https://mustache.github.io/mustache.5.html)
 
-Github地址：https://github.com/janl/mustache.js/  
+[Github地址：](https://github.com/janl/mustache.js/) https://github.com/janl/mustache.js/    
 下载地址：https://codeload.github.com/janl/mustache.js/zip/refs/tags/v4.2.0  
 GitHub示例：https://github.com/mustache/mustache.github.com
 
@@ -591,7 +592,7 @@ GitHub示例：https://github.com/mustache/mustache.github.com
 2. 如果希望像传统模板引擎一样可以有函数和参数处理等等的功能，那么Mustache就不是好的选择。
 
 ### [Nano ID](https://github.com/ai/nanoid/)
-
+[Github地址：](https://github.com/ai/nanoid/) https://github.com/ai/nanoid/  
 生成 uuid。
 
 ### [octocard]()
@@ -640,26 +641,26 @@ JS 的一个图片展示库。
 
 简洁美观的进度条，扁平化。
 
-## [qrcode-generator]()
+### [qrcode-generator]()
 
 各种语言的二维码生成工具。
 
 ### [qrcode.js（二维码生成）]()
 
-GitHub地址：https://github.com/davidshimjs/qrcodejs  
+[GitHub地址：](https://github.com/davidshimjs/qrcodejs) https://github.com/davidshimjs/qrcodejs    
 QRCode.js 是一个用于生成二维码的 JavaScript 库。主要是通过获取 DOM 的标签,再通过 HTML5 Canvas 绘制而成,不依赖任何库。
 
 ### [Quill]()
 
 Quill是当下高兼容性、强大、丰富且具有扩展性的文字编辑器。对于移动设备的支持度高。
 
-## [rebound-js]()
+### [rebound-js]()
 
 实现部分物理效果，Facebook出品。
 
 ### [regexp-frequent](https://github.com/taijiweb/regexp-frequent)正则工具库。
 
-## [regulex]()
+### [regulex]()
 
 用于生成 正则表达式 的可视化流程图。  
 类似于Solr, 但是用于浏览器上的全文搜索引擎，可以为 JSON 创建索引，离线也可以使用。
@@ -702,7 +703,7 @@ ScrollToFixed能够让网页的导航或表头等固定在顶部或底部，用�
 
 ### [skrollr](http://prinzhorn.github.io/skrollr/)
 
-GitHub地址：https://github.com/Prinzhorn/skrollr  
+[GitHub地址：](https://github.com/Prinzhorn/skrollr) https://github.com/Prinzhorn/skrollr    
 是一款轻量级且强大的js库，实现异步滚动的开源库。
 
 ### [slick]()
@@ -739,7 +740,7 @@ Js实现的颜色选择器 (Colorpicker)。
 
 ### [stellar.js](http://markdalgleish.com/projects/stellar.js/)
 
-GitHub地址：https://github.com/markdalgleish/stellar.js     
+[GitHub地址：](https://github.com/markdalgleish/stellar.js) https://github.com/markdalgleish/stellar.js       
 视差滚动效果，前端用于实现异步滚动效果的库，现已不再维护。可轻松创建视差滚动站点。
 
 ### [streamjs](https://github.com/winterbe/streamjs)
@@ -768,7 +769,7 @@ jQuery 插件，用于处理移动端的触摸事件。
 
 ### [swiper](https://swiper.com.cn/)
 
-GitHub地址：https://github.com/nolimits4web/swiper/   
+[GitHub地址：](https://github.com/nolimits4web/swiper/) https://github.com/nolimits4web/swiper/     
 [Swiper中文网](http://www.swiper.com.cn/)
 
 1. Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果。
@@ -790,7 +791,7 @@ IOS 7上Switch的JS实现, 支持 IE8 及以上浏览器。
 
 ### [TheaterJS]()
 
-[GitHub地址](https://github.com/Zhouzi/TheaterJS)  
+[GitHub地址：](https://github.com/Zhouzi/TheaterJS)  https://github.com/Zhouzi/TheaterJS    
 一个用于模拟人输入状态的JS库。
 
 ### [three_js]()
@@ -811,7 +812,7 @@ toastr是一个提示信息JavaScript函数库，必须载入jQuery，宗旨是�
 
 ### [Tocbot（目录生成）]()
 
-GitHub地址：https://github.com/tscanlin/tocbot/releases  
+[GitHub地址：](https://github.com/tscanlin/tocbot/releases) https://github.com/tscanlin/tocbot/releases    
 根据文章的标题级别自动生成目录对一篇文章来说是一个比较实用的功能。
 
 ### [todomvc]()
@@ -847,7 +848,7 @@ Basecamp 公司出品的富文本编辑器，简洁小巧。
 ### [underscore.js](http://underscorejs.org/)
 
 中文文档：https://www.underscorejs.cn/  
-GitHub地址：https://github.com/jashkenas/underscore
+[GitHub地址：](https://github.com/jashkenas/underscore) https://github.com/jashkenas/underscore  
 
 1. 一个 JavaScript 实用库，提供了一整套函数式编程的实用功能，但是没有扩展任何 JavaScript 内置对象。
 2. Underscore 提供了100多个函数,包括常用的: map, filter, invoke — 当然还有更多专业的辅助函数,如:函数绑定, JavaScript 模板功能,创建快速索引, 强类型相等测试, 等等.
@@ -863,7 +864,7 @@ GitHub地址：https://github.com/jashkenas/underscore
 
 ### [Waypoints（滚动侦测）](http://imakewebthings.com/waypoints/)
 
-Github地址：https://github.com/imakewebthings/waypoints
+[Github地址：](https://github.com/imakewebthings/waypoints) https://github.com/imakewebthings/waypoints  
 
 一个jQuery插件，每当您滚动到某个元素时，该插件都会执行一个函数。这使站点上的导航可以根据滚动条的位置突出显示我们正在播放的幻灯片。
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="underscore-min.js"></script>
+</head>
+<body>
+<pre>
+    遍历 list 中的所有元素，按顺序用每个元素当做参数调用 iteratee 函数。如果传递了 context 参数，则把 iteratee 绑定到 context 对象上。每次调用 iteratee 都会传递三个参数：(element, index, list)。如果 list 是个 JavaScript 对象，iteratee 的参数是 (value, key, list))。返回 list 以方便链式调用。
+    注意：集合函数能在数组，对象，和类数组对象，比如 arguments, NodeList 和类似的数据类型上正常工作。 但是它通过鸭子类型工作，所以要避免传递带有一个数值类型 length 属性的对象。每个循环不能被破坏 - 打破， 使用_.find 代替，这也是很好的注意。
+</pre>
+</body>
+<script>
+    _.each([11, 22, 33], function (ele) {
+        console.log(ele);
+    });
+    _.each({one: 11, two: 22, three: 33}, function (index, ele) {
+        console.log(index, ele);
+    });
+</script>
+</html>

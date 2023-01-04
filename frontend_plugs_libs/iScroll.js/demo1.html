@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/iscroll.js"></script>
+</head>
+<body>
+iScroll作用于滚动区域的外层。在上面的例子中，UL元素能进行滚动。只有容器元素的第一个子元素能进行滚动，其他子元素完全被忽略。
+<div id="wrapper">
+    <ul>
+        <li>iScroll.js1</li>
+        <li>iScroll.js2</li>
+        <li>iScroll.js3</li>
+        <li>iScroll.js4</li>
+    </ul>
+</div>
+</body>
+<script>
+    // 初始化  第一个参数可以是滚动容器元素的DOM选择器字符串，也可以是滚动容器元素的引用对象。
+    var myScroll = new IScroll("#wrapper");
+    // 或
+    var wrapper = document.getElementById("wrapper");
+    var myScroll2 = new IScroll(wrapper);
+    //注意，iScroll使用的是querySelector 而不是 querySelectorAll，所以iScroll只会作用到选择器选中元素的第一个。如果需要对多个对象使用iScroll，需要构建自己的循环机制。
+
+
+    var myScroll3 = new IScroll("#wrapper", {
+        mouseWheel: true,
+        scrollbars: true
+    });
+
+</script>
+</html>

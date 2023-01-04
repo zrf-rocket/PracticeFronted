@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .slides_container {
+            width: 470px;
+            height: 170px;
+        }
+
+        .slides_container div {
+            width: 470px;
+            height: 170px;
+            display: block;
+        }
+    </style>
+    <script src="./../../jquery/jquery-1.9.1.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+</head>
+<body>
+<div id="slides">
+    <div class="slides_container">
+        <div>
+            <h1>Slide1</h1>
+            <p></p>
+        </div>
+        <div>
+            <h1>Slide2</h1>
+            <p></p>
+        </div>
+        <div>
+            <h1>Slide3</h1>
+            <p></p>
+        </div>
+        <div>
+            <h1>Slide4</h1>
+            <p></p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        $("#slides").slidesjs({
+            preload: true,  //当参数设置为  true 的时候，表示在加载相册中照片的过程中 显示 加载图片，设置为 false的时候则表示不显示  加载图片。默认值为：false
+            preloadImages: "loading.gif", //这个属性一般跟上一个  preload(boolean) 一起使用，string内的值表示需要显示的加载图片的路径地址。默认值为： "/img/loading.gif"
+            generateNextPrev: true,  //设置 是否自动生成 上一个、下一个 按钮。默认值为： false
+            next: 'next', // 自动生成的 下一个按钮 样式名称。默认值为： "next"
+            prev: 'prev', // 自动生成的 上一个按钮 样式名称。默认值为： "prev"
+            pagination: true, //如果你不使用分页的方式显示图片你可以设置为 false ，但是没有必要，推荐不做设置
+            generatePagination: true, //设置 是否自动生成 分页导航层。默认值为： true
+            paginationClass: 'pagination', //设置 分页导航层的 样式名称。默认值为： "pagination"
+            currentClass: 'current', //设置分页导航层中 当前分页项目的 样式名称。默认值为： "current"
+        });
+    });
+</script>
+</html>

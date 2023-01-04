@@ -1,5 +1,7 @@
 # JavaScript
 
+The_Definitive_Guide_6th_Edition 目录为 `《[JavaScript权威指南(第六版)].(美)David.Flanagan》`书籍代码
+
 ## 数据类型
 ## 对象
 1. array数组

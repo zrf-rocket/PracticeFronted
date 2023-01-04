@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo2:device.js</title>
+    <script src="current-device.min.js"></script>
+</head>
+<body>
+通常情况下，为了使页面在不同分辨率的设备上展示出不同的效果，会使用CSS3的 @media属性来实现，但如果想在PC端和mobile端展示两个不同的页面，使用device.js就会方便很多，首先用它来检测设备，然后再在不同的设备上打开不同的页面。
+</body>
+<script>
+    var isMobile = device.mobile(),
+        isTable = device.tablet();
+
+    if (isMobile || isTable) {
+        window.open("index.html", "_self"); //如果终端是手机或者平板，就打开index.html
+    } else {
+        window.open("demo1.html", "_self"); //否则打开demo1.html
+    }
+</script>
+</html>

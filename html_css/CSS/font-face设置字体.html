@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--   引入样式文件方式 -->
+    <link href="font-face.css" rel="stylesheet">
+    <!--   自定义字体   -->
+    <style>
+        @font-face {
+            /*自定义样式名称*/
+            font-family: "FZZZHONGJW";
+            /*样式文件*/
+            src: url("./../../static/fonts/FZZZHONGJW.TTF");
+        }
+
+        @font-face {
+            font-family: "glyphicons-halflings-regular";
+            src: url("./../../static/fonts/glyphicons-halflings-regular.woff");
+        }
+
+        .fontFamily {
+            font-family: FZZZHONGJW;
+        }
+    </style>
+</head>
+<body>
+<div style="font-size: x-large; font-weight: bold; font-family: 'Microsoft YaHei UI'; font-variant: small-caps">html设置字体的方法：
+    1、【font-variant】属性可以设定小型大写字母；
+    2、【font-weight】属性设置文本的粗细；
+    3、【font-size】属性设置文本的大小。
+    4、【font-family】设置字体字号
+</div>
+
+<p>1、字体变形</p>
+属性可以设定小型大写字母。
+小型大写字母不是一般的大写字母，也不是小写字母，这种字母采用不同大小的大写字母。
+
+<p>2、字体加粗</p>
+属性设置文本的粗细。
+使用 bold 关键字可以将文本设置为粗体。
+关键字 100 ~ 900 为字体指定了 9 级加粗度。如果一个字体内置了这些加粗级别，那么这些数字就直接映射到预定义的级别，100 对应最细的字体变形，900 对应最粗的字体变形。数字 400 等价于 normal，而 700 等价于 bold。
+如果将元素的加粗设置为 bolder，浏览器会设置比所继承值更粗的一个字体加粗。与此相反，关键词 lighter 会导致浏览器将加粗度下移而不是上移。
+
+
+<p>4、设置字体字号</p>
+<p class="fontFamily">字型样式设置ABCDEFGHIJIBU 通过CLASS</p>
+<p style="font-family: 'glyphicons-halflings-regular'">通过内部定义字体设置ABCDEFGHIJIBU</p>
+<p style="font-family: ShangShouXiangYaTi">通过样式文件定义字体</p>
+<p style="font-family: ''">font-family为空字符串</p>
+
+
+</body>
+</html>

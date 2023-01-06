@@ -4,7 +4,7 @@
 
 ## frontend_plugs_libs [前端常用插件库合集 400+]
 
-*_注意：_ 此处插件库排序按照字母排序。*
+*_注意：_ 此处插件库排序按照字母排序。插件分类维度见这里：[插件集合分类](README%20Plugin%20Category.md)*
 
 ### [accessible-html5-video-player]()
 
@@ -76,9 +76,9 @@ alertify.js是为了美化通知信息而生的JavaScript框架。
 ### [Animate.css](https://animate.style/)
 
 [Github地址：](https://github.com/animate-css/animate.css.git) https://github.com/daneden/animate.css 预设了很多动画。  
-这款插件能让你的网页端拥有更加丰富的动画。纯CSS制作的动画效果的CSS集合，无需JavaScript，支持多浏览器的动画特效，即插即用。    
-animate.css把不同的动画绑定到了不同的类里，所以想要使用哪种动画，只需要把通用类animated和相应的类添加到元素上就行了。  
-主要包括Attention(晃动效果)、bounce(弹性缓冲效果)、fade(透明度变化效果)、flip(翻转效果)、rotate(旋转效果)、slide(滑动效果)、zoom(变焦效果)、special(特殊效果)这8类
+1. 这款插件能让你的网页端拥有更加丰富的动画。纯CSS制作的动画效果的CSS集合，无需JavaScript，支持多浏览器的动画特效，即插即用。    
+1. animate.css把不同的动画绑定到了不同的类里，所以想要使用哪种动画，只需要把通用类animated和相应的类添加到元素上就行了。  
+1. 主要包括Attention(晃动效果)、bounce(弹性缓冲效果)、fade(透明度变化效果)、flip(翻转效果)、rotate(旋转效果)、slide(滑动效果)、zoom(变焦效果)、special(特殊效果)这8类
 
 下载https://raw.githubusercontent.com/daneden/animate.css/master/animate.css  
 或安装  
@@ -386,11 +386,13 @@ npm install current-device
 2. 企业级图表库，百度开发。
 3. [Vue 版 Echart](https://github.com/ecomfe/vue-echarts) https://github.com/ecomfe/vue-echarts
 
-### [editor_md]()
+### [editor_md](http://editor.md.ipandao.com/)
 
-http://editor.md.ipandao.com/
 
-### [Ejs](http://www.embeddedjs.com/) 模板引擎
+
+### [Ejs](http://www.embeddedjs.com/)
+
+模板引擎。
 
 ### [elevator.js]()
 
@@ -451,7 +453,10 @@ Eruda 是一个专为手机网页前端设计的调试面板，类似 DevTools �
 1. 一个用于放大缩小图片、Web 内容或者多媒体元素的库，优雅大方。
 2. 浏览图片，弹出查看图片，视屏等等。
 
-### [favico.js](http://lab.ejci.net/favico.js/) 动态改 favicon。牛逼是可以放视频~
+### [favico.js](http://lab.ejci.net/favico.js/)
+
+1. 动态改favicon。
+2. 可以放视频。
 
 ### [FileAPI]()
 
@@ -942,6 +947,10 @@ Mozilla 出品，用于离线存储，基于IndexedDB, WebSQL 或者 localStorag
 
 ### [magicbox_tencent]()
 
+* [腾讯magicbox可视化开发](https://magicbox.bk.tencent.com/static_api/v3/index.html#build/show)
+* [腾讯magicbox前端开发组件库](https://magicbox.bk.tencent.com/static_api/v3/index.html#index?isPro=1)
+
+
 ### [Magnific-Popup]()
 
 * [GitHub地址：](https://github.com/dimsemenov/Magnific-Popup) https://github.com/dimsemenov/Magnific-Popup
@@ -963,8 +972,9 @@ Mozilla 出品，用于离线存储，基于IndexedDB, WebSQL 或者 localStorag
 
 ### [MD5]()
 
-https://github.com/pvorb/node-md5
-用MD5的方式加密文件的库
+[GitHub地址：](https://github.com/pvorb/node-md5) https://github.com/pvorb/node-md5  
+用MD5的方式加密文件的库。
+MD5（Message-Digest Algorithm）是计算机安全领域广泛使用的散列函数（又称哈希算法、摘要算法），主要用来确保消息的完整和一致性。常见的应用场景有密码保护、下载文件校验等。
 
 ### [mermaid]()
 
@@ -1678,7 +1688,9 @@ jQuery 插件，用来处理浏览器缩放。
 https://treejs.cn/v3/main.php#_zTreeInfo
 文件树形视图控件
 
-## html_css_javascript [HTML](html_css_javascript/README%20HTML%20Object.md)/[CSS](html_css_javascript/README%20CSS.md)/[JS](html_css_javascript/JavaScript/README.md)的知识学习内容
+## html_css [HTML](html_css/README%20HTML%20Object.md)/[CSS](html_css/README%20CSS.md)的知识学习总结内容
+
+## javascript [JS](javascript/README.md)的知识学习总结内容
 
 ## jQuery [JQuery的知识学习内容](jquery/README.md)
 

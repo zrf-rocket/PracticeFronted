@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>-->
+
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<h2>响应式文本</h2>
+<div class="container">
+    <div class="jumbotron">
+        <h1>This is bootstrap framework!</h1>
+        <p>重置窗口大小，查看响应式效果！</p>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h5>第一列</h5>
+            <p>this is bootstrap framework</p>
+            <p>this is html/css/javascript</p>
+        </div>
+        <div class="col-sm-4">
+            <h5>第二列</h5>
+            <p>this is bootstrap framework</p>
+            <p>this is html/css/javascript</p>
+        </div>
+        <div class="col-sm-4">
+            <h5>第三列</h5>
+            <blockquote>this is bootstrap framework</blockquote>
+            <blockquote>this is html/css/javascript</blockquote>
+        </div>
+    </div>
+</div>
+
+
+<h2>表格</h2>
+<p>创建响应式表格 (将在小于768px的小型设备下水平滚动)。另外：添加交替单元格的背景色</p>
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>表头1</th>
+            <th>表头2</th>
+            <th>表头3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>第1行第1列</td>
+            <td>第1行第2列</td>
+            <td>第1行第3列</td>
+        </tr>
+        <tr>
+            <td>第2行第1列</td>
+            <td>第2行第2列</td>
+            <td>第2行第3列</td>
+        </tr>
+        <tr>
+            <td>第3行第1列</td>
+            <td>第3行第2列</td>
+            <td>第3行第3列</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>图像</h2>
+<p>创建响应式图片(将扩展到父元素)。 另外：图片以椭圆型展示：</p>
+<img src="./../imgs/1.png" class="img-responsive img-circle" alt="椭圆响应式图片" width="304" height="236">
+
+<h2>图标</h2>
+<p>云图标 <span class="glyphicon glyphicon-cloud"></span></p>
+<p>云下载图标 <span class="glyphicon glyphicon-cloud-download"></span></p>
+<p>云上传图标 <span class="glyphicon glyphicon-cloud-upload"></span></p>
+<p>信件图标 <span class="glyphicon glyphicon-envelope"></span></p>
+<p>搜索图标 <span class="glyphicon glyphicon-search"></span></p>
+<p>打印图标 <span class="glyphicon glyphicon-print"></span></p>
+<p>下载图标 <span class="glyphicon glyphicon-download"></span></p>
+<p>上传图标 <span class="glyphicon glyphicon-upload"></span></p>
+
+<h2>定制字体图标</h2>
+通过增加或减少图标的字体尺寸。color定制字体颜色。通过text-shadow设置文本阴影
+<button type="button" class="btn btn-primary btn-lg" style="font-size: 30px; color: yellow; text-shadow: black 5px 3px 3px;">
+    <span class="glyphicon glyphicon-user"></span> User
+</button>
+
+<svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-8-circle" viewBox="0 0 16 16">
+  <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-5.03 1.803c0 1.394-1.218 2.355-2.988 2.355-1.763 0-2.953-.955-2.953-2.344 0-1.271.95-1.851 1.647-2.003v-.065c-.621-.193-1.33-.738-1.33-1.781 0-1.225 1.09-2.121 2.66-2.121s2.654.896 2.654 2.12c0 1.061-.738 1.595-1.336 1.782v.065c.703.152 1.647.744 1.647 1.992Zm-4.347-3.71c0 .739.586 1.255 1.383 1.255s1.377-.516 1.377-1.254c0-.733-.58-1.23-1.377-1.23s-1.383.497-1.383 1.23Zm-.281 3.645c0 .838.72 1.412 1.664 1.412.943 0 1.658-.574 1.658-1.412 0-.843-.715-1.424-1.658-1.424-.944 0-1.664.58-1.664 1.424Z"/>
+</svg>
+
+<h2>带有字体图标的导航栏</h2>
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collpase" data-bs-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-next"></span>
+                <span class="icon-prev"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-home"> Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#shop">
+                        <span class="glyphicon glyphicon-shopping-cart"> Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#support">
+                        <span class="glyphicon glyphicon-headphones"> Support</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="navbar navbar-fixed-bottom navbar-inverse" role="navigation"></div>
+</body>
+</html>

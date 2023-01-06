@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MD5</title>
+    <script src="md5.min.js"></script>
+</head>
+<body>
+<h1 id="content1"></h1>
+<h1 id="content2"></h1>
+<h1 id="content3"></h1>
+<h1 id="content4"></h1>
+</body>
+<script>
+    var content1 = "this is MD5.js";
+    var content2 = "this is md5.js";
+    var ret = MD5(content1);
+    var ret2 = MD5(content2);
+    document.getElementById("content1").innerText = content1 + " : " + ret;
+    document.getElementById("content2").innerText = content2 + " : " + ret2;
+
+
+    var content3 = '{"name":"this is MD5.js","language": JavaScript}';
+    var content4 = '{"name":"this is md5.js","language": javascript}';
+    var ret3 = MD5(content3);
+    var ret4 = MD5(content4);
+    document.getElementById("content3").innerText = content3 + " : " + ret3;
+    document.getElementById("content4").innerText = content4 + " : " + ret4;
+</script>
+</html>

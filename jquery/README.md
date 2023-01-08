@@ -1,53 +1,65 @@
-# JQuery
+# jQuery
+## 简介
 jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+jQuery 是一个 JavaScript 函数库。jQuery 极大地简化了 JavaScript 编程。
 
-
-## 功能特性
-### 选择器
-### 事件
-
-### 隐藏显示
-### 淡入淡出
-### 滑动
-### 动画
-### 停止动画
-### callback
-### 链
-
-
-### 捕获
-### 设置
-### 添加元素
-### 删除元素
-### CSS类
-### css()方法
-### 尺寸
-
-
-
-### 遍历
-### 祖先
-### 后代
-### 同胞
-### 过滤
-
-### Ajax load()方法
-### get()方法post()方法
-
-### noConflict()方法
-### JSONP
+jQuery 库包含以下特性：
+* HTML 元素选取
+* HTML 元素操作
+* CSS 操作
+* HTML 事件函数
+* JavaScript 特效和动画
+* HTML DOM 遍历和修改
+* AJAX
+* Utilities
 
 
 ## 实例
-### validate插件
-### cookie
-### accordion
-### autocomplete
-### growl
-### 密码验证
-### prettydate
-### tooltip
-### treeview
+demo3-选择器
+demo4-事件
+
+demo5-效果-隐藏显示
+demo6-效果-淡入淡出
+demo7-效果-滑动
+demo8-效果-动画
+demo9-效果-停止动画
+demo10-效果-callback
+demo11-效果-链
+
+
+demo12-html-捕获_获取
+demo13-html-设置
+demo14-html-添加元素
+demo15-html-删除元素
+demo16-html-CSS类
+demo17-html-css方法
+demo18-html-尺寸
+
+
+
+demo19-遍历
+demo20-祖先
+demo21-后代
+demo22-同胞
+demo23-过滤
+
+demo20-Ajax-Ajax load()方法
+demo21-Ajax-get()方法post()方法
+
+demo22-noConflict()方法
+demo23-JSONP
+
+
+
+demo24-validate插件
+demo25-cookie
+demo26-accordion
+demo27-autocomplete
+demo28-growl
+demo29-密码验证
+demo30-prettydate
+demo31-tooltip
+demo32-treeview
 
 
 ## JQuery常用插件
@@ -91,7 +103,7 @@ Validation插件的官方API地址为： http://docs.jquery.com/Plugins/Validati
 
 
 ## 参考资料
-[官网：](https://jquery.com/) https://jquery.com/  
+[jQuery官网：](https://jquery.com/) https://jquery.com/  
 
 
 

@@ -1,7 +1,9 @@
 # jQuery
 ## 简介
+<pre>
 jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
 jQuery 是一个 JavaScript 函数库。jQuery 极大地简化了 JavaScript 编程。
+</pre>
 
 jQuery 库包含以下特性：
 * HTML 元素选取
@@ -15,51 +17,46 @@ jQuery 库包含以下特性：
 
 
 ## 实例
-demo3-选择器
-demo4-事件
+##### demo3-选择器  
+##### demo4-事件  
 
-demo5-效果-隐藏显示
-demo6-效果-淡入淡出
-demo7-效果-滑动
-demo8-效果-动画
-demo9-效果-停止动画
-demo10-效果-callback
-demo11-效果-链
+##### demo5-效果-隐藏显示  
+##### demo6-效果-淡入淡出  
+##### demo7-效果-滑动  
+##### demo8-效果-动画  
+##### demo9-效果-停止动画  
+##### demo10-效果-callback  
+##### demo11-效果-链  
 
+##### demo12-html-捕获_获取  
+##### demo13-html-设置  
+##### demo14-html-添加元素  
+##### demo15-html-删除元素  
+##### demo16-html-CSS类  
+##### demo17-html-css方法  
+##### demo18-html-尺寸  
 
-demo12-html-捕获_获取
-demo13-html-设置
-demo14-html-添加元素
-demo15-html-删除元素
-demo16-html-CSS类
-demo17-html-css方法
-demo18-html-尺寸
+##### demo19-遍历  
+##### demo20-祖先  
+##### demo21-后代  
+##### demo22-同胞  
+##### demo23-过滤  
 
+##### demo20-Ajax-Ajax load()方法  
+##### demo21-Ajax-get()方法post()方法  
 
+##### demo22-noConflict()方法  
+##### demo23-JSONP  
 
-demo19-遍历
-demo20-祖先
-demo21-后代
-demo22-同胞
-demo23-过滤
-
-demo20-Ajax-Ajax load()方法
-demo21-Ajax-get()方法post()方法
-
-demo22-noConflict()方法
-demo23-JSONP
-
-
-
-demo24-validate插件
-demo25-cookie
-demo26-accordion
-demo27-autocomplete
-demo28-growl
-demo29-密码验证
-demo30-prettydate
-demo31-tooltip
-demo32-treeview
+##### demo24-validate插件
+##### demo25-cookie
+##### demo26-accordion
+##### demo27-autocomplete
+##### demo28-growl
+##### demo29-密码验证
+##### demo30-prettydate
+##### demo31-tooltip
+##### demo32-treeview
 
 
 ## JQuery常用插件

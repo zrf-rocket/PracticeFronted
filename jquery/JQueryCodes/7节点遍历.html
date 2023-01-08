@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // alert($("p").next().text());
+            $("p").click(function () {
+                // alert($(this).next().text());//点击当前的标签  显示同级的下一个元素的内容
+
+                //添加一个过滤器
+                // alert($("div").next().text());
+                // alert($(this).next("div").text());//点击p  显示邻居的下一个div的内容，间隔的不行
+                // alert($(this).nextAll().text());//取出所有与自己同级的标签（只取后面的同级，前面的不会被取到），没有就显示空
+            });
+
+            //点击当前div  与此同级的后面的所有div全部变色
+            /*
+                $("div").click(function(){
+                    $.each($(this).nextAll("div"),function(){
+                        $(this).css("background","red");
+                    });
+                });//each 每个元素
+            */
+
+            //不需要each  等价写法
+            // $("div").click(function(){$(this).nextAll("div").css("background","red");});
+
+            $("div").click(function () {
+                $(this).css("background", "black");
+                $(this).siblings("div").css("background", "red");//所有同级的
+            });
+
+
+            //获取所有同辈的元素
+            $(".t").click(function () {
+                $(this).css("color", "pink");
+                $(this).siblings(".t").css("color", "yellow");//所有同级的
+            });
+        });
+    </script>
+</head>
+<body>
+<p>第1个p</p>
+<p class="t">第2个p</p>
+<div>第1个div
+    <p class="t">第1个div的p</p>
+</div>
+<p class="t">第3个p</p>
+<div>第2个div</div>
+<p>第4个p</p>
+<div>第3个div</div>
+</body>
+</html>

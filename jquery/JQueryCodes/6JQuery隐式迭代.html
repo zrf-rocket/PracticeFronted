@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //判断对象是否存在
+            var state = $("#btn1").length;
+            //返回0表示不存在   返回1表示存在
+            if (state <= 0) {
+                alert("id为btn1的按钮不存在，状态值为：" + state);
+            } else {
+                alert("存在此按钮,状态值为：" + state);
+            }
+            $("#btn3").mouseover(function () {
+                alert("鼠标以上来了");
+            });
+
+        });
+    </script>
+</head>
+<body>
+<input type="button" id="btn1" value="按钮1"/>
+<input type="button" id="btn2" value="按钮2"/>
+<input type="button" id="btn3" value="按钮3"/>
+</body>
+</html>

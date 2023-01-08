@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery提供的函数</title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        var array = [3, 7.8, 9];
+        // alert(array);
+        var array2 = $.map(array, function (item) {
+            return item * 2;
+        });
+        alert(array2);
+
+
+        var arr0 = [1, 3, 5, 7, 8, 0];//对于普通数据key就是数组的下标
+        $.each(arr0, function (key, value) {
+            alert(key + "<=>" + value);
+        });
+        $.each(arr0, function (i) {
+            alert(i);
+        });//有一个参数  此处的i表示key
+
+
+        var arr = {"abc": "ABC", "name": "rocket", "age": 24};
+        $.each(arr, function (key, value) {
+            alert(key + "=" + value);
+        });
+        //无参  代表value
+        $.each(arr, function () {
+            alert(this);
+        });
+
+        var arr2 = [22, 33, 44, 55, 66];
+        //没有参数  此处表示value
+        $.each(arr2, function () {
+            alert(this);
+        });
+
+    </script>
+</head>
+<body>
+jQuery提供的函数
+</body>
+</html>

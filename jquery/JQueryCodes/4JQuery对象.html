@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        function test() {
+            var div1 = document.getElementById("div1").innerHTML;
+            var inDiv1 = $(div1);
+            alert(inDiv1);
+        }
+
+        test();
+
+        //$("#div1").html()等价于document.getElementById("div1").innerHTML
+        $(function () {
+            alert($("#div1").html()); // 输出div里面所有的内容包括样式代码
+        });
+        //$("#div1")得到的是jQuery对象
+        //jquery与DOM对象不能互相调用所以 alert($("#div1").innerHTML) 是错的   innerHTML是DOM对象的属性
+        //DOM对象转为jQuery对象：$(DOM对象)
+        //没有jQuery封装的方法时需要使用DOM对象：var domobj=jqobj[0] 或 var domobj=jqobj.get(0)
+
+
+        // alert($("#div1").html);
+        alert($("#div1").html());
+
+
+        $(function () {
+            var div1 = document.getElementById("div1");//先得到DOM对象
+            var content1 = $(div1).html();//DOM对象转为jQuery对象
+            alert(content1);
+            //将div1层重新赋值
+            var content2 = $(div1).html("<a href='https://www.baidu.com'>百度</a>");// 有参数就赋值，没有参数就取值
+        });
+
+
+        $(function () {
+            $("#div1").css("background", "red");//设置div的样式
+
+            var style = $("#div1").css("background");//获取样式
+            alert("style=" + style);
+
+            var value1 = $("#div1").val();//获取value
+            alert("value1=" + value1);
+
+            //修改value
+            $("#div1").val("value1......");
+            var value2 = $("#div1").val();
+            alert("value2=" + value2);
+
+            var domobj = document.getElementById("div1");
+            var text = $(domobj).text();//仅仅获取div的内容
+            alert(text);
+        });
+    </script>
+
+    <script>
+        //jquery对象转为DOM对象
+        $(function () {
+            var div1 = document.getElementById("div1");
+            $(div1).html("转为jQuery之后的新内容");
+            //转为DOM对象
+            var div1_2 = $(div1)[0];
+            alert(div1_2.innerHTML);
+            alert(div1_2.innerHeight);//undefined
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#t1").val("这是文本框" + new Date());//给文本框设值
+            alert($("#t1").val());//取出文本框的值
+        });
+        $(function () {
+            $("#div1").html("这是新设定的值");
+            alert($("#div1").html());
+        });
+    </script>
+</head>
+<body>
+jQuery对象和DOM对象
+<div id="div1">
+    div的
+    <div style="color: red">内容</div>
+</div>
+<input type="text" id="t1"/>
+</body>
+</html>

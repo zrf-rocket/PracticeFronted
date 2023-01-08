@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // $("#tb td")//获取tb下的所有td
+            // $("#tb > td")//获取tb下的直接td
+            $("#tb td").html("<img src='1.png'/>")
+                .mouseover(function () {
+                    $("#tb td").html("<img src='1.png'/>");
+                    $(this).siblings().html("<img src='1.png'/>");
+                    $(this).nextAll().html("<img src='2.png'/>");
+                });
+        });
+    </script>
+</head>
+<body>
+<table id="tb">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>

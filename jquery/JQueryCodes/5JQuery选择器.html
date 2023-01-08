@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .t {
+            background-color: red;
+            font-size: 20px;
+            color: yellow;
+        }
+    </style>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        //按钮
+        $(function () {
+            $("#btn").click(function () {
+                // alert("点击了按钮")
+                alert($("#btn").val());
+            });
+        });
+
+        //p段落
+        $(function () {
+            // $("p").click();//取得所有的p标签 并监听点击事件
+            $("p").click(function () {//隐式迭代   给所有选择的元素增加click事件响应
+                alert($("p").text());//获取p里面的内容  并弹出
+                // alert("点中了P");
+            });
+        });
+
+        //对样式
+        $(function () {
+            $(".t").click(function () {
+                alert($(this).text());
+            });
+        });
+
+        //同时选择多个选择器
+        $(function () {
+            $("div, span, pre, menuitem").click(function () {//"div,span,pre,menuitem"此处选择器的空格不能多也不能少
+                alert("点中");
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="tagname" id="btn"/>
+<p>1111</p>
+<p>2222</p>
+<p>3333</p>
+<p>4444</p>
+<p class="t">aaaaa</p>
+<p class="t">bbbb</p>
+<p class="t">ccccc</p>
+<div>这是div的内容-</div>
+<span>这是span里面的内容</span>
+<pre>这是pre里面的内容</pre>
+<menuitem>这是menuitem里面的内容</menuitem>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./static/js/jquery-1.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log("页面加载此处被执行.....");
+
+            var html_cnt = $(".cnt").html; //返回值：function html(a)
+            console.log(html_cnt);
+
+            //含有相同内容的p标签隐藏
+            //$(".content .cnt").find("XX").hide(); //无法实现效果
+            var find_tag = $(".content").find("p"); //找到所有的p标签  返回的是对象
+            console.log(find_tag);
+            /*
+            // 没有forEach
+            find_tag.forEach(function (elements) {
+                elements
+            });
+             */
+
+            find_tag.each(function (index, elements) {
+                //elements.hide = true; // 无法设置标签的隐藏
+                //cnt = elements.html(); //无法获取标签下的HTML内容
+                cnt = elements.innerHTML;
+                if ("XX" === cnt) {
+                    $(this).hide();  // 实现隐藏  隐藏当前的 HTML 元素。
+                    //elements.hide(); //无法实现隐藏
+                }
+            });
+
+            // var cnt_finally = $(".cnt").finally("XX");
+            // console.log(cnt_finally);
+
+
+            // 我们知道在 JavaScript 的 for 循环中，可以使用 continue 语句跳过本次循环，使用 break 语句跳出（结束）整个循环。而 jQuery 除了for 循环外，还有个 each() 方法也可以用来遍历元素，不过在该方法中不是通过 continue 或 break 来跳过循环，而是使用 return 语句实现类似的功能。
+            //
+            // 1，跳出 each() 循环的语句
+            // return true：跳过本次循环（类似 for 循环的 continue）
+            // return false：跳出所有循环（类似 for 循环的 break）
+            // 仅仅一个return 会不起作用
+        });
+    </script>
+</head>
+<body>
+script标签中 无需要使用type="text/javascript"，在HTML5中，不必那样做了。JavaScript 是 HTML5 以及所有现代浏览器中的默认脚本语言！
+通过 jQuery，您可以选取（查询，query） HTML 元素，并对它们执行“操作”（actions）。
+<div class="content">
+    <p class="cnt">11</p>
+    <p class="cnt">22</p>
+    <p class="cnt">XX</p>
+    <p class="cnt">XX</p>
+    <p class="cnt2">44</p>
+    <p class="cnt2">55</p>
+    <p class="cnt2">XX</p>
+    <p class="cnt2">XX</p>
+</div>
+
+</body>
+</html>

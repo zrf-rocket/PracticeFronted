@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="static/js/jquery-1.4.min.js"></script>
+    <script>
+        /*
+        ready() 防止文档在完全加载（就绪）之前运行 jQuery 代码。如果在文档没有完全加载之前就运行函数，操作可能失败。
+            试图隐藏一个不存在的元素
+            获得未完全加载的图像的大小
+        */
+        $(document).ready(function () {
+            $("#test").click(function () {
+                $("#test").hide(); // 隐藏 id="test" 的元素。
+            });
+
+            $(".test").click(function () {
+                $(".test").hide(); // 隐藏所有 class="test" 的元素。
+            });
+
+            $("span").click(function () {
+                $("span").hide(); // 隐藏所有 <span> 元素。
+            });
+        });
+    </script>
+</head>
+<body>
+jQuery 使用的语法是 XPath 与 CSS 选择器语法的组合。
+<div class="test">class test1</div>
+<div class="test">class test2</div>
+<div class="test">class test3</div>
+<div id="test">id test</div>
+<div><span>span111</span></div>
+<div><span>span222</span></div>
+<div><span>span333</span></div>
+</body>
+</html>

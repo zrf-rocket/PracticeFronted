@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    使用微软的CDN库文件
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+    -->
+    <script type="text/javascript" src="./static/js/jquery-1.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide(); // 隐藏当前标签内容
+            });
+            $("button").click(function(){
+                $("p").hide();
+            });
+            $("h2").click(function () {
+                $("p").html("被H2点击"); // 将p标签内的内容全部重置
+                $("p").show(); // 显示p标签
+            });
+        });
+    </script>
+</head>
+<body>
+如何选取 HTML 元素，以及如何对它们执行类似隐藏、移动以及操作其内容等任务。
+<p>this is p1, disappear.</p>
+<p>this is p2, disappear.</p>
+<p>this is p3, disappear.</p>
+<h2>this is H2</h2>
+<button type="button">Click me</button>
+</body>
+</html>

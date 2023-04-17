@@ -437,6 +437,10 @@ npm install current-device
 
 模板引擎。
 
+### Electron(https://www.electronjs.org/docs/latest)
+
+[GitHub地址：](https://github.com/electron/electron)https://github.com/electron/electron
+
 ### [element ui](https://element-plus.gitee.io/zh-CN/)
 
 Element UI 是一套采用 Vue 2.0 作为基础框架实现的组件库，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的组件库，提供了配套设计资源，帮助网站快速成型。
@@ -630,6 +634,30 @@ npm install handlebars
 ### [holderjs](http://imsky.github.io/holder/)
 
 * 生成占位图片。
+
+### [hotcss]()
+
+[GitHub地址](https://github.com/imochen/hotcss.git)：https://github.com/imochen/hotcss.git  
+官网地址：http://imochen.github.io/hotcss/
+
+移动端布局终极解决方案 --- 让移动端布局开发更加容易
+
+不仅便捷了你的布局，同时它使用起来异常简单。可能你会说 talk is cheap,show me the code，那我现在列下hotcss整个项目的目录结构。
+
+#### **介绍**
+
+* hotcss不是一个库，也不是一个框架。它是一个移动端布局开发解决方案。使用hotcss可以让移动端布局开发更容易。
+* 使用动态的HTML根字体大小和动态的viewport scale。
+* 遵循视觉一致性原则。在不同大小的屏幕和不同的设备像素密度下，让页面看起来是一样的。
+
+#### **优势**
+
+* 保证不同设备下的统一视觉体验。
+* 不需要你再手动设置viewport，根据当前环境计算出最适合的viewport。
+* 支持任意尺寸的设计图，不局限于特定尺寸的设计图。
+* 支持单一项目，多种设计图尺寸，专为解决大型，长周期项目。
+* 提供px2rem转换方法，CSS布局，零成本转换，原始值不丢失。
+* 有效解决移动端真实1像素问题。
 
 ### [hotkeys](http://jslite.io/hotkeys/)
 
@@ -948,6 +976,10 @@ Lazy Load帮助高度较长的网页进行延迟载入图片，尚未浏览到�
 
 * [GitHub地址：](https://github.com/lerna/lerna) https://github.com/lerna/lerna
 * 对一个项目中包含若干个 npm 包的管理。对这几个npm包内部依赖版本的管理和npm包的发布比较方便。
+
+### [less.js](https://github.com/less/less.js)
+
+* [GitHub地址：](https://github.com/less/less.js) https://github.com/less/less.js
 
 ### [Libraries.io](https://libraries.io/)
 

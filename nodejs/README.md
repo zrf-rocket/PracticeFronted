@@ -1,8 +1,6 @@
 # NodeJS
 [移步工程](https://gitee.com/SteveRocket/practice_nodejs)
 
-The_Develop_Guide 为书籍`《node.js开发指南》`源码。
-
 ## NodeJS是什么
 <pre>
 在 Node.js 之前，JavaScript 只能运行在浏览器中，作为网页脚本使用，为网页添加一些特效，或者和服务器进行通信。有了 Node.js 以后，JavaScript 就可以脱离浏览器，像其它编程语言一样直接在计算机上使用，再也不受浏览器的限制了。
@@ -19,26 +17,12 @@ Node.js是一个JavaScript运行时（Runtime）。
 </pre>
 
 
+[下载地址：](https://nodejs.org/zh-cn/download/) https://nodejs.org/zh-cn/download/  
+
 ## 编写程序
 
+node 运行js文件
 运行：node demo1.js
-
-
-
-## 函数式编程
-
-
-
-### node 运行js文件
-node demo1.js
-
-
-
-
-
-
-
-
 
 ## 运行时是什么？
 程序在运行期间需要依赖的一系列组件或者工具；把这些工具和组件打包在一起提供给开发者，开发者就能运行自己编写的代码。
@@ -86,6 +70,9 @@ Node.js 直接在计算机上运行 JavaScript 代码，并且要赋予 JavaScri
 <pre>
 本地模块使用 C/C++ 编写，而 Node.js 面向 JavaScript 开发人员，所以必须要封装本地模块的 C/C++ 接口，提供一套优雅的 JavaScript 接口给开发人员，并且要保持接口在不同平台（操作系统）上的一致性。
 </pre>
+
+## 函数式编程
+
 
 ## 参考链接
 1. [Node.js 中文网](https://nodejs.org/zh-cn/)

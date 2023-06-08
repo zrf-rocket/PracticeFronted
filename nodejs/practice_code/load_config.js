@@ -1,6 +1,8 @@
 // 从JSON文件中获取配置信息
 
-const fs = require('fs');
+// const fs = require('fs');
+// 上下导入方式等价
+const fs = require('node:fs');
 
 fs.readFile('./config.json', 'utf8', (err, data)=>{
     if(err) throw err;

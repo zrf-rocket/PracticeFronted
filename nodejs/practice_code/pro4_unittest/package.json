@@ -1,0 +1,19 @@
+{
+  "name": "pro4_unittest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^10.2.0",
+    "should": "^13.2.3"
+  }
+}

@@ -1,6 +1,8 @@
 # NodeJS
 [移步工程](https://gitee.com/SteveRocket/practice_nodejs)
 
+<img src="./imgs/wechat.png" width="500px" alt="公众号：CTO Plus"/>
+
 ## NodeJS是什么
 <pre>
 在 Node.js 之前，JavaScript 只能运行在浏览器中，作为网页脚本使用，为网页添加一些特效，或者和服务器进行通信。有了 Node.js 以后，JavaScript 就可以脱离浏览器，像其它编程语言一样直接在计算机上使用，再也不受浏览器的限制了。

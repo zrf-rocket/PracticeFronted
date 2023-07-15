@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Mocha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="mocha.css"/>
+</head>
+<body>
+<div id="mocha"></div>
+<script src="mocha.js"></script>
+<script src='chai.js'></script>
+<script>
+    var fibonacci = function (number) {
+        if (typeof number !== 'number')
+            throw new Error('number should be a Number');
+        if (number < 0)
+            throw new Error('Number should >=0')
+        if (0 <= number && number <= 1)
+            return number;
+        return fibonacci(number - 1) + fibonacci(number - 2);
+    }
+</script>
+<script>
+    mocha.setup('bdd');
+</script>
+<script src="tests.spec.js"></script>
+<script>
+    if (window.initMochaPhantomJS && window.location.search.indexOf('skip') === -1) {
+        initMochaPhantomJS()
+    }
+    mocha.ui('bdd');
+    expect = chai.expect;
+
+    mocha.run();
+</script>
+</body>
+</html>

@@ -3,16 +3,24 @@
 **【关于我们】**
 
 * [Articulate v1.0](https://mp.weixin.qq.com/s/0yqGBPbOI6QxHqK17WxU8Q)
-* [Articulate v2.0 待定.......]()
+* [Articulate v2.0](https://mp.weixin.qq.com/s/V5Axn-ZWi22ubh5Jiocb9g)
 
 [![](https://img.shields.io/badge/GitHub-zrf--rocket-blue?logo=gitpod)](https://github.com/zrf-rocket)
 [![](https://img.shields.io/badge/Gitee-SteveRocket-pink)](https://gitee.com/SteveRocket/)
 ![CTO Plus](https://img.shields.io/badge/微信公众号：CTO%20Plus-8A2BE2) 🥰
 
-<img src="./static/wechat.png" style="width:500px">
+## Contact
 
+![微信公众号](./static/wechat.png)  
+**< 微信公众号 >**
 
-**【代码工程系列】**
+![QQ技术交流群](./static/qq_link.png)  
+**< QQ技术交流群 >**
+
+![联系作者](./static/wechat.jpg)  
+**< 联系作者 >**
+
+## **【代码工程系列】**
 
 * [Python和Go的设计模式](https://github.com/zrf-rocket/DesignPattern)
     * GitHub：https://github.com/zrf-rocket/DesignPattern
@@ -76,6 +84,10 @@
     * GitHub：https://github.com/zrf-rocket/EDR_SOC
     * Gitee：https://gitee.com/SteveRocket/edr_soc
 
+* [安全运营中心（SOC）-信息资产采集与安全评估系统（ICSA）](https://github.com/zrf-rocket/SOC_ICSA)
+    * GitHub：https://github.com/zrf-rocket/SOC_ICSA
+    * Gitee：https://gitee.com/SteveRocket/SOC_ICSA
+
 * [DevSecOps-SDLC](https://github.com/zrf-rocket/DevSecOps-SDLC)
     * GitHub：https://github.com/zrf-rocket/DevSecOps-SDLC
     * Gitee：https://gitee.com/SteveRocket/dev-sec-ops-sdlc
@@ -84,16 +96,146 @@
     * [基于AI图像识别的工业缺陷检测应用系统（GPU&FPGA）](https://mp.weixin.qq.com/s/04qefQFg-Pg1Gcqq1vBLQQ)
     * [基于AI图像识别的智能缺陷检测系统，在钢铁行业的应用-技术方案](https://mp.weixin.qq.com/s/dSHbnuOwQZzE4CvPr1JYjg)
 
-
-
-
 # 前端开发技能总结
 
-## angular [AngularJS的知识学习内容]()
+## 工程目录结构
 
-## frontend_plugs_libs [前端常用插件库合集 400+]
+* angular [AngularJS的知识学习内容]()
 
-*_注意：_ 此处插件库排序按照字母排序。插件分类维度见这里：[插件集合分类](README%20Plugin%20Category.md)*
+* frontend_plugs_libs [前端常用插件库和工具合集 400+]()
+* html_css
+    * H5   [H5技术开发知识点](html_css/H5)
+    * CSS3   [CSS3技术开发知识点](html_css/CSS3)
+* javascript
+    * es6 [es6新特性](javascript/es6)
+    * es7 [es7新特性](javascript/es7)
+    * es8 [es8新特性](javascript/es8)
+    * es9 [es9新特性](javascript/es9)
+    * keywords [JavaScript的所有关键字代码示例](javascript/keywords)
+* jquery
+* node.js
+* react
+* ts
+* vue
+    * vue2
+    * vue3
+    * applet_pro 基于vue的小程序开发技术点
+* HBuilder 移动端开发技术点
+* uniapp 移动端开发技术点
+* flutter 移动端开发技术点
+
+*_特别注意：_ 此处插件库排序按照字母排序。插件分类维度见这里：[插件集合分类](README%20Plugin%20Category.md)*
+
+## html_css [HTML](html_css/README%20HTML%20Object.md)/[CSS](html_css/README%20CSS.md)的知识学习总结内容
+
+## javascript [JS](javascript/README.md)的知识学习总结内容
+
+## jQuery [JQuery的知识学习内容](jquery/README.md)
+
+## nodejs [NodeJS的知识学习内容](nodejs/README.md)
+
+## react [ReactJS的知识学习内容](react/README.md)
+
+## ts [TypeScript的知识学习内容](ts/README.md)
+
+## vue [VUE的知识学习内容](vue/README.md)
+
+# <a name="browser-strong">前端开发插件库和工具集</a>
+
+## 测试
+
+* 测试框架
+    * [Jest](https://jestjs.io/)
+    * Mocha
+    * [性能测试](https://benchmarkjs.com/)
+* 断言库
+    * [Power Assert](https://github.com/power-assert-js/power-assert)
+    * Chai
+    * Should
+* Snoion
+* [DeviceMock.js](http://rm-labo.com/labo/devicemock/) mock 设备。
+* 端到端测试
+    * Puppeteer
+    * [BackstopJS](https://github.com/garris/BackstopJS)
+    * 录制浏览器交互并生成测试脚本
+        * [Puppeteer Recorder](https://github.com/checkly/puppeteer-recorder) 生成 Puppeteer 的。
+        * [softest](https://github.com/prprprus/softest/blob/master/README-zh.md) 基于 Puppeteer 构建的。支持多 Tab，截图等 Puppeteer Recorder 不支持的功能。
+
+## 数据可视化(图表)
+
+* [F2](https://github.com/antvis/f2/blob/master/README.zh-CN.md) 阿里出品。为移动端而生。
+* [Plottable.JS](http://plottablejs.org/) 基于D3的一个图表库
+* [flot](http://www.flotcharts.org/) 文档不给力
+* [chartJs](http://www.chartjs.org/) [中文文档](http://www.bootcss.com/p/chart.js/docs/)  demo很漂亮，很清晰。比较轻量级。
+* [ichartJs](http://www.ichartjs.com/) 中国的一个家伙搞的，感觉还不错。
+* k线图(k line)
+    * [Echarts的k线图](http://echarts.baidu.com/echarts2/doc/doc.html#K) 功能比较简单
+    * [kline](https://github.com/chxj1992/kline) 功能比较多，支持 webpack 等。
+* 流程图&脑图
+    * [GGEditor](https://ggeditor.com/zh-CN) 基于 G6 和 React 的可视化图编辑器。支持流程图和脑图。阿里出品。
+
+## UI 框架
+
+* [WeUI](https://github.com/weui/weui) 由微信官方设计团队为微信 Web 开发量身设计。
+* [SUI Mobile](https://github.com/sdc-alibaba/SUI-Mobile) 阿里巴巴国际UED前端出品的移动端UI库。
+* [Framework7](http://framework7.io/)
+* [UIKit](https://getuikit.com/) Web 组件库，不依赖任何框架，组件类型多、功能强。
+* [wired elements](https://github.com/wiredjs/wired-elements) 手绘效果的组件库。它的底层是 Web components。
+
+## UI组件类
+
+### 拖拽
+
+* [dragula](https://github.com/bevacqua/dragula) 支持Draggable，Dropable和Sortable。感觉比jqueryUI的轻量级，好用的样子
+* [angular-dragula](http://bevacqua.github.io/angular-dragula/) dragular 官方的 angular 版本
+* [vue-grid-layout](https://github.com/jbaysolutions/vue-grid-layout) 支持托拽和自定义大小网格系统。
+
+## 小程序
+
+* 其他框转小程序(转译型框架)
+    * [mpvue](http://mpvue.com/) 美团出品。 Vue 转微信小程序、百度智能小程序、头条小程序 和 支付宝小程序。
+    * [WePY](https://github.com/Tencent/wepy) 类 Vue 写法转 小程序。
+    * [Taro](https://github.com/NervJS/taro) 京东出品。React 转生成能运行在微信/百度/支付宝/字节跳动小程序、H5、React Native 等的应用。
+    * [Chameleon](https://cmljs.org/doc/) 滴滴出品的不同环境的跨端整体解决方案。
+    * [uniapp](https://uniapp.dcloud.io/) DClound出品。生成 App，小程序，H5。
+    * [graceUI](http://grace.hcoder.net/) 可生成 uniapp 和 小程序代码。小额收费。
+* 增强型小程序框架
+    * [MPX](https://didi.github.io/mpx/) 滴滴出品。致力于提高小程序开发体验的增强型小程序框架，通过Mpx，我们能够最先进的web开发体验(Vue + Webpack)来开发生产性能深度优化的小程序
+* 组件库
+    * [iView webApp](https://weapp.iviewui.com/) Talking Data 出品。
+    * [MinUI](https://meili.github.io/min/index.html) 蘑菇街出品。
+    * [zanui-weapp](https://github.com/youzan/zanui-weapp) Vant UI 的小程序版。有赞出品。
+
+## 浏览器增强类
+
+### 让一些旧浏览器增强
+
+* [Selectivizr](https://github.com/keithclark/selectivizr)  让IE 6-8一些的css3选择器
+* [ieBetter](https://github.com/zhangxinxu/ieBetter.js) 让ie6-8有高级浏览器的特性
+* [ExplorerCanvas](https://github.com/arv/ExplorerCanvas) 让IE8-的浏览器支持canvas
+* [CSS3 Pie](http://css3pie.com/) 让IE6-9支持border-radious,box-shadow,linear-gradient。 可以使用.htc文件（注意Mine type）或.js文件。在用Pie.js时，box-radious的元素有背景色时，不显示背景色。。。
+* [formFive](http://etiennetalbot.github.io/formFive/) 让旧的浏览器支持HTML5表单的一些特性，如 placeholder,autofocus
+* [https://github.com/anselmh/object-fit](https://github.com/anselmh/object-fit) 让浏览器支持`object-fit`这css规则
+* [HTML5 Cross Browser Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills) 一堆Polyfills
+* [flexibility](https://github.com/jonathantneal/flexibility) 让旧的 IE 也支持 Flexbox
+
+## 前端开发工具合集
+
+[前端开发工具合集](README DevTools.md)
+
+## Node.js开发插件库
+
+[Node.js开发插件库](nodejs/README_plugins.md)
+
+## VUE的前端开发插件
+
+[VUE常用前端插件](https://gitee.com/SteveRocket/practice_vue/blob/master/README_plugins.md)
+
+## React的前端开发插件
+
+[React常用前端插件](react/README_plugins.md)
+
+## JavaScript日常前端开发插件
 
 ### [accessible-html5-video-player]()
 
@@ -1878,102 +2020,3 @@ jQuery 插件，用来处理浏览器缩放。
 
 https://treejs.cn/v3/main.php#_zTreeInfo
 文件树形视图控件
-
-## html_css [HTML](html_css/README%20HTML%20Object.md)/[CSS](html_css/README%20CSS.md)的知识学习总结内容
-
-## javascript [JS](javascript/README.md)的知识学习总结内容
-
-## jQuery [JQuery的知识学习内容](jquery/README.md)
-
-## nodejs [NodeJS的知识学习内容](nodejs/README.md)
-
-## react [ReactJS的知识学习内容](react/README.md)
-
-## ts [TypeScript的知识学习内容](ts/README.md)
-
-## vue [VUE的知识学习内容](vue/README.md)
-
-## 测试
-
-* 测试框架
-    * [Jest](https://jestjs.io/)
-    * Mocha
-    * [性能测试](https://benchmarkjs.com/)
-* 断言库
-    * [Power Assert](https://github.com/power-assert-js/power-assert)
-    * Chai
-    * Should
-* Snoion
-* [DeviceMock.js](http://rm-labo.com/labo/devicemock/) mock 设备。
-* 端到端测试
-    * Puppeteer
-    * [BackstopJS](https://github.com/garris/BackstopJS)
-    * 录制浏览器交互并生成测试脚本
-        * [Puppeteer Recorder](https://github.com/checkly/puppeteer-recorder) 生成 Puppeteer 的。
-        * [softest](https://github.com/prprprus/softest/blob/master/README-zh.md) 基于 Puppeteer 构建的。支持多 Tab，截图等 Puppeteer Recorder 不支持的功能。
-
-## 数据可视化(图表)
-
-* [F2](https://github.com/antvis/f2/blob/master/README.zh-CN.md) 阿里出品。为移动端而生。
-* [Plottable.JS](http://plottablejs.org/) 基于D3的一个图表库
-* [flot](http://www.flotcharts.org/) 文档不给力
-* [chartJs](http://www.chartjs.org/) [中文文档](http://www.bootcss.com/p/chart.js/docs/)  demo很漂亮，很清晰。比较轻量级。
-* [ichartJs](http://www.ichartjs.com/) 中国的一个家伙搞的，感觉还不错。
-* k线图(k line)
-    * [Echarts的k线图](http://echarts.baidu.com/echarts2/doc/doc.html#K) 功能比较简单
-    * [kline](https://github.com/chxj1992/kline) 功能比较多，支持 webpack 等。
-* 流程图&脑图
-    * [GGEditor](https://ggeditor.com/zh-CN) 基于 G6 和 React 的可视化图编辑器。支持流程图和脑图。阿里出品。
-
-## UI 框架
-
-* [WeUI](https://github.com/weui/weui) 由微信官方设计团队为微信 Web 开发量身设计。
-* [SUI Mobile](https://github.com/sdc-alibaba/SUI-Mobile) 阿里巴巴国际UED前端出品的移动端UI库。
-* [Framework7](http://framework7.io/)
-* [UIKit](https://getuikit.com/) Web 组件库，不依赖任何框架，组件类型多、功能强。
-* [wired elements](https://github.com/wiredjs/wired-elements) 手绘效果的组件库。它的底层是 Web components。
-
-## UI组件类
-
-### 拖拽
-
-* [dragula](https://github.com/bevacqua/dragula) 支持Draggable，Dropable和Sortable。感觉比jqueryUI的轻量级，好用的样子
-* [angular-dragula](http://bevacqua.github.io/angular-dragula/) dragular 官方的 angular 版本
-* [vue-grid-layout](https://github.com/jbaysolutions/vue-grid-layout) 支持托拽和自定义大小网格系统。
-
-## 小程序
-
-* 其他框转小程序(转译型框架)
-    * [mpvue](http://mpvue.com/) 美团出品。 Vue 转微信小程序、百度智能小程序、头条小程序 和 支付宝小程序。
-    * [WePY](https://github.com/Tencent/wepy) 类 Vue 写法转 小程序。
-    * [Taro](https://github.com/NervJS/taro) 京东出品。React 转生成能运行在微信/百度/支付宝/字节跳动小程序、H5、React Native 等的应用。
-    * [Chameleon](https://cmljs.org/doc/) 滴滴出品的不同环境的跨端整体解决方案。
-    * [uniapp](https://uniapp.dcloud.io/) DClound出品。生成 App，小程序，H5。
-    * [graceUI](http://grace.hcoder.net/) 可生成 uniapp 和 小程序代码。小额收费。
-* 增强型小程序框架
-    * [MPX](https://didi.github.io/mpx/) 滴滴出品。致力于提高小程序开发体验的增强型小程序框架，通过Mpx，我们能够最先进的web开发体验(Vue + Webpack)来开发生产性能深度优化的小程序
-* 组件库
-    * [iView webApp](https://weapp.iviewui.com/) Talking Data 出品。
-    * [MinUI](https://meili.github.io/min/index.html) 蘑菇街出品。
-    * [zanui-weapp](https://github.com/youzan/zanui-weapp) Vant UI 的小程序版。有赞出品。
-
-## <a name="browser-strong">浏览器增强类</a>
-
-### 让一些旧浏览器增强
-
-* [Selectivizr](https://github.com/keithclark/selectivizr)  让IE 6-8一些的css3选择器
-* [ieBetter](https://github.com/zhangxinxu/ieBetter.js) 让ie6-8有高级浏览器的特性
-* [ExplorerCanvas](https://github.com/arv/ExplorerCanvas) 让IE8-的浏览器支持canvas
-* [CSS3 Pie](http://css3pie.com/) 让IE6-9支持border-radious,box-shadow,linear-gradient。 可以使用.htc文件（注意Mine type）或.js文件。在用Pie.js时，box-radious的元素有背景色时，不显示背景色。。。
-* [formFive](http://etiennetalbot.github.io/formFive/) 让旧的浏览器支持HTML5表单的一些特性，如 placeholder,autofocus
-* [https://github.com/anselmh/object-fit](https://github.com/anselmh/object-fit) 让浏览器支持`object-fit`这css规则
-* [HTML5 Cross Browser Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills) 一堆Polyfills
-* [flexibility](https://github.com/jonathantneal/flexibility) 让旧的 IE 也支持 Flexbox
-
-## VUE
-
-[VUE常用前端插件](https://gitee.com/SteveRocket/practice_vue/blob/master/README_plugins.md)
-
-## React
-
-[React常用前端插件](react/README_plugins.md)

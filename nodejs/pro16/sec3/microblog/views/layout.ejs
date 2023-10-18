@@ -26,8 +26,12 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="/">首頁</a></li>
-              <li><a href="/login">登入</a></li>
-              <li><a href="/reg">註冊</a></li>
+              <% if (!user) { %>
+                <li><a href="/login">登入</a></li>
+                <li><a href="/reg">註冊</a></li>
+              <% } else { %>
+                <li><a href="/logout">登出</a></li>
+              <% } %>
             </ul>
           </div>
         </div>
@@ -35,6 +39,16 @@
     </div>
 
     <div id="container" class="container">
+      <% if (success) { %>
+        <div class="alert alert-success">
+          <%= success %>
+        </div>
+      <% } %>
+      <% if (error) { %>
+        <div class="alert alert-error">
+          <%= error %>
+        </div>
+      <% } %>
       <%- body %>
       <hr />
       <footer>
@@ -42,6 +56,6 @@
       </footer>
     </div>
   </body>
-  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/jquery-1.12.0.min.js"></script>
   <script src="/javascripts/bootstrap.js"></script>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="handlebars.min-v4.7.7.js"></script>
+</head>
+<body>
+<div id="person"></div>
+<div id="people"></div>
+
+
+</body>
+<script>
+    // 获取字典中的值
+    var persons = {firstName: "javascript", lastName: "handlebars", age: {age1: 22, age2: 33}};
+    var template = Handlebars.compile("<p>firstName:{{firstName}} - lastName:{{lastName}} age1:{{age.age1}} age2:{{age.age2}}</p>");
+    document.getElementById("person").innerHTML = template(persons);
+
+
+    // 循环
+    var peoples = {
+        people: [
+            "Yehuda Katz",
+            "Alan Johnson",
+            "Charles Jolley",
+        ]
+    };
+    var template2 = Handlebars.compile('<ul class="people_list">\n' +
+        '    {{#each people}}\n' +
+        '        <li>{{this}}</li>\n' +
+        '    {{/each}}\n' +
+        '</ul>');
+    document.getElementById("people").innerHTML = template2(peoples);
+
+</script>
+</html>

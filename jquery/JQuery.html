@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+jQuery是JS库，库不能称之为框架，框架是解决方案的轮子、架子，库一般来说是一个语言浓缩和优化过后的超集或者工具包，其实ES6 更像是ES5的超集和库。
+<br/>
+jQuery就是用javascript更加方便的查询和控制页面控件。
+<br/>
+jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。
+<br/>
+想要多懒的写法就可以多懒的写法，因为它支持链式写法，而且对css样式支持接近完美。
+<br/>
+jQuery的核心特性可以总结为：具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。
+<br/>
+jQuery兼容各种主流浏览器 或者说所有的浏览器，它的其中一大目的，就是为了对付鱼龙混杂的兼容问题，所以对各个浏览器都可以轻松应对，而不用管原生js是否支持。
+<br/>
+<br/>
+
+
+获取一个DOM节点：
+<br/>
+javascript ：document.getElementByID("id")；
+<br/>
+jQuery： $("#id")；
+<br/>
+<br/>
+<br/>
+
+
+操作CSS
+<br/>
+javascript ：好大一串
+<br/>
+document.getElementById("id").style.color="#ff0000"；
+<br/>
+document.getElementById("id").style.background="#000000"；
+<br/>
+document.getElementById("id").style.display="block"；
+<br/>
+jQuery：就像写css一样写就好了
+<br/>
+$("#id").css(
+{
+"color":"#ff0000",
+"background":"#000000",
+"display":"block"
+})
+<br/>
+<br/>
+<br/>
+
+
+获取一个元素的属性
+<br/>
+javascript ：获取，设置
+<br/>
+document.getElementByID("id").getAttribute("href")；
+<br/>
+document.getElementByID("id").setAttribute("href","www.xx.com")；
+<br/>
+
+jQuery：
+<br/>
+$("#id").attr("href","www.xx.com");
+<br/>
+<br/>
+<br/>
+
+
+Jquery 的好处和缺点
+<br/>
+1、快速获取文档元素
+<br/>
+jQuery的选择机制构建于Css的选择器，它提供了快速查询DOM文档中元素的能力，而且大大强化了JavaScript中获取页面元素的方式。
+<br/><br/>
+2、提供漂亮的页面动态效果
+<br/>
+jQuery中内置了一系列的动画效果，可以开发出非常漂亮的网页，许多网站都使用jQuery的内置的效果，比如淡入淡出、元素移除等动态特效。
+<br/><br/>
+3、创建AJAX无刷新网页
+<br/>
+AJAX是异步的JavaScript和ML的简称，可以开发出非常灵敏无刷新的网页，特别是开发服务器端网页时，比如PHP网站，需要往返地与服务器通信，如果不使用AJAX，每次数据更新不得不重新刷新网页，而使用AJAX特效后，可以对页面进行局部刷新，提供动态的效果。
+<br/><br/>
+4、提供对JavaScript语言的增强
+<br/>
+jQuery提供了对基本JavaScript结构的增强，比如元素迭代和数组处理等操作。
+<br/>
+<br/>
+增强的事件处理<br/>
+jQuery提供了各种页面事件，它可以避免程序员在HTML中添加太事件处理代码，最重要的是，它的事件处理器消除了各种浏览器兼容性问题。
+<br/><br/>
+5、更改网页内容
+<br/>
+jQuery可以修改网页中的内容，比如更改网页的文本、插入或者翻转网页图像，jQuery简化了原本使用JavaScript代码需要处理的方式。
+<br/>
+选择符、易用的API、跨浏览器兼容、DOM元素批处理、插件提供的代码复用等等，个个特性都有强大的理论支持和实际场景的良好应用。
+<br/>
+<br/>
+<br/>
+
+
+缺点
+<br/>
+极度依赖dom节点，要引入第三方jquery文件，而且是一大坨。版本参差不齐，虽说解决了浏览器之间的兼容问题，但却出现了jquery版本之间的用法冲突等。
+<br/>
+1、现在的jQuery太臃肿了，有很多用不到的功能。所以现在有了很多精简jQuery的项目。如 zepto.js
+<br/>
+2、对jQuery的过度依赖，目前大部分前端和后端人员极度依赖jQuery的写法和应用，以至于离开jQuery压根不会写JS，在一定程度上变成了一种悲哀。
+<br/>
+3、全DOM操作，钩子往往会依赖标签，如果依赖jQuery来搭建页面的话（比如后台输出json，然后jQuery loop一个列表出来），维护上会有困难。一旦改动改页面结构，很多依赖标签的选择器，一改起来js那块就得跟着大改，或者改动json <br/>数据格式，dom也得跟着改动，改版是一件万分痛苦的事。也就是解耦性太紧了。是基于事件驱动不是基于数据驱动，数据结构一旦变化，view层就要重新维护。
+<br/>
+4、避免不了大量手拼html字符串（标准dom方法除了innerHTML这一历史遗迹，是完全没有直接插html的api接口的），从根本上解决不了XSS攻击隐患。这确实也是jQuery的一个缺点。
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</body>
+</html>

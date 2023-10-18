@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./d3.min.js"></script>
+    <script>
+        //选择 body 标签，添加 svg 元素，设置 svg 元素的宽度和高度为 500
+        // let body = d3.select('body').append('svg').attr("width", 500).attr('height', 500).style('background-color', 'red');
+        let body = d3.select("body").style("background-color", "black");
+        body.append('p').text("this is p line -0");
+        body.append('p').text("this is p1 line -1");
+        //设置属性
+        body.selectAll('p').style('color','yellow');
+        body.select('p').style("color","pink");
+        //插入
+        body.insert('p').text('this is p4 line -4');
+        body.insert('p', 'p:first-of-type').text("insert-p");
+        //删除
+        body.select('p:last-of-type').remove();
+    </script>
+</head>
+<body>
+<h2>D3对象</h2>
+<span>
+D3 对象类似 jQuery 中的 “$”对象，采用了同样的链式语法。每次打点调用 d3 提供的函数方法，都会返回一个 d3 对象，这样可以继续调用 d3 的其他函数方法。
+</span>
+
+<h2>选择元素</h2>
+<span>
+D3 选择元素提供了两个函数：select 和 selectAll。
+select  返回css选择器所匹配的第一个元素。
+selectAll 返回css选择器匹配的所有元素。
+选择元素后可以操作元素，操作元素主要分为增加 ( append )、插入 ( insert )、删除元素 ( remove ) 和设置获取元素属性 ( attr, style )。
+</span>
+
+<h2>数据绑定</h2>
+<span>
+数据绑定是将数据绑定到 DOM 元素上，这是 D3 最大的特色，也是 D3 的设计哲学。D3 中数据绑定提供了datum()和data()两个函数。
+
+datum(value)选择集中的每一个元素绑定相同的数据value。
+这个方法不会进行数据绑定的计算(update、enter、exit)，只能在现有的元素上绑定数据。如果value是数组会自动转成字符串。
+
+data([value])选择集中的每一个元素分别绑定数组value中的一项。
+</span>
+
+
+</body>
+</html>

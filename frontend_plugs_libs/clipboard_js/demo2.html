@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="clipboard.min.js"></script>
+</head>
+<body>
+<textarea id="bar">this is textarea content!!!</textarea>
+<!-- data-clipboard-action 可以设置是否为剪切模式 只在输入框或文本域下有效 -->
+<button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">Cut to clipboard</button>
+<!-- 通过data-clipboard-text来设置需要被复制的内容 -->
+<button class="btn" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Copy to clipboard</button>
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function (e) {
+        console.info(e.action);
+        console.info(e.text);
+        console.info(e.trigger);
+        e.clearSelection();
+        document.getElementById("bar").value = "剪切成功";
+    });
+
+    clipboard.on('error',function (e) {
+       console.error("Action", e.action);
+       console.error("Trigger", e.trigger);
+    });
+</script>
+</body>
+</html>

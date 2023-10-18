@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组操作</title>
+</head>
+<body>
+<span id="softwares">'jzagent.exe', 'WeChat.exe'</span>
+
+</body>
+<script src="./js/jquery.js"></script>
+<script type="text/javascript">
+    var elements = $("#softwares")[0].innerText;
+
+    var software_arr = elements.split(",");
+
+    for (index in software_arr) {
+        alert(software_arr[index]);
+    }
+
+
+    document.write("<br/>");
+
+    var arr = new Array(12, 34, 56, 78, 90);
+
+    for (item in arr) {
+        document.write(arr[item] + "<br/>");
+    }
+</script>
+</html>

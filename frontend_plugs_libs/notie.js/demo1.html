@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="notie.min.css">
+    <script src="notie.min.js"></script>
+    <style>
+        .notie-container {
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+    // alert
+    notie.alert({type: 1, text: "Success!", time: 2});
+
+    notie.alert({type: 2, text: "Warning!", time: 2});
+
+    notie.alert({type: 3, text: "Error!", time: 2});
+
+    notie.alert({type: 4, text: "Information!", time: 2});
+
+    notie.alert({type: 5, text: "neutral!", time: 2});
+
+    notie.alert({
+        type: 3, // type alert类型，1代表Success，2代表Warning，3代表Error，4代表Information，5代表neutral
+        text: 'ok', // text alert里打印类容
+        stay: false, // 默认为false
+        time: 3, // 弹出显示时间默认3秒，最小1秒
+        position: "top" // 显示位置 默认top，也可以bottom
+    });
+
+
+    // 确认框
+    notie.confirm({
+        text: '确认更改此配置吗?<br><b>...</b>',
+        submitText: '确定',
+        cancelText: '取消',
+        position: top,
+        cancelCallback: function () {
+
+        },
+        submitCallback: function () {
+
+        }
+    });
+
+    // 带输入的消息框
+    notie.input({
+        text: '请输入你的年龄:',
+        submitText: '提交',
+        cancelText: '取消',
+        cancelCallback: function () {
+            notie.alert({type: 3, text: '你取消的本次输入'})
+        },
+        submitCallback: function (value) {
+            notie.alert({type: 1, text: '你的年龄是: ' + value})
+        },
+        value: '',
+        type: '',
+        placeholder: '你的年龄输在这里'
+    });
+
+    // 带选择的消息框
+    notie.select({
+        text: '请选择功能',
+        cancelText: '取消',
+        cancelCallback: function () {
+            notie.alert({type: 5, text: '你取消了!'})
+        },
+        choices: [
+            {
+                text: '分享文章',
+                handler: function () {
+                    notie.alert({type: 1, text: '已分享!'})
+                }
+            },
+            {
+                text: '打开文章',
+                handler: function () {
+                    notie.alert({type: 1, text: '打开了!'})
+                }
+            },
+            {
+                type: 2,
+                text: '编辑文章',
+                handler: function () {
+                    notie.alert({type: 2, text: '开始编辑'})
+                }
+            },
+            {
+                type: 3,
+                text: '删除文章',
+                handler: function () {
+                    notie.alert({type: 3, text: '已删除!'})
+                }
+            }
+        ]
+    });
+
+
+</script>
+</html>

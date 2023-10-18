@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+如果没有引用以下文件，请去掉此注释
+-->
+<link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+<link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bk-icon-2.0/iconfont.css" rel="stylesheet">
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bkDropdownMenu-1.0/js/bkDropdownMenu.js"></script>
+
+
+<div class="bk-dropdown-menu" id="bk-dropdown-menu1">
+    <button class="bk-button bk-primary bk-dropdown-trigger">
+        <span>更多操作</span><i class="bk-icon icon-angle-down"></i>
+    </button>
+    <div class="bk-dropdown-content left-align is-show" style="top: 39px;">
+        <ul class="bk-dropdown-list">
+            <li>
+                <a href="javascript:;">生产环境</a>
+            </li>
+            <li>
+                <a href="javascript:;">预发布环境</a>
+            </li>
+            <li>
+                <a href="javascript:;">测试环境</a>
+            </li>
+            <li>
+                <a href="javascript:;">正式环境</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="bk-dropdown-menu" id="bk-dropdown-menu2">
+    <button class="bk-button bk-primary is-icon bk-dropdown-trigger">
+        <i class="bk-icon icon-cog-shape"></i>
+    </button>
+<!--
+is-show样式   页面加载 默认显示下拉菜单内容，移除此样式可以实现默认收起来的状态。
+-->
+    <div class="bk-dropdown-content left-align" style="top: 39px;">
+        <ul class="bk-dropdown-list">
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 告警ID</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 告警名称</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 告警级别</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 目标IP</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 分类名称</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 状态</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 是否屏蔽</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 是否处理</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 是否确认</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 确认人</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 策略名称</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 业务名称</label></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $('#bk-dropdown-menu1').bkDropdown();
+
+    $('#bk-dropdown-menu2').bkDropdown({
+        align: 'left',  // 与触发对象的对齐方式，包括左对齐，居中，右对齐三种方式
+        //width: 50,   // 下拉菜单的最小宽度和触发对象一样，根据内容自适应，也可以配置宽度，必须为整数
+
+        // 控制高度
+    });
+
+
+</script>
+</body>
+</html>

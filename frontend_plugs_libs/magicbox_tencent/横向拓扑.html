@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+如果没有引用以下文件，请去掉此注释
+-->
+<link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bkTopology-1.1/css/bkTopology.css" rel="stylesheet">
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bkTopology-1.1/js/bkTopology.js"></script>
+
+<div class="bktopo_demo" id="bktopo_demo2">
+    <div class="none node" id="node-templates" data-container="body" data-placement="top" data-html="true" data-trigger="hover">
+        <div class="node-container">
+            <span class="node-text"></span>
+        </div>
+    </div>
+    <div class="bktopo_box topology-container" style="height:350px;">
+        <div class="node info" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="root" style="top: 152px; left: 10px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">卡机健康度</span>
+            </div>
+        </div>
+
+        <div class="node info" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child1" style="top: 30px; left: 200px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">进程CPU监控</span>
+            </div>
+        </div>
+        <div class="node info" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child2" style="top: 90px; left: 200px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">网管网络故障监控</span>
+            </div>
+        </div>
+        <div class="node info" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child3" style="top: 150px; left: 200px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">进程内在泄露监控</span>
+            </div>
+        </div>
+        <div class="node info" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child4" style="top: 210px; left: 200px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">进程存活监控</span>
+            </div>
+        </div>
+        <div class="node info" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child5" style="top: 270px; left: 200px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">用户内在使用监控</span>
+            </div>
+        </div>
+        <div class="node info" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child6" style="top: 330px; left: 200px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">用户内在使用监控</span>
+            </div>
+        </div>
+
+        <div class="node warning" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child1_1" style="top: 30px; left: 380px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">监控正常无触发自愈</span>
+            </div>
+        </div>
+        <div class="node success" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child2_1" style="top: 90px; left: 380px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">监控正常无触发自愈</span>
+            </div>
+        </div>
+        <div class="node danger" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child3_1" style="top: 150px; left: 380px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">发现异常触发自愈</span>
+            </div>
+        </div>
+
+        <div class="node default" data-container="body" data-placement="top" data-html="true" data-trigger="hover" data-id="child3_2" style="top: 150px; left: 560px; height: 50px; width: 120px;">
+            <div class="node-container">
+                <span class="node-text">重启进程正常</span>
+            </div>
+        </div>
+
+        <svg style="width: 100%;height: 100%;" pointer-events="none">
+            <path data-id="2ddda863-7fd6-41f6-acf9-fbc281a1b7e2" d="M 69 176 L 152 176  M 152 176  A 5 5 0 0,0 152 176  M 152 176  L 152 54  M 152 54  A 5 5 0 0,1 152 54  M 152 54  L 259 54 " pointer-events="visibleStroke" fill="none" stroke="#4A9BFF" stroke-width="2px"
+                  ;
+            "=" "></path>
+            <path d=" M 198 54 L 195 52.5 L 195 54 L 195 55.5 L 198 54 " stroke="#4A9BFF " fill="#4A9BFF " class="node-path " style="stroke-width: 5px; "></path>
+        </svg>
+        <svg style="width: 100%;height: 100%; " pointer-events="none">
+            <path data-id="e414c6cd-cfcf-4ee2-9ea2-214d5388a992 " d="M 69 176 L 152 176 M 152 176 A 5 5 0 0,0 152 176 M 152 176 L 152 114 M 152 114 A 5 5 0 0,1 152 114 M 152 114 L 259 114 " pointer-events="visibleStroke " fill="none " stroke="#4A9BFF
+            " stroke-width="2px " ;
+            "=""></path>
+            <path d=" M 198 114 L 195 112.5 L 195 114 L 195 115.5 L 198 114" stroke="#4A9BFF" fill="#4A9BFF" class="node-path" style="stroke-width: 5px;"></path>
+        </svg>
+        <svg style="width: 100%;height: 100%;" pointer-events="none">
+            <path data-id="b37784d1-eaa0-4be7-830f-164e043a9e62" d="M 69 176 L 152 176  M 152 176  A 5 5 0 0,0 152 176  M 152 176  L 152 174  M 152 174  A 5 5 0 0,1 152 174  M 152 174  L 259 174 " pointer-events="visibleStroke" fill="none" stroke="#4A9BFF"
+                  stroke-width="2px" ;
+            "=" "></path>
+            <path d=" M 198 174 L 195 172.5 L 195 174 L 195 175.5 L 198 174 " stroke="#4A9BFF " fill="#4A9BFF " class="node-path " style="stroke-width: 5px; "></path>
+        </svg>
+        <svg style="width: 100%;height: 100%;
+            " pointer-events="none ">
+            <path data-id="cae4c188-0a59-4eef-8448-a7212ed553eb " d="M 69 176 L 152 176 M 152 176 A 5 5 0 0,1 152 176 M 152 176 L 152 234 M 152 234 A 5 5 0 0,0 152 234 M 152 234 L 259 234 " pointer-events="visibleStroke " fill="none " stroke="#4A9BFF
+            " stroke-width="2px " ;
+            "=""></path>
+            <path d=" M 198 234 L 195 232.5 L 195 234 L 195 235.5 L 198 234" stroke="#4A9BFF" fill="#4A9BFF" class="node-path" style="stroke-width: 5px;"></path>
+        </svg>
+        <svg style="width: 100%;height: 100%;" pointer-events="none">
+            <path data-id="beeaf26e-c760-41c4-8fcf-2ec16ce1d443" d="M 69 176 L 152 176  M 152 176  A 5 5 0 0,1 152 176  M 152 176  L 152 294  M 152 294  A 5 5 0 0,0 152 294  M 152 294  L 259 294 " pointer-events="visibleStroke" fill="none" stroke="#4A9BFF"
+                  stroke-width="2px" ;
+            "=" "></path>
+            <path d=" M 198 294 L 195 292.5 L 195 294 L 195 295.5 L 198 294 " stroke="#4A9BFF " fill="#4A9BFF " class="node-path " style="stroke-width: 5px; "></path>
+        </svg>
+        <svg style="width: 100%;height: 100%;" pointer-events="none ">
+            <path data-id="ad7194d4-22bd-4032-9e70-7c966f30d171 " d="M 259 54 L 439 54 " pointer-events="visibleStroke " fill="none " stroke="#46C37B " stroke-width="2px " ;
+            "=""></path>
+            <path d=" M 378 54 L 375 52.5 L 375 54 L 375 55.5 L 378 54" stroke="#46C37B" fill="#46C37B" class="node-path" style="stroke-width: 5px;"></path>
+        </svg>
+        <svg style="width: 100%;height: 100%;" pointer-events="none">
+            <path data-id="7004d456-99c8-46fe-ade9-e712e05865eb" d="M 259 114 L 439 114" pointer-events="visibleStroke" fill="none" stroke="#46C37B" stroke-width="2px" ;
+            "=" "></path>
+            <path d=" M 378 114 L 375 112.5 L 375 114 L 375 115.5 L 378 114
+            " stroke="#46C37B " fill="#46C37B " class="node-path " style="stroke-width: 5px; "></path>
+        </svg>
+        <svg style="width: 100%;height: 100%; " pointer-events="none ">
+            <path data-id="148647bd-cf5a-4a91-8945-9d8ab0277457 " d="M 259 174 L 439 174
+            " pointer-events="visibleStroke " fill="none " stroke="#c94d3c " stroke-width="2px " ;
+            "=""></path>
+            <path d=" M 378 174 L 375 172.5 L 375 174 L 375 175.5 L 378 174" stroke="#c94d3c" fill="#c94d3c" class="node-path" style="stroke-width: 5px;"></path>
+        </svg>
+        <svg style="width: 100%;height: 100%;" pointer-events="none">
+            <path data-id="baa8def1-f823-4cb7-8aaa-a623484a278d" d="M 439 174 L 619 174" pointer-events="visibleStroke" fill="none" stroke="#46C37B" stroke-width="2px" ;
+            "=" "></path>
+            <path d=" M 558 174 L 555 172.5 L 555 174 L 555 175.5 L 558 174
+            " stroke="#46C37B " fill="#46C37B " class="node-path " style="stroke-width: 5px; "></path>
+        </svg>
+    </div>
+</div>
+<script type="text/javascript ">
+    var data2 = {
+        "nodes ": [
+            // 一级节点
+            {id: "root ", x: 10, y: 152, height: 50, width: 120, text: "卡机健康度 ", className: "node info "},
+            // 二级节点
+            {id: "child1 ", x: 200, y: 30, height: 50, width: 120, text: "进程CPU监控 ", className: "node info "},
+            {id: "child2 ", x: 200, y: 90, height: 50, width: 120, text: "网管网络故障监控 ", className: "node info "},
+            {id: "child3 ", x: 200, y: 150, height: 50, width: 120, text: "进程内在泄露监控 ", className: "node info "},
+            {id: "child4 ", x: 200, y: 210, height: 50, width: 120, text: "进程存活监控 ", className: "node info "},
+            {id: "child5 ", x: 200, y: 270, height: 50, width: 120, text: "用户内在使用监控 ", className: "node info "},
+            {id: "child6 ", x: 200, y: 330, height: 50, width: 120, text: "用户内在使用监控 ", className: "node info "},
+            // 三级节点
+            {id: "child1_1 ", x: 380, y: 30, height: 50, width: 120, text: "监控正常无触发自愈 ", className: "node success "},
+            {id: "child2_1 ", x: 380, y: 90, height: 50, width: 120, text: "监控正常无触发自愈 ", className: "node success "},
+            {id: "child3_1 ", x: 380, y: 150, height: 50, width: 120, text: "发现异常触发自愈 ", className: "node danger "},
+
+            // 四级节点
+            {id: "child3_2 ", x: 560, y: 150, height: 50, width: 120, text: "重启进程正常 ", className: "node default "},
+
+        ],
+        "edges ": [
+            {source: "root ", sDirection: 'right', target: "child1 ", tDirection: 'left', edgesType: "info "},
+            {source: "root ", sDirection: 'right', target: "child2 ", tDirection: 'left', edgesType: "info "},
+            {source: "root ", sDirection: 'right', target: "child3 ", tDirection: 'left', edgesType: "info "},
+            {source: "root ", sDirection: 'right', target: "child4 ", tDirection: 'left', edgesType: "info "},
+            {source: "root ", sDirection: 'right', target: "child5 ", tDirection: 'left', edgesType: "info "},
+            {source: "root ", sDirection: 'right', target: "child6 ", tDirection: 'left', edgesType: "info "},
+
+            {source: "child1 ", sDirection: 'right', target: "child1_1 ", tDirection: 'left', edgesType: "success "},
+            {source: "child2 ", sDirection: 'right', target: "child2_1 ", tDirection: 'left', edgesType: "success "},
+            {source: "child3 ", sDirection: 'right', target: "child3_1 ", tDirection: 'left', edgesType: "danger "},
+
+            {source: "child3_1 ", sDirection: 'right', target: "child3_2 ", tDirection: 'left', edgesType: "default "},
+
+        ]
+    };
+
+
+    $('#bktopo_demo2 .bktopo_box').bkTopology({
+        data: data2, //配置数据源
+        lineType: [ //配置线条的类型
+            {type: 'success', lineColor: '#46C37B'},
+            {type: 'info', lineColor: '#4A9BFF'},
+            {type: 'warning', lineColor: '#f0a63a'},
+            {type: 'danger', lineColor: '#c94d3c'},
+            {type: 'default', lineColor: '#aaa'}
+        ]
+    });
+</script>
+</body>
+</html>

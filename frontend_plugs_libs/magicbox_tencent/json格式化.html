@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+如果没有引用以下文件，请去掉此注释-->
+<link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://magicbox.bk.tencent.com/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+<link href="https://magicbox.bk.tencent.com/static_api/v3/assets/json-1.0.2/index.css"rel="stylesheet">
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/json-1.0.2/jquery.json.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/json-1.0.2/jsonlint.js"></script>
+
+<div class="jsonjs" id="jsonshow">
+    <div class="col-md-6 col-sm-6">
+        <textarea class="form-control" placeholder="在此输入json字符串或XML字符串..." id="json-src">[{ "Json解析":"支持格式化高亮折叠", "支持XML转换":"支持XML转换Json,Json转XML", "Json格式验证":"更详细准确的错误信息" }, { "Json解析":"支持格式化高亮折叠", "支持XML转换":"支持XML转换Json,Json转XML", "Json格式验证":"更详细准确的错误信息" }]
+        </textarea>
+    </div>
+    <div class="col-md-6 col-sm-6">
+        <div id="json-target"><span data-type="array" data-size="2"><i style="cursor:pointer;" class="fa fa-minus-square-o" onclick="hide(this)"></i>[<br>&nbsp;&nbsp;&nbsp;&nbsp;<span data-type="object"><i style="cursor:pointer;" class="fa fa-minus-square-o" onclick="hide(this)"></i>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="json_key">"Json解析"</span>:
+            <span
+                    class="json_string">"支持格式化高亮折叠"</span>,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="json_key">"支持XML转换"</span>:<span class="json_string">"支持XML转换Json,Json转XML"</span>,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="json_key">"Json格式验证"</span>:<span class="json_string">"更详细准确的错误信息"</span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;}</span>,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;<span data-type="object" data-inner="<i style=&quot;cursor:pointer;&quot; class=&quot;fa fa-minus-square-o&quot; onclick=&quot;hide(this)&quot;></i>{<br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class=&quot;json_key&quot;>&quot;Json解析&quot;</span>:<span class=&quot;json_string&quot;>&quot;支持格式化高亮折叠&quot;</span>,<br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class=&quot;json_key&quot;>&quot;支持XML转换&quot;</span>:<span class=&quot;json_string&quot;>&quot;支持XML转换Json,Json转XML&quot;</span>,<br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class=&quot;json_key&quot;>&quot;Json格式验证&quot;</span>:<span class=&quot;json_string&quot;>&quot;更详细准确的错误信息&quot;</span><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}">
+                <i
+                        style="cursor:pointer;" class="fa fa-minus-square-o" onclick="hide(this)"></i>{
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="json_key">"Json解析"</span>:<span class="json_string">"支持格式化高亮折叠"</span>,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="json_key">"支持XML转换"</span>:<span class="json_string">"支持XML转换Json,Json转XML"</span>,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="json_key">"Json格式验证"</span>:<span class="json_string">"更详细准确的错误信息"</span>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+                    <br>]</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var current_json = '';
+    var current_json_str = '';
+    $('#json-src').keyup(function () {
+        var content = $.trim($(this).val());
+        var result = '';
+        if (content != '') {
+            try {
+                if (jsonlint.parse(content)) {
+                    result = new JSONFormat(content, 4).toString();
+                }
+            } catch (e) {
+                result = '<span style="color: #f1592a;font-weight:bold;">' + e + '</span>';
+            }
+            $('#json-target').html(result);
+        } else {
+            $('#json-target').html('');
+        }
+    });
+    $('#json-src').keyup();
+</script>
+</body>
+</html>
+
+

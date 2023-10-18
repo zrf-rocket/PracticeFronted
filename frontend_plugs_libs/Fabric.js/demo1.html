@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fabric 5.3.0</title>
+    <script src="fabric.min.js"></script>
+    <style>
+        #main {
+            width: 800px;
+            height: 800px;
+            background-color: #8f1ef7;
+        }
+    </style>
+</head>
+<body>
+<canvas id="main"></canvas>
+</body>
+<script>
+    // 声明画布
+    var canvas = new fabric.Canvas("#main");
+    // 绘制图形
+    var rect = new fabric.Rect({
+        left: 100, //距离画布左侧的距离，单位是像素
+        top: 100, //距离画布上边的距离
+        fill: 'red',//填充的颜色
+        width: 100, //方形的宽度
+        height: 100 //方形的高度
+    });
+    // 圆形
+    var circle = new fabric.Circle({
+        left: 200, //距离画布左侧的距离，单位是像素
+        top: 200, //距离画布上边的距离
+        fill: 'pink',//填充的颜色
+        width: 100, //方形的宽度
+        height: 100 //方形的高度
+    });
+    // 三角形
+    var triangle = new fabric.Triangle({
+        left: 300, //距离画布左侧的距离，单位是像素
+        top: 300, //距离画布上边的距离
+        fill: 'yellow',//填充的颜色
+        width: 100, //方形的宽度
+        height: 100 //方形的高度
+    });
+    // 添加图形到画布
+    canvas.add(rect);
+    canvas.add(circle);
+    canvas.add(triangle);
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="d3.js"></script>
+
+    <style>
+		.chart div {
+		  font: 10px sans-serif;
+		  background-color: steelblue;
+		  text-align: right;
+		  padding: 3px;
+		  margin: 1px;
+		  color: white;
+		}
+	</style>
+
+</head>
+<body>
+<div></div>
+
+
+<div class="chart">
+  <div style="width: 40px;">4</div>
+  <div style="width: 80px;">8</div>
+  <div style="width: 150px;">15</div>
+  <div style="width: 160px;">16</div>
+  <div style="width: 230px;">23</div>
+  <div style="width: 420px;">42</div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+    var body = d3.select("body");
+    var div = body.append("div");
+    div.html("this is d3.js programming");
+
+
+
+	var data = [4, 8, 15, 16, 23, 42, 12];
+
+	var x = d3.scale.linear()
+	    .domain([0, d3.max(data)])
+	    .range([0, 420]);
+
+	d3.select(".chart")
+	  .selectAll("div")
+	  .data(data)
+	  .enter().append("div")
+	  .style("width", function(d) { return x(d) + "px"; })
+	  .text(function(d) { return d; });
+
+
+
+
+	  
+</script>
+</html>

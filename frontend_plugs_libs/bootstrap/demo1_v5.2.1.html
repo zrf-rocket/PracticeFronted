@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    Bootstrap 5 的设计目标是响应移动设备。移动优先的样式是核心框架的一部分。
+    为确保正确的渲染和触摸缩放，请在<head>元素内添加以下<meta>标记
+    width=device-width 设置了页面的宽度跟随设备的screen-width（将因设备而异）
+    initial-scale=1 设置了浏览器首次加载页面时的初始缩放级别
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Framework5.2.1</title>
+
+    <!-- 国内推荐使用 Staticfile CDN 上的库 -->
+    <!-- 新 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.2.1/css/bootstrap.min.css">
+
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.2.1/js/bootstrap.min.js"></script>
+
+    <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    Bootstrap 5 网格的基本结构
+    <!-- 控制列宽，以及它们在不同设备上的显示方式-->
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
+    </div>
+
+    <!-- 或者让 Bootstrap 自动处理布局 -->
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</div>
+</body>
+</html>

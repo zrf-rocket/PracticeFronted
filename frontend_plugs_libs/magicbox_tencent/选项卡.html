@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+如果没有引用以下文件，请去掉此注释-->
+<link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bkTab-1.0/js/bkTab.js"></script>
+
+<div class="bk-tab2 bk-tab2-small" id="bk-tab2">
+    <div class="bk-tab2-head">
+        <ul class="bk-tab2-nav">
+            <li class="tab2-nav-item active">业务资源</li>
+            <li class="tab2-nav-item">服务实例</li>
+            <li class="tab2-nav-item">业务拓扑</li>
+            <li class="tab2-nav-item">节点信息</li>
+        </ul>
+    </div>
+    <div class="bk-tab2-content">
+        <div class="bk-tab2-pane p15 active">
+            <div class="f12">文本、表格或表单等内容1</div>
+        </div>
+        <div class="bk-tab2-pane p15">
+            <div class="f12">服务实例</div>
+        </div>
+        <div class="bk-tab2-pane p15">
+            <div class="f12">业务拓扑</div>
+        </div>
+        <div class="bk-tab2-pane p15">
+            <div class="f12">节点信息</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.bk-tab2').bkTab({
+        tabTriggers: '.tab2-nav-item',
+        tabPanels: '.bk-tab2-pane',
+        onTabChange: function (index, tab) {
+            console.log(index)
+        }
+    })
+</script>
+</body>
+</html>

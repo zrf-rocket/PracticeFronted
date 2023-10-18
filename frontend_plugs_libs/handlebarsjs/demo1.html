@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="handlebars.min-v4.7.7.js"></script>
+</head>
+<body>
+<div id="example"></div>
+
+<script id="handlebarsTemplate" type="text/x-handlebars-template">
+    <div class="entry">
+        <h1>{{title}}</h1>
+        <div class="body">
+            {{body}}
+        </div>
+    </div>
+</script>
+
+</body>
+<script>
+    var context = {title: "this is handlebars Template", body: "There are a variety of ways to install Handlebars, depending on the programming language and environment you are using."};
+    var source = document.getElementById("handlebarsTemplate").innerHTML;
+    var template = Handlebars.compile(source);
+    var html = template(context);
+    document.getElementById("example").innerHTML = html;
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="skrollr.min.js"></script>
+</head>
+<body>
+改变背景的实例
+改变高度的实例
+旋转动画的实例
+
+
+只需要写出关键帧的状态，skrollr会自己添加过度帧。
+至少要添加两个关键帧，但是如果只添加一个关键帧，是没有过渡效果的，但是这一帧的样式会作用于元素。
+关键帧的书写顺序没有要求，即下面两种写法，最终的效果是一样的
+
+
+</body>
+<script>
+    //页面文档 全部加载完毕
+    window.onload = function () {
+        // 初始化skrollr
+        var sk = skrollr.init();
+
+    }
+
+
+</script>
+</html>

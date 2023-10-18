@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复制图片</title>
+    <script src="https://www.itxst.com/package/clipboardjs/clipboard.min.js"></script>
+</head>
+<body>
+clipboard.js 也可以复制图片到微信和word，复制到微信不能是https和base64格式，但是word、excel支持。
+<div id="msg"></div>
+<div id="imgs">
+    <!--图片地址不能是https、也不能是base64格式 !-->
+    <img src="http://www.baidu.com/img/bd_logo1.png" style="width: 150px;"><br/>
+    <img src="http://www.baidu.com/img/bd_logo1.png" style="width: 150px;"><br/>
+    <img src="./../imgs/1.png" style="width: 150px;"><br/>
+    <img src="./../imgs/1.png" style="width: 150px;"><br/>
+    【搜索关键词】山河图
+</div>
+<input id="btn1" type="button" onclick="copy('#btn1')" value="点击复制">
+
+
+<hr/>
+<div id="img_base64">
+    <img src='data:image/jpeg;base64,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'
+         style='width:50px;'><br/>
+    【搜索关键词】Excel图标
+</div>
+
+<input id="btn2" type="button" onclick="copy('#btn2')" value="点击复制">
+
+
+<script>
+    /* 自定义复制函数
+    * obj 触发器元素对象或id、class
+    * text 需要复制的内容
+    */
+    function copy(obj, text) {
+        console.log(obj, text);
+        var clipboard = new ClipboardJS(obj, {
+            target: function (trigger) {
+                if ("#btn2" === obj)
+                    return document.getElementById("img_base64");
+                else
+                    return document.getElementById("imgs");
+            }
+        });
+
+        clipboard.on("success", function (e) {
+            e.clearSelection();
+            document.getElementById("msg").innerHTML = "复制成功";
+        });
+
+        clipboard.on('error', function (e) {
+            document.getElementById("msg").innerHTML = "复制失败";
+        });
+    }
+</script>
+</body>
+</html>

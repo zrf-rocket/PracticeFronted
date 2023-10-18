@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="mustache.js"></script>
+</head>
+<body>
+<div id="mustache"></div>
+</body>
+<script>
+    var data = {
+        "name": "javascript",
+        "plugin_name": "mustache",
+        "subject": ["html", "css", "JavaScript"],
+    };
+    var tmpl = '<p>{{name}}</p><h2>{{plugin_name}}</h2>';
+    var html = Mustache.render(tmpl, data);
+
+    document.getElementById("mustache").innerHTML = html;
+</script>
+</html>

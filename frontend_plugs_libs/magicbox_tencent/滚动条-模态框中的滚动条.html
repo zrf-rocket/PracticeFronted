@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+如果没有引用以下文件，请去掉此注释-->
+<link rel="stylesheet" href="https://magicbox.bk.tencent.com/static_api/v3/assets/mCustomScrollbar-3.0.9/jquery.mCustomScrollbar.css">
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/mCustomScrollbar-3.0.9/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<div class="plugin20_demo" id="plugin20_demo3" style="display:inline-block;">
+    <button class="king-btn king-info king-btn-large" data-toggle="modal" data-target="#myModal">点击弹层</button>
+
+    <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" style="display: block;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">标题</h4>
+                </div>
+                <div class="modal-body mCustomScrollbar _mCS_3 mCS-autoHide mCS_no_scrollbar" style="height: 340px; overflow: visible;">
+                    <div id="mCSB_3" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0">
+                        <div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+                            <div>
+                                <p>成熟：蓝鲸支撑着所有的腾讯游戏（200+），经过了 数以十万计服务器 的压力测试；
+                                </p>
+                                <p>全面：从配置管理、作业管理到移动运维，再到运维数据实时分析决策；
+                                </p>
+                                <p>开放：开放的PaaS（运营工具构建平台）和完整的devops培训体系，助力业务自主开发个性化工具；
+                                </p>
+                                <p>高效：蓝鲸体系已为腾讯游戏运行服务流程800W次，约4000W次原子任务
+                                </p>
+                                <p>无人值守开区，智能缩扩容 早已不是梦！
+                                </p>
+                                <p>成熟：蓝鲸支撑着所有的腾讯游戏（200+），经过了 数以十万计服务器 的压力测试；
+                                </p>
+                                <p>全面：从配置管理、作业管理到移动运维，再到运维数据实时分析决策；
+                                </p>
+                                <p>开放：开放的PaaS（运营工具构建平台）和完整的devops培训体系，助力业务自主开发个性化工具；
+                                </p>
+                                <p>高效：蓝鲸体系已为腾讯游戏运行服务流程800W次，约4000W次原子任务
+                                </p>
+                                <p>无人值守开区，智能缩扩容 早已不是梦！
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px; display: block; height: 288px; max-height: 306px;" oncontextmenu="return false;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#myModal .modal-body").mCustomScrollbar({
+        setHeight: 340,
+        theme: "minimal-dark"
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格样式、分页样式、控制显示指定列</title>
+    <link rel="stylesheet" href="css/jquery.dataTables.css"/>
+
+
+    <!--    <script src="js/jquery.js"></script>-->
+    <!--    jquery要放在datatables 的上面 -->
+    <!--    <script src="js/jquery.dataTables.js"></script>-->
+
+    <!--    下拉菜单需要的文件-->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bk-icon-2.0/iconfont.css" rel="stylesheet">
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bkDropdownMenu-1.0/js/bkDropdownMenu.js"></script>
+
+    <style>
+        input {
+            margin: 0 0 20px 30px;
+        }
+    </style>
+</head>
+<body>
+
+<label><input type="checkbox" name="第一列" value="0" checked="checked">第1列</label>
+<label><input type="checkbox" name="第一列" value="1" checked="checked">第2列</label>
+<label><input type="checkbox" name="第一列" value="2" checked="checked">第3列</label>
+<label><input type="checkbox" name="第一列" value="3" checked="checked">第4列</label>
+<label><input type="checkbox" name="第一列" value="4" checked="checked">第5列</label>
+<label><input type="checkbox" name="第一列" value="5" checked="checked">第6列</label>
+<label><input type="checkbox" name="第一列" value="6" checked="checked">第7列</label>
+<label><input type="checkbox" name="第一列" value="7" checked="checked">第8列</label>
+<label><input type="checkbox" name="第一列" value="8" checked="checked">第9列</label>
+<label><input type="checkbox" name="第一列" value="9" checked="checked">第10列</label>
+<label><input type="checkbox" name="第一列" value="10" checked="checked">第11列</label>
+<label><input type="checkbox" name="第一列" value="11" checked="checked">第12列</label>
+<label><input type="checkbox" name="第一列" value="12" checked="checked">第13列</label>
+<label><input type="checkbox" name="第一列" value="13" checked="checked">第14列</label>
+<label><input type="checkbox" name="第一列" value="14" checked="checked">第15列</label>
+<label><input type="checkbox" name="第一列" value="15" checked="checked">第16列</label>
+
+
+<div class="bk-dropdown-menu" id="bk-dropdown-menu2">
+    <button class="bk-button bk-primary is-icon bk-dropdown-trigger">
+        <i class="bk-icon icon-cog-shape"></i>
+    </button>
+    <div class="bk-dropdown-content left-align" style="top: 39px;">
+        <ul class="bk-dropdown-list" style="max-height: 100%; min-width: 30px" id="check-list">
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 告警ID</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 告警名称</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 告警级别</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 目标IP</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 分类名称</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 状态</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 是否屏蔽</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 是否处理</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 是否确认</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 确认人</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 策略名称</label></a></li>
+            <li><a href="javascript:;"><label><input type="checkbox" checked="checked"> 业务名称</label></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<table id="table_style" class="display table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>第1列</th>
+        <th>第2列</th>
+        <th>第3列</th>
+        <th>第4列</th>
+        <th>第5列</th>
+        <th>第6列</th>
+        <th>第7列</th>
+        <th>第8列</th>
+        <th>第9列</th>
+        <th>第10列</th>
+        <th>第11列</th>
+        <th>第12列</th>
+        <th>第13列</th>
+        <th>第14列</th>
+        <th>第15列</th>
+        <th>第16列</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>第一行,第1列</td>
+        <td>第一行,第2列</td>
+        <td>第一行,第3列</td>
+        <td>第一行,第4列</td>
+        <td>第一行,第5列</td>
+        <td>第一行,第6列</td>
+        <td>第一行,第7列</td>
+        <td>第一行,第8列</td>
+        <td>第一行,第9列</td>
+        <td>第一行,第10列</td>
+        <td>第一行,第11列</td>
+        <td>第一行,第12列</td>
+        <td>第一行,第13列</td>
+        <td>第一行,第14列</td>
+        <td>第一行,第15列</td>
+        <td>第一行,第16列</td>
+    </tr>
+    <tr>
+        <td>第一行,第1列</td>
+        <td>第一行,第2列</td>
+        <td>第一行,第3列</td>
+        <td>第一行,第4列</td>
+        <td>第一行,第5列</td>
+        <td>第一行,第6列</td>
+        <td>第一行,第7列</td>
+        <td>第一行,第8列</td>
+        <td>第一行,第9列</td>
+        <td>第一行,第10列</td>
+        <td>第一行,第11列</td>
+        <td>第一行,第12列</td>
+        <td>第一行,第13列</td>
+        <td>第一行,第14列</td>
+        <td>第一行,第15列</td>
+        <td>第一行,第16列</td>
+    </tr>
+    <tr>
+        <td>第一行,第1列</td>
+        <td>第一行,第2列</td>
+        <td>第一行,第3列</td>
+        <td>第一行,第4列</td>
+        <td>第一行,第5列</td>
+        <td>第一行,第6列</td>
+        <td>第一行,第7列</td>
+        <td>第一行,第8列</td>
+        <td>第一行,第9列</td>
+        <td>第一行,第10列</td>
+        <td>第一行,第11列</td>
+        <td>第一行,第12列</td>
+        <td>第一行,第13列</td>
+        <td>第一行,第14列</td>
+        <td>第一行,第15列</td>
+        <td>第一行,第16列</td>
+    </tr>
+    <tr>
+        <td>第一行,第1列</td>
+        <td>第一行,第2列</td>
+        <td>第一行,第3列</td>
+        <td>第一行,第4列</td>
+        <td>第一行,第5列</td>
+        <td>第一行,第6列</td>
+        <td>第一行,第7列</td>
+        <td>第一行,第8列</td>
+        <td>第一行,第9列</td>
+        <td>第一行,第10列</td>
+        <td>第一行,第11列</td>
+        <td>第一行,第12列</td>
+        <td>第一行,第13列</td>
+        <td>第一行,第14列</td>
+        <td>第一行,第15列</td>
+        <td>第一行,第16列</td>
+    </tr>
+    <tr>
+        <td>第一行,第1列</td>
+        <td>第一行,第2列</td>
+        <td>第一行,第3列</td>
+        <td>第一行,第4列</td>
+        <td>第一行,第5列</td>
+        <td>第一行,第6列</td>
+        <td>第一行,第7列</td>
+        <td>第一行,第8列</td>
+        <td>第一行,第9列</td>
+        <td>第一行,第10列</td>
+        <td>第一行,第11列</td>
+        <td>第一行,第12列</td>
+        <td>第一行,第13列</td>
+        <td>第一行,第14列</td>
+        <td>第一行,第15列</td>
+        <td>第一行,第16列</td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+<script>
+    // var table = $("table_style").DataTable({
+    //     "columnDefs": [
+    //         {
+    //             targets: 2,
+    //             "visible": false,
+    //             "searchable": false
+    //         }
+    //     ]
+    // });
+
+    //
+    $('#bk-dropdown-menu2').bkDropdown({
+        align: 'left'
+    });
+
+
+    /// 点击表头
+    // $("th").on('click', function (e) {
+    //    e.preventDefault();
+    //    var column = table.column($(this).attr('data-column'));
+    //    column.visible(!column.visible);
+    //    console.log("点击");
+    // });
+
+
+    // 获取table表头和序号
+    function initFilterSelect() {
+        var headTitle = "";
+        var tableTh = $("#table_style").find("thead").find("th");
+        for (let i = 0; i < tableTh.length; i++) {
+            console.log(tableTh[i].innerText);
+            headTitle += `<li><a href="javascript:;"><label><input type="checkbox" checked="checked" value="${i}"> ${tableTh[i].innerText}</label></a></li>`;
+        }
+        $("#check-list").html(headTitle);  // 把li的HTML内容 给ul赋值
+        // $("#check-list").innerHTML = headTitle;
+    }
+
+    initFilterSelect();
+    console.log($("#check-list").html());
+
+    // 在function方法内，通过标签对象，给input添加click点击事件
+    // 当它被点击时，使用attr()方法获得value值，并使用alert()方法输出。
+    $("label input").on("click", function () {
+        // 获取当前点击元素的value（获取序号）
+        var index = parseInt($(this).attr('value'));
+
+        //使用prop方法来获取和设置input 的 checked属性  获取的checked返回值为boolean，选中为true,否则为flase
+        // var isChecked = $(this).attr('checked');  // 无法实现
+        var isChecked = $(this).prop('checked');
+        var isDisplay = "显示";
+        if (!isChecked) isDisplay = "隐藏";
+
+        alert(`${isDisplay}第${index + 1}列，${isChecked}`);
+
+        // 隐藏表格指定列
+        /*
+        * 方法：
+        * 1、利用“:nth-child”选择器和“$(元素)”语句来获取想要隐藏的某列元素对象，语法为“$(元素:nth-child(n))”；
+        * 2、利用hide()方法将获取的元素对象隐藏，语法为“元素对象.hide()”。
+        *
+        * 还可以使用css()方法将display属性设置为none，实现隐藏。
+        *
+        * 延伸属性
+        * nth-last-col
+        * nth-last-child
+        * nth-of-type
+        * nth-last-of-type
+        * */
+
+        var thChild = `#table_style th:nth-child(${index+1})`;
+        var tdChild = `#table_style td:nth-child(${index+1})`;
+        if (isChecked) {
+            $(thChild).show();
+            $(tdChild).show();
+        } else {
+            $(thChild).hide();
+            $(tdChild).hide();
+        }
+        // $("#table_style tr th").hide();
+        // $("#table_style tr td").show();
+    });
+</script>
+</html>

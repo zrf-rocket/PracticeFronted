@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="static/js/jquery-1.4.min.js"></script>
+    <script>
+        /*
+        12.jQuery 属性
+        设置或返回元素的 CSS 相关属性。
+context 	在版本 1.10 中被弃用。包含传递给 jQuery() 的原始上下文。
+jquery 	包含 jQuery 版本号。
+jQuery.fx.interval 	改变以毫秒计的动画速率。
+jQuery.fx.off 	全局禁用/启用所有动画。
+jQuery.support 	表示不同浏览器特性或漏洞的属性集合（用于 jQuery 内部使用）。
+length 	包含 jQuery 对象中的元素数目。
+
+        * */
+        $(document).ready(function () {
+            alert($("ul").length + "个ul   " + $("li").length + "个li");
+
+            alert("最后一个ul有 " + $("ul:last li").length + " 个li");
+        });
+
+    </script>
+</head>
+<body>
+<ul></ul>
+<ul>
+    <li>第1个</li>
+    <li>第2个</li>
+    <li>第3个</li>
+    <li>第4个</li>
+</ul>
+</body>
+</html>

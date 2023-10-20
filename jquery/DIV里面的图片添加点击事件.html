@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <script src="jquery-3.6.2.min.js" type="text/javascript"></script>-->
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="award-container">
+    <div class="winners-boxs">
+        <div class="winner-box">
+            <div class="content">
+                <div>111</div>
+                <div>222</div>
+                <img src="imgs/(1).png" class="reactions reaction2">
+            </div>
+        </div>
+        <div class="winner-box">
+            <div class="content">
+                <div>111</div>
+                <div>222</div>
+                <img src="imgs/(2).png" class="reactions reaction2">
+            </div>
+        </div>
+        <div class="winner-box">
+            <div class="content">
+                <div>111</div>
+                <div>222</div>
+                <img src="imgs/(3).png" class="reactions reaction2">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    $(".reactions").on('click', function (event) {
+       console.log("被点击", event.className);
+    });
+
+    $(".reaction2").on('click', function (event) {
+       console.log("被点击", event.className);
+    });
+</script>
+</html>

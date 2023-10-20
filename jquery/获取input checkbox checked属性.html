@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+如果使用jquery,应使用prop方法来获取和设置checked属性
+
+1.通过prop方法获取checked属性，获取的checked返回值为boolean，选中为true,否则为flase
+
+<input type="checkbox" id="selectAll" onclick="checkAll()">全选
+function checkAll()
+{
+var checkedOfAll=$("#selectAll").prop("checked");
+alert(checkedOfAll);
+$("input[name='procheck']").prop("checked", checkedOfAll);
+}
+
+2.如果使用attr方法获取时，如果当前input中初始化未定义checked属性，则不管当前是否选中，$("#selectAll").attr("checked")都会返回undefined；
+<input type="checkbox" id="selectAll" onclick="checkAll()">全选
+
+
+3.如果当前input中初始化已定义checked属性，则不管是否选中，$("#selectAll").attr("checked")都会返回checked.
+<input type="checkbox" id="selectAll" onclick="checkAll()" checked>全选
+function checkAll()
+{
+var checkedOfAll=$("#selectAll").attr("checked");
+alert(checkedOfAll);
+$("input[name='procheck']").attr("checked", checkedOfAll);
+}
+　　总结，如果使用jquery,应使用prop方法来获取和设置checked属性，不应使用attr.
+</pre>
+</body>
+
+</html>

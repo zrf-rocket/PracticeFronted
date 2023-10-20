@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="static/js/jquery-3.6.2.min.js"></script>
+</head>
+<body>
+<ol>
+    <li class="liList" value="11">11111</li>
+    <li class="liList" value="22">22222</li>
+    <li class="liList" value="33">33333</li>
+    <li class="liList" value="44">44444</li>
+    <li class="liList" value="55">55555</li>
+    <li class="liList" value="66">66666</li>
+</ol>
+</body>
+<script>
+    $(".liList").click(function () {
+        console.log("第" + $(this).index() + "个LI");
+        console.log("value：" + $(this).attr("value"));
+        console.log("text：" + $(this).text());
+        console.log("html：" + $(this).html());
+    });
+</script>
+</html>

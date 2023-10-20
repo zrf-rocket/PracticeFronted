@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+MVC模式，需要服务器端配合，JavaScript可以在前端修改服务器渲染后的数据。<br/>
+一句话就是所有通信都是单向的： 也就是前期我们最常用的状态，提交一次反馈一次，通信一次相互制约。<br/>
+比如：提交表单 填写内容 → 点击提交 →业务逻辑处理 →存入数据库 → 刷新页面→服务器取数据库数据→渲染到客户端页面→ 展示上一次你提交的内容<br/>
+视图（View）：用户界面。<br/>
+控制器（Controller）：业务逻辑<br/>
+模型（Model）：数据保存<br/>
+
+<hr/>
+View 传送指令到 Controller<br/>
+Controller 完成业务逻辑后，要求 Model 改变状态<br/>
+Model 将新的数据发送到 View，用户得到反馈<br/>
+
+<br/><br/><br/>
+这个模式缺点是什么呢？<br/>
+
+缺点一：它必须等待服务器端的指示，而且如果是异步模式的话，所有html节点、数据、页面结构都是后端请求过来。<br/>
+
+浏览器只作为一个解析显示容器，Model 作用几乎是废x，Model 层面做的很少几乎前端无法控制，你前端几乎是切图仔和做轮播图的工作/哭<br/>
+<br/><br/>
+缺点二：因为你前端渲染的页面结构，几乎是后端服务器包扎一堆数据一起发送过来，前端的你只需要用拼接字符串 或者字符串拼接引擎<br/>
+
+ 比如Mustache、Jade、artTemplate、tmpl、kissyTemplate、ejs等来做事，说白了纯苦力和重复工作居多，这也导致了，如果很多人认为前端并不重要，只负责美工 和 动作体验就好了。
+ <br/><br/>
+
+缺点三：一发而动全身。数据、显示不分离！为什么这么说，因为如果业务逻辑要变，比如很简单的需求，你用jsp或者php 拼接出来的ajax数据页面，年龄这个字段我不需要了，把性别字段 区分开，男的单独显示，女的单独显示，以前是一起显示到一个表的<br/>
+
+那么，后端先要sql查询把 男、女数据分开，然后渲染字符串时候把 年龄 这个字段去除，然后把男女分开成2个table，然后再推送给前端接收。<br/>
+
+前端收到了，然后从新在渲染一遍，在加工一次页面甚至是展示动作效果。。。真苦逼<br/><br/>
+
+
+<br/>
+<br/>
+<br/>
+MVVM框架模式
+<br/>
+MVVM最早由微软提出来，它借鉴了桌面应用程序的MVC思想，在前端页面中，把Model用纯JavaScript对象表示，View负责显示，两者做到了最大限度的分离。也就是我们常说的，前后分离
+<br/>
+<img src="mvvm.jpg">
+<br/>
+它采用双向绑定（data-binding）：View的变动，自动反映在 ViewModel，反之亦然,model数据的变动，也自动展示给页面显示
+<br/>
+把Model和View关联起来的就是ViewModel。ViewModel负责把Model的数据同步到View显示出来，还负责把View的修改同步回Model。
+<br/>
+<br/>
+<br/>
+
+
+
+MVVM 数据绑定怎么实现
+<br/>
+由于数据驱动模式的精髓在于【数据】和【视图】分离，所以我们首先并不关心DOM结构，而是关心数据的展现。
+<br/>
+最简单的数据存储方式是什么呢？显然不是mysql、数据库而是使用JavaScript对象
+<br/>
+MVVM的核心思想：关注Model的变化，让MVVM框架利用自己的机制去自动更新DOM，从而把开发者从操作DOM的繁琐中解脱出来！
+<br/>
+数据 - 视图分离，数据驱动视图， 视图不影响数据，再也不用管繁琐的DOM结构操作了
+<br/>
+<br/>
+<br/>
+
+
+
+
+</body>
+<script type="text/javascript">
+	// JS基础对象   原始数据
+	var student = { //把变量student  看作Model数据    把HTML某些DOM节点看作View
+		name:'rocket',  //只要改变JavaScript对象的内容，就会导致DOM结构作出对应的变化
+		age:24,
+		sex:"M"
+	};
+//关注点从如何操作DOM变成了如何改变JavaScript对象的状态，而操作JavaScript对象比获取和操作DOM简单了
+
+	alert(student.name + student.age + student.sex);
+</script>
+</html>

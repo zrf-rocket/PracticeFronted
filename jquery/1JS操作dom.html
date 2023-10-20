@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS操作DOM</title>
+</head>
+<body>
+JS原生通过浏览器解析机制，它的原理是使用浏览器提供的原生API 结合JS语法，可以直接操作DOM
+
+
+<div id="name" style="color: #fff">前端原始内容</div>
+<div id="age">24</div>
+</body>
+<script type="text/javascript">
+	var dom1 = document.getElementById("name");
+	var dom2 = document.getElementById("age");
+
+	//下面的操作会改变前端页面的显示
+	dom1.innerHTML = "内容被修改了";
+	dom2.innerHTML = "666";
+	dom1.style.color = "#000000";
+</script>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="static/js/jquery-1.4.min.js"></script>
+    <!--
+    单独文件中的函数
+    如果您的网站包含许多页面，并且您希望您的 jQuery 函数易于维护，那么请把您的 jQuery 函数放到独立的 .js 文件中。
+    -->
+    <script src="static/js/custom.js"></script>
+
+
+    <script>
+        /*
+        2.jQuery 事件
+        事件处理程序指的是当 HTML 中发生某些事件时所调用的方法。通常会把 jQuery 代码放到 <head>部分的事件处理方法中
+        bind() 	向匹配元素附加一个或更多事件处理器
+        blur() 	触发、或将函数绑定到指定元素的 blur 事件
+        change() 	触发、或将函数绑定到指定元素的 change 事件
+        click() 	触发、或将函数绑定到指定元素的 click 事件
+        dblclick() 	触发、或将函数绑定到指定元素的 double click 事件
+        delegate() 	向匹配元素的当前或未来的子元素附加一个或多个事件处理器
+        die() 	移除所有通过 live() 函数添加的事件处理程序。
+        error() 	触发、或将函数绑定到指定元素的 error 事件
+        event.isDefaultPrevented() 	返回 event 对象上是否调用了 event.preventDefault()。
+        event.pageX 	相对于文档左边缘的鼠标位置。
+        event.pageY 	相对于文档上边缘的鼠标位置。
+        event.preventDefault() 	阻止事件的默认动作。
+        event.result 	包含由被指定事件触发的事件处理器返回的最后一个值。
+        event.target 	触发该事件的 DOM 元素。
+        event.timeStamp 	该属性返回从 1970 年 1 月 1 日到事件发生时的毫秒数。
+        event.type 	描述事件的类型。
+        event.which 	指示按了哪个键或按钮。
+        focus() 	触发、或将函数绑定到指定元素的 focus 事件
+        keydown() 	触发、或将函数绑定到指定元素的 key down 事件
+        keypress() 	触发、或将函数绑定到指定元素的 key press 事件
+        keyup() 	触发、或将函数绑定到指定元素的 key up 事件
+        live() 	为当前或未来的匹配元素添加一个或多个事件处理器
+        load() 	触发、或将函数绑定到指定元素的 load 事件
+        mousedown() 	触发、或将函数绑定到指定元素的 mouse down 事件
+        mouseenter() 	触发、或将函数绑定到指定元素的 mouse enter 事件
+        mouseleave() 	触发、或将函数绑定到指定元素的 mouse leave 事件
+        mousemove() 	触发、或将函数绑定到指定元素的 mouse move 事件
+        mouseout() 	触发、或将函数绑定到指定元素的 mouse out 事件
+        mouseover() 	触发、或将函数绑定到指定元素的 mouse over 事件
+        mouseup() 	触发、或将函数绑定到指定元素的 mouse up 事件
+        one() 	向匹配元素添加事件处理器。每个元素只能触发一次该处理器。
+        ready() 	文档就绪事件（当 HTML 文档就绪可用时）
+        resize() 	触发、或将函数绑定到指定元素的 resize 事件
+        scroll() 	触发、或将函数绑定到指定元素的 scroll 事件
+        select() 	触发、或将函数绑定到指定元素的 select 事件
+        submit() 	触发、或将函数绑定到指定元素的 submit 事件
+        toggle() 	绑定两个或多个事件处理器函数，当发生轮流的 click 事件时执行。
+        trigger() 	所有匹配元素的指定事件
+        triggerHandler() 	第一个被匹配元素的指定事件
+        unbind() 	从匹配元素移除一个被添加的事件处理器
+        undelegate() 	从匹配元素移除一个被添加的事件处理器，现在或将来
+        unload() 	触发、或将函数绑定到指定元素的 unload 事件
+        * */
+
+
+        // $(document).ready(function () {
+        //     // 当按钮的点击事件被触发时会调用函数
+        //     $("button").click(function () {
+        //         $("p").hide();
+        //     });
+        //
+        //
+        //     // 当双击按钮触发时会调用函数
+        //     $("button:last").dblclick(function () {
+        //         $("h3").css("background-color", "red");
+        //     });
+        // });
+
+
+        /*
+        jQuery 名称冲突
+        jQuery 使用 $ 符号作为 jQuery 的简写方式。某些其他 JavaScript 库中的函数（比如 Prototype）同样使用 $ 符号。
+        jQuery 使用名为 noConflict() 的方法来解决该问题。
+        允许你在同一个页面加载多个jQuery实例，尤其是不同版本的jQuery。
+        其他一些 JavaScript 框架包括：MooTools、Backbone、Sammy、Cappuccino、Knockout、JavaScript MVC、Google Web Toolkit、Google Closure、Ember、Batman 以及 Ext JS。
+        其中某些框架也使用 $ 符号作为简写（就像 jQuery），如果您在用的两种不同的框架正在使用相同的简写符号，有可能导致脚本停止运行。
+        noConflict() 方法会释放对 $ 标识符的控制，这样其他脚本就可以使用它了。
+        var jq=jQuery.noConflict()，帮助您使用自己的名称（比如 jq）来代替 $ 符号。
+        */
+        $.noConflict();
+        // 或
+        // var jQuery = $.noConflict();
+        jQuery(document).ready(function () {
+            // 第二个button绑定点击事件
+            jQuery("button:eq(1)").click(function () {
+                jQuery("span").css("background-color", "green");
+            });
+        });
+
+        // 如果 jQuery 代码块使用 $ 简写，并且不愿意改变这个快捷方式，那么可以把 $ 符号作为变量传递给 ready 方法。
+        // 这样就可以在函数内使用 $ 符号了 - 而在函数外，依旧不得不使用 "jQuery"
+        jQuery(document).ready(function ($) {
+            $("button:last").click(function () {
+                $("p").hide();
+            });
+        });
+
+    </script>
+</head>
+<body>
+<h3>jQuery事件</h3>
+<p>this is p1</p>
+<p>this is p2</p>
+<p>this is p3</p>
+<span>
+    由于 jQuery 是为处理 HTML 事件而特别设计的，那么当您遵循以下原则时，您的代码会更恰当且更易维护：
+    1. 把所有 jQuery 代码置于事件处理函数中
+    2. 把所有事件处理函数置于文档就绪事件处理器中
+    3. 把 jQuery 代码置于单独的 .js 文件中
+    4. 如果存在名称冲突，则重命名 jQuery 库
+</span>
+<button type="button">Click</button>
+<button type="button">Click2</button>
+<button type="button">Double Click3</button>
+
+</body>
+</html>

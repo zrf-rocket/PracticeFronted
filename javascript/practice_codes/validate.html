@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    //
+    var regxp = new RegExp("^((25[0-5]|2[0-4]\\d|[01]?\\d\\d?)($|(?!\.$)\.)){4}$");
+    var reg_res = regxp.test(host_ip);  //为空则为false   数字或真正的IP则为true
+
+    //IP验证 引入的方法
+    var pattern = /((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})){3}/g, str = '';
+    var pattern_res = pattern.test(host_ip);  // 真正的IP才为true
+
+</script>
+</html>

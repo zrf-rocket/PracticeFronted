@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a1 = [1, 2, 3, 4, 5, 6];
+    // 方式1
+    let a2 = a1.map(item => item * item);
+    console.log(a1, a2);
+
+
+    // 方式2
+    let a3 = a1.map(function (item) {
+        console.log(item);
+        return item * item;
+    })
+    console.log(a3);
+
+
+
+    //a1.append(123); //TypeError: arr.append is not a function
+    // 翻转
+    a1.reverse()
+    // 对象尾部压入元素
+    a1.push(8);
+    // 弹出元素
+    console.log(a1, a1.length, a1.pop(), a1);
+    a1.push(8);
+    console.log(a1, a1.length, a1.pop(), a1);
+
+
+
+
+    // 定义对象
+    const lis = ["aaa", "bbb", "ccc", Number, null]
+    lis.push(123)
+    // 对象长度
+    console.log(typeof lis, lis.length, lis);
+    // 遍历
+    lis.forEach(function (item) {
+        console.log(item)
+    })
+
+    //const add = lis.reduce((newObj, item) => newObj[item], obj);
+
+
+    var effects = ["default", "fade", "cube", "coverflow", "flip", "cards"];
+    // 判断是否存在指定的值
+
+    //不能使用 in 的方法来判断一个元素是否在数组中
+    // if ("default" in effects)
+    //     console.log("effects中存在指定的值");
+    // else
+    //     console.log("不存在");
+
+
+    // indexOf()方法返回给定元素能找在数组中找到的第一个索引值，否则返回-1
+    let index = effects.indexOf("default");
+    if (-1 === index)
+        console.log("不存在。。。。。");
+    else
+        console.log("effects中存在指定的值");
+
+
+    // ES语法  元素在则返回true  不在则返回false
+    let arr = ["default", "fade", "cube", "coverflow", "flip", "cards"];
+    effects.includes();
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+<div class="award-container">
+    <div class="winners-boxs">
+        <div class="swiper-wrapper">
+            <!--        第一页的卡片-->
+            <div class="swiper-slide" style="background-color: black">内容AAA</div>
+            <!--        第二页的卡片-->
+            <div class="swiper-slide" style="background-color: red">内容BBB</div>
+            <!--        第三页的卡片-->
+            <div class="swiper-slide" style="background-color: green">内容CCC<p> 这个是一个P标签1</p></div>
+            <!--        第四页的卡片-->
+            <div class="swiper-slide" style="background-color: gray">内容DDD</div>
+            <!--        第五页的卡片-->
+            <div class="swiper-slide" style="background-color: pink">内容EEE<p> 这个是一个P标签2</p></div>
+            <!--        第六页的卡片-->
+            <div class="swiper-slide" style="background-color: yellow">内容FFF<p> 这个是一个P标签3</p></div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // 获取所有的类为 swiper-slide 的元素内容
+    function changeHTML() {
+        var swiperSlides = document.querySelectorAll(".swiper-slide");
+        Array.from(swiperSlides).forEach((item, index) => {
+            console.log(item, typeof item);// 元素HTML内容
+            console.log(index); // 元素所在的索引位置
+            item.innerHTML = `<li>新内容123</li>`;
+            // 判断一个字符串是否在
+            if ("AAA" in item)
+                console.log("存在");
+        });
+    }
+
+    //changeHTML();
+
+
+
+    // js移除整个winners-boxs的div
+    //document.querySelector(".winners-boxs").remove();
+
+    // js清空class winners-boxs 里面的所有内容
+
+
+    // jQuery方式
+    // 清空全部内容
+    // $(".winners-boxs").html("");
+    // 删除div里面的某一个内容
+    $(".winners-boxs p").remove();  //移除里面的所有p标签
+
+
+</script>
+</html>

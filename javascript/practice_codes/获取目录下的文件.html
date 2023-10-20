@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //判断文件是否存在
+        var fso = new ActiveXObject("Scripting.FileSystemObject");//创建文件系统对象
+        var s = fso.GetFolder("img/");//获取文件夹对象
+        var fn = new Enumerator(s.files);
+        var s = "";
+        for (; !fn.atEnd(); fn.moveNext()) {
+            s = s + fn.item() + "\n";
+        }
+        alert(s);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

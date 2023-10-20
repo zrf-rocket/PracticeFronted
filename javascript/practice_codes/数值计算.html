@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var li1 = [11,22,33,44,55,66,77];
+    for (let i = 0; i < 100; i++) {
+        console.log(i, i / li1.length, Math.ceil(i / li1.length), Math.trunc(i / li1.length), li1[Math.trunc(i%li1.length)]);
+        console.log();
+    }
+</script>
+</html>

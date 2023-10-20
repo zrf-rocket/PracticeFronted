@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var index = 100;
+        switch (index) {
+            case 0:
+                console.log("命中结果为0");
+                break //停止执行，跳出switch
+            case 100:
+                console.log("命中结果为", index);
+                //继续往下执行，并执行default
+            default:  //上述条件都不满足时，默认执行的代码
+                console.log("未命中", index);
+        }
+    </script>
+</head>
+<body>
+JS switch case 语句与 if else 语句的多分支结构类似，都可以根据不同的条件来执行不同的代码；但是与 if else 多分支结构相比，switch case 语句更加简洁和紧凑，执行效率更高。
+
+switch 语句根据表达式的值，依次与 case 子句中的值进行比较：
+如果两者相等，则执行其后的语句段，当遇到 break 关键字时则跳出整个 switch 语句。
+如果不相等，则继续匹配下一个 case。
+switch 语句包含一个可选的 default 关键字，如果在前面的 case 中没有找到相等的条件，则执行 default 后面的语句段。
+
+注意：switch 语句中，表达式是使用全等（===）来与各个 cese 子句中的值进行匹配的。由于使用的是全等运算符，因此不会自动转换每个值的类型。
+
+
+
+break 关键字
+switch 语句是逐行执行的，当 switch 语句找到一个与之匹配的 case 子句时，不仅会执行该子句对应的代码，还会继续向后执行，直至 switch 语句结束。为了防止这种情况产生，需要在每个 case 子句的末尾使用 break 来跳出 switch 语句。
+
+break 除了可以用来跳出 switch 语句外，还可以用来跳出循环语句（for、for in、while、do while 等），后面我们会详细介绍。
+</body>
+</html>

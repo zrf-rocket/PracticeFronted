@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        $('.winners-boxs .profile_bg').attr('src', ceph_static_url + "/images/bg2/profile_bg.png")
+        $('.winners-boxs .avatar').css('display', "none")
+        $('.winners-boxs .rtx-name').css('height', "30%")
+        $('.winners-boxs .rtx-name').css('bottom', "50%")
+        $('.winners-boxs .rtx-chinese-name').css('height', "30%")
+        $('.winners-boxs .rtx-chinese-name').css('bottom', "20%")
+        $('.winners-boxs').find('.winner-box, img.profile_bg, .winner-avatar').each(function (index, value) {
+            $(value).css('width', boxWidth + 'px');
+            $(value).css('height', boxHeight + 'px');
+            $(value).css('font-size', fontSize + 'px');
+        });
+    </script>
+</head>
+<body>
+<div>
+    <div>
+        <div style="min-width: "></div>
+    </div>
+</div>
+</body>
+</html>

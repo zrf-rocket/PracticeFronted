@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var name = "rocket";
+    var arr = ["蓝鲸智云",'admin', 'guest'];
+    //不在数组中则返回-1  在则返回元素所在的索引位置
+    console.log(arr.indexOf(name), arr.indexOf("guest"), arr.indexOf("蓝鲸智云"));  //-1   2   0
+
+
+    // js区分大小写
+    console.log(arr.indexOf("Admin"), arr.indexOf("Guest")); // -1  -1
+
+    // 大写转小写
+    console.log(arr.indexOf("Admin".toLowerCase()), arr.indexOf("Guest".toLowerCase())); // 1  2
+    var role = "ADMIN"
+    console.log(role.toLowerCase()); //admin
+    // 将变量改为小写  不影响原始内容
+    console.log(role);  //ADMIN
+</script>
+</html>

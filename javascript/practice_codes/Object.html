@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var dict1 = {"name1": "javascript", "name3": "html", "name2": "css"};
+        var dict2 = {"age1": 123, "name3": 123.3454, "name2": {"aaa": 111, "bbb": 222}};
+        // 将第2个字典的值更新到第一个1字典中   并生成新的字典
+        const values = Object.assign(dict1, dict2);  //dict2的name2会更新dict1的name2
+        console.log(values);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(":text").blur(function () {
+                if ($(this).val().length <= 0) {
+                    $(this).css("background", "red");
+                } else {
+                    $(this).css("background", "white");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="text"/>
+<input type="text"/>
+<input type="text"/>
+<input type="text"/>
+<input type="text"/>
+</body>
+</html>

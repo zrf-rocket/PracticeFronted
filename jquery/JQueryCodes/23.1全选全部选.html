@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //下面 :checkbox 的前面需要有空格
+            $("#all").click(function () {
+                // $(":checkbox").attr("checked",true);//ok
+                $("#playlist :checkbox").attr("checked", true);
+            });
+            $("#notall").click(function () {
+                // $(":checkbox").attr("checked",false);//ok
+                $("#playlist :checkbox").attr("checked", false);
+            });
+            $("#not").click(function () {
+                // alert($(":checkbox").val());
+                // if($(":checkbox").val()){
+                // 	$(this).attr("checked",false);
+                // }else{
+                // 	$(this).attr("checked",true);
+                // }
+
+                $("#playlist :checkbox").each(function () {
+                    // $(this).attr("checked",!$(this).attr("checked"));//ok
+
+                    //ok
+                    if ($(this).attr("checked")) {
+                        $(this).attr("checked", false);
+                    } else {
+                        $(this).attr("checked", true);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="playlist">
+    <input type="checkbox"/>AAA<br/>
+    <input type="checkbox"/>BBB<br/>
+    <input type="checkbox"/>CCC<br/>
+    <input type="checkbox"/>DDD<br/>
+    <input type="checkbox"/>EEE<br/>
+    <input type="checkbox"/>FFF<br/>
+    <!-- <input type="button" value="全选" id="all"/>
+    <input type="button" value="全不选" id="notall"/>
+    <input type="button" value="反选" id="not"/> -->
+    <a href="#" id="all">全选</a>
+    <a href="#" id="notall">全不选</a>
+    <a href="#" id="not">反选</a>
+</div>
+</body>
+</html>

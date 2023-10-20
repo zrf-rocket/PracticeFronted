@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>无刷新点评</title>
+	<script type="text/javascript" src="./../static/js/jquery-1.4.2.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#btnPost").click(function(){
+				var title=$("#title").val();
+				var body=$("#txtBody").val();
+				var content=$("<tr><td>"+title+"</td><td>"+body+"</td></tr>");
+				$("#tb").append(content);
+				$("#title").val("");
+				$("#txtBody").val("");
+			});
+		});
+	</script>
+</head>
+<body>
+<p>这是我的第一个帖子，帖子的内容</p>
+<table id="tb" border="1">
+	<tr><td>AAAAA</td><td>BBBBB</td></tr>
+
+</table>
+<input type="text" id="title" /><br/>
+<textarea id="txtBody"></textarea><br/>
+<input type="button" value="发表评论" id="btnPost"/>
+</body>
+</html>

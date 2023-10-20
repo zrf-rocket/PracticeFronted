@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .sty {
+            background-color: Pink;
+        }
+    </style>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        //动态创建DOM节点
+        $(function () {
+            var link = $("<a href='12JQuery表单选择器.html'>12JQuery表单选择器</a>");//创建DOM节点
+            $("div:first").append(link);//append在元素末尾追加元素
+            $("div:first").prepend(link);//在元素开头添加元素
+            $("div:first").css("background", "red");//设置第一个div的背景颜色为red
+            link.text("表单选择器");//修改上面link链接的文本内容
+
+            // var link=$("<a href='#'>本页</a>");
+            // $("div:second").append(link);//不起作用
+        });
+
+        $(function () {
+            var data = {"baidu": "https://www.baidu.com", "新浪": "https://www.sina.com"};
+            //使用each来遍历
+            $.each(data, function (key, value) {
+                //创建tr对象
+                var tr = $("<tr><td>" + key + "</td><td><a href=" + value + ">" + key + "</a></td></tr>");
+                $("#tb").append(tr);
+            });
+        });
+
+        //删除节点
+        $(function () {
+            //点击按钮删除所有选中的节点
+            $("#del").click(function () {//选中del
+                //选中ul下的所有有属性class=sty的li 节点
+                // $("ul li[class=sty]").remove();//ok
+                var lis = $("ul li.sty").remove();//OK  返回的是删除的那个对象
+                alert(lis.text());
+            });
+        });
+    </script>
+</head>
+<body>
+<div>第一个div</div>
+<div>第二个div</div>
+<table id="tb" border="1"></table>
+
+<ul>
+    <li>111</li>
+    <li class="sty">222</li>
+    <li>333</li>
+    <li class="sty">444</li>
+    <li>555</li>
+    <li class="sty1">666</li>
+</ul>
+<input type="button" value="删除节点" id="del"/>
+
+<br/><br/>
+节点的删除与移动案例：
+<br/>
+
+<script type="text/javascript">
+    $(function () {
+        $("#moveToRight").click(function () {
+            var items = $("#select1 option:selected").remove();//删除选中的选项 并获取
+            $("#select2").append(items);//将获取的元素放到另一处
+        });
+    });
+</script>
+<select style="float:left;width:15%; height:100px;" id="select1" multiple="multiple">
+    <option>添加</option>
+    <option>删除</option>
+    <option>修改</option>
+    <option>查询</option>
+    <option>打印</option>
+</select>
+<div style="float:left;width:15%">
+    <input style="float:left; width:100%;" id="moveToRight" type="button" value=">" onclick="moveSelected(document.getElementById('select1'),document.getElementById('select2'))"/>
+    <input style="float:left; width:100%;" id="moveToLeft" type="button" value="<" onclick="moveSelected(document.getElementById('select2'),document.getElementById('select1'))"/>
+    <input style="float:left; width:100%;" type="button" value="》"/>
+    <input style="float:left; width:100%;" type="button" value="《"/>
+</div>
+<select style="float:left;width:15%; height:100px;" id="select2" multiple="multiple">
+
+</select>
+</body>
+</html>

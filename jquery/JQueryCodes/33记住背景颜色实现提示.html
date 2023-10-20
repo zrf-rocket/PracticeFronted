@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <!--引入cookie脚本-->
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript">
+        //点击选中颜色  变为背景颜色，下次打开网页时还是此种颜色
+        // $("#tableColor:td").click(function(){//error   此处td的前面不需要：  只需要一个空格间隔开即可
+
+        $(function () {
+            $("#tableColor td").click(function () {
+                // alert("点中");
+                //获取点击中的那个style颜色
+                var bgColor = $(this).css("background-color");//获取当前背景颜色
+                $("body").css("background-color", bgColor);//设置页面背景颜色
+
+                $.cookie("lastBgColor", bgColor, {expires: 7});//此处的参数{expires:7} 用于表示保存cookie的时间  7天
+            }).css("cursor", "pointer");
+
+            //保存到cookie中
+            var bgColor = $.cookie("lastBgColor");
+            if (bgColor) {
+                $("body").css("background-color", bgColor);
+            }
+        });
+
+
+    </script>
+</head>
+<body>
+<table id="tableColor">
+    <tr>
+        <td style="background-color:Red" width="30px">
+            <center>红</center>
+        </td>
+        <td style="background-color:Green" width="30px">
+            <center>绿</center>
+        </td>
+        <td style="background-color:Yellow" width="30px">
+            <center>黄</center>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

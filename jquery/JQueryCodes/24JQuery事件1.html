@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        //方式一  鼠标移入移出
+        $(function () {
+            $("a").mouseenter(function () {
+                $(this).text("鼠标进来啦");
+            }).mouseleave(function () {
+                $(this).text("鼠标移出");
+                // $(this).text($("a").text());
+                // $(this).text($(this).text());
+            });
+        });
+
+
+        //方式二  hover鼠标移入移出
+        /*$(function(){
+            $("p").hover(function(){$(this).text("进来了")},function(){$(this).text("出去了")});
+        });*/
+
+        //事件冒泡
+        /*$(function(){
+            $("#t1").click(function(e){alert("t1");},e.stopPropagation();});//e.stopPropagation();}用于取消冒泡
+            $("#tr1").click(function(e){alert("tr1");});
+            $("#td1").click(function(e){alert("td1");});
+            $("#p1").click(function(e){alert("p1");});//通过e来拿到相关事件的信息
+        });*/
+
+
+        //类似于劫持
+        /*$(function(){
+            $("a").click(function(e){
+                alert("劫持所有的超链接，禁止跳转！");
+                e.preventDefault();//组织默认行为
+            })
+        });
+
+        $(function(){
+            $(":submit").click(function(e){
+                if($("#name").val().length()<=0){
+                    alert("用户名不能为空");
+                    e.preventDefault();
+                }
+            });
+        });*/
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            // $("#p1").click(function(e){alert(e.pageX+"  "+e.pageY);});//获取鼠标的点击坐标
+            $("#p1").click(function (e) {
+                alert($(this).html());
+                alert($(e.target).html());
+            });//target最原始的对象     this当前触发的对象
+            $("#tr1").click(function (e) {
+                alert($(this).html());
+                alert($(e.target).html());
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        //一次性事件  one表示只被触发一次     如果one换成是bind，则会一直被触发
+        $(function () {
+            $(":button").one("click", function () {
+                alert("被点了一下");
+            });
+        });
+    </script>
+</head>
+<body>
+<p>要有内容在此</p>
+<a href="www://baidu.com">baidu</a>
+<a href="#">本页的首页</a>
+
+<table onclick="alert('table')" border="1">
+    <tr onclick="alert('tr')">
+        <td onclick="alert('td')"><p onclick="alert('p')">要有内容撑开</p></td>
+    </tr>
+</table>
+事件冒泡，点击里面的标签，从最里面的一层逐一往外执行弹出方法
+<table id="t1" border="1">
+    <tr id="tr1">
+        <td id="td1" height="60px">
+            <p0 id="p1">要有内容撑开</p0>
+        </td>
+    </tr>
+</table>
+
+<form action="1.html">
+    <input type="text" id="name"/>
+    <input type="submit" value="提交"/>
+</form>
+<input type="button" value="click"/>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .cl1 {
+            background-color: Pink;
+        }
+
+        .cl2 {
+            font-size: 100px;
+        }
+
+        .cl {
+            color: red;
+        }
+
+        body {
+            filter: Gray;
+        }
+
+        /*此样式用于让网页变为黑白显示，做切换黑白效果的按钮*/
+    </style>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //根据取得的样式给指定的标签增加属性
+            // $("#cl3").attr("cl1","cl2");//error  不能没有class
+            // $("#cl3").attr("class","cl1","cl2");//error   后面的两个样式不能分开
+
+            // $("#cl3").attr("class","cl1    cl2");//OK 也可以多个空格
+            $("#cl3").attr("class", "cl1 cl2");//OK  使用一个空格隔开
+        });
+
+
+        $(function () {
+
+            //追加样式 addClass()
+            $("#btnAdd").click(function () {
+                $("#div1").addClass("cl1 cl2 cl");
+            });
+            //移除样式 removeClass()
+            $("#btnSub").click(function () {
+                $("#div1").removeClass("cl2");
+            });
+            //切换样式 如果存在此样式，则去掉；如果不存在此样式，则添加  toggleClass()
+            $("#change").click(function () {
+                $("#div1").toggleClass("cl")
+            });
+            //判断样式是否存在 hasClass()  存在此样式则返回true，否则返回false
+            $("#c").click(function () {
+                alert($("#div1").hasClass("cl1"));
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="cl1 cl2">class的多个选择器</div>
+<br/>
+<div id="cl3">仅含有id的div</div>
+
+<br/>
+<div class="class1" id="div1">id="div1" 和 class="class1" 的div</div>
+<input type="button" value="add" id="btnAdd"/>
+<input type="button" value="sub" id="btnSub"/>
+<input type="button" value="change" id="change"/>
+<input type="button" value="检测样式" id="c"/>
+</body>
+</html>

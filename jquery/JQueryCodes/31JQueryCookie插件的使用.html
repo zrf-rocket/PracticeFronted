@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <!--引入cookie脚本-->
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // alert($.cookie("用户名"));//没有cookie值  就返回null
+            // $.cookie("用户名","rocket");//此时cookie就有就有值  在同域名的另外一个页面中也可访问到
+            // alert($.cookie("用户名"));
+
+
+            //判断是否存在cookie
+            if ($.cookie("UserName")) {//读取上次记录的用户名      如果没有cookie，就返回null
+                //如果存在cookie，则将cookie的值赋值给文本框
+                $("#username").val($.cookie("UserName"));
+            }
+            $("#btnLogin").click(function () {
+                $.cookie("UserName", $("#username").val());//取出输入到文本框中的内容 作为cookie的值，注意此处实是.val() 而不是.text()
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="text" id="username"/>
+<input type="button" id="btnLogin" value="登录"/>
+</body>
+</html>

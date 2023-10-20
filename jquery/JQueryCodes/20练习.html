@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .blackwhite {
+            filter: Gray;
+        }
+
+        .hightLight {
+            background-color: Pink;
+        }
+    </style>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn").click(function () {
+                // alert("点击");
+                // $(document.body).toggleClass("blackwhite");
+                // $(this).addClass("blackwhite");
+                // $("body *").addClass("blackwhite");
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("body *").click(function () {//此处的*也是个选择器   表示body下的所有
+                $(this).addClass("hightLight").siblings().removeClass("hightLight");
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="切换" id="btn"/>
+<img src="2.png"/>
+
+<br/>
+<input type="text"/>
+<div>没有任何样式的div</div>
+<p>一个段落</p>
+</body>
+</html>

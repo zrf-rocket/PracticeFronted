@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // $("body").mouseover(function(e){//此处的body需要使用双引号括起来
+            $(document).mouseover(function (e) {//body只是元素的（可视部分的）显示范围   document表示整个文档
+                $("#fly").css("left", e.pageX).css("top", e.pageY);
+            });
+        });
+    </script>
+</head>
+<body>
+使用position来设置鼠标位置
+<div id="fly" style="position:absolute"><img src="2.png"/></div>
+</body>
+</html>

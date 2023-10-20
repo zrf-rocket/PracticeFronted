@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#ul1 li").css("cursor", "pointer").mouseover(function () {//.css("cursor","pointer") 用于设置鼠标移上去时 鼠标变为手型
+                // $(this).css("background","red");//设置自己的颜色
+                // $(this).siblings().css("background","yellow");//设置兄弟的颜色
+                $(this).css("background", "red").siblings().css("background", "pink");
+            }).click(function () {
+                $(this).css("background", "white").appendTo("#ul2");//.css("background","white") 用于设置ul2的样式属性
+            });
+        });
+    </script>
+</head>
+<body>
+<ul id="ul1" style="float:left; width:30%;">
+    <li>AAAA</li>
+    <li>BBBB</li>
+    <li>CCCC</li>
+    <li>DDDD</li>
+    <li>EEEE</li>
+</ul>
+<ul id="ul2" style="float:left;width:30%;"></ul>
+</body>
+</html>

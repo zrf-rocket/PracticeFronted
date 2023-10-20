@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //动态创建超链接
+            var link = $("<a href='http://www.baidu.com' id='link1'>百度</a>");
+            //添加到页面
+            // document.body.appendChild(link);#error
+            $("body").append(link);
+            //下面的操作是加载页面之后才能进行的操作，无法在append操作之前完成text
+            // $("#link1").text("");//相当于取消超链接
+            $("#link1").text("谷歌");//重新替换链接的文本
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="btn1" id="btn1"/>
+<input type="button" value="btn2" id="btn2"/>
+</body>
+</html>

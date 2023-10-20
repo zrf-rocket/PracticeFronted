@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>标签替换&标签包裹</title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn").click(function () {
+                $("#btn").val("成功替换");//将按钮的value重新设置
+                $("br").replaceWith("<hr/>");//将所有的br换为hr
+                $("b").wrap("<font color='red'></font>");//wrap 将所有b标签的内容，使用指定标签包裹起来
+            });
+
+        });
+    </script>
+</head>
+<body>
+<br/>
+<b>粗体字</b>
+<br/>
+<i>斜体字</i>
+<br/>
+<input type="button" id="btn" value="点击"/>
+</body>
+</html>

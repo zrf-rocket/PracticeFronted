@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>计算器&注册页面</title>
+    <script type="text/javascript" src="./../static/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#eq").click(function () {//点击等号按钮
+                //取出txt1的值
+                // var value1=$("#txt1").text()//不能用来获取文本框中的值
+                // var value1=$("#txt1").val("1234");//设置文本框的值为1234
+
+                var value1 = $("#txt1").val();//获取文本框中的value值
+                // alert(value1);
+
+                //取出txt1的值
+                var value2 = $("#txt2").val();
+                // alert(value2);
+
+                var result = parseInt(value1) + parseInt(value2);//将字符串转为数字  默认转为10进制
+                // var result=parseInt(value1,10)+parseInt(value2,10);//ok
+                // parseInt(value,10)  转为10进制
+                // parseInt(value,2)    转为2进制
+                // alert(result);
+                $("#Text").val(result);//ok
+                // document.getElementById('Text').value=result;//ok
+            });
+        });
+
+
+        //给function包一个$()是让此function函数在ready的时候执行
+        var leftSeconds = 10;
+        var intervalId;
+        $(function () {
+            //取得btn   先禁用
+            $("#btn").attr("disabled", true);//attr可以给一个对象赋值  可以给一个未封装的属性赋值
+            $("#btn").val("禁用状态");//设定值
+            //设置计时器
+            intervalId = setInterval("CountDown()", 1000);//每一秒钟触发一次此方法
+        });
+
+        function CountDown() {
+            if (leftSeconds <= 0) {
+                $("#btn").attr("disabled", false);//
+                $("#btn").val("启用按钮");
+                clearInterval(intervalId);
+                return;
+            }
+            leftSeconds--;
+            $("#btn").val("还有：" + leftSeconds + "秒");
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="txt1" value="value1" title="title1"/>+
+<input type="text" id="txt2" value="value2" title="title2"/>
+<input type="button" value="=" id="eq"/>
+<input type="text" id="Text"/>
+
+<br/>
+<textarea>textarea的内容</textarea>
+<input type="button" id="btn" value="同意"/>
+</body>
+</html>

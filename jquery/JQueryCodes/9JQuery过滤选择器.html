@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="./../static/js/jquery-1.4.2.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#tb tr:first").css("color","red");//:first  选取第一个tr
+			$("#tb tr:last").css("color","pink");//:last  选取最后一个tr
+			$("#tb tr:eq(1)").css("fontSize","50px");//:eq(1)  索引等于1的字体
+			$("#tb tr:gt(2):lt(4)").css("background","green");//:gt(2):lt(4)  索引大于2小于4的tr背景为绿色
+			$("#tb1 tr:even").css("background","yellow");//索引是奇数的
+			$("#tb1 tr:odd").css("background","red");//索引是偶数的
+		});
+	</script>
+</head>
+<body>
+<table id="tb" border="2">
+	<tr><td>1111</td><td>aaaa</td></tr>
+	<tr><td>2222</td><td>bbbb</td></tr>
+	<tr><td>3333</td><td>cccc</td></tr>
+	<tr><td>4444</td><td>dddd</td></tr>
+	<tr><td>5555</td><td>eeee</td></tr>
+	<tr><td>6666</td><td>ffff</td></tr>
+</table>
+
+<table id="tb1" border="2">
+	<tr><td>1111</td><td>aaaa</td></tr>
+	<tr><td>2222</td><td>bbbb</td></tr>
+	<tr><td>3333</td><td>cccc</td></tr>
+	<tr><td>4444</td><td>dddd</td></tr>
+	<tr><td>5555</td><td>eeee</td></tr>
+	<tr><td>6666</td><td>ffff</td></tr>
+</table>
+
+
+<script type="text/javascript">
+	$(function(){
+		$("#d1").click(function(){
+			$("ul",$(this)).css("background","pink");//第二个参数$(this)  传递一个jQuery对象
+		});
+	});
+	$(function(){
+		$("#t1 tr").click(function(){
+			$("td",$(this)).css("background","green");//代表点击的当前的行
+			// .mouseover(function(){
+			// 	// $(this).nextAll().css("background","red");
+			// });
+		});
+	});
+</script>
+<div>
+	<div id="d1">
+		<ul>
+			<li>aaaaaaaaaaaaaa</li>
+			<li>bbbbbbbbbbb</li>
+			<li>ccccccccccccc</li>
+			<li>eeeeeeeeeeee</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li>aaaaaaaaaaaaaa</li>
+			<li>bbbbbbbbbbb</li>
+			<li>ccccccccccccc</li>
+			<li>eeeeeeeeeeee</li>
+		</ul>
+	</div>
+	<table id="t1" border="2">
+		<tr><td>11</td><td>aa</td></tr>
+		<tr><td>22</td><td>bb</td></tr>
+		<tr><td>33</td><td>cc</td></tr>
+	</table>
+</div>
+</body>
+</html>

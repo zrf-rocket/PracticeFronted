@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="./../static/js/jquery-1.4.2.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$("input[name=names]").click(function(){
+				var arr=new Array();
+				var names=$("input[name=names]:checked");//checked表示选中的checkbox
+				names.each(function(key,value){
+					arr[key]=$(value).val();
+				});
+				//等价写法
+				// $("input[name=names]:checked").each(function(key,value){
+				// 	arr[key]=$(value).val();
+				// });
+				$("#msgName").text("共选中"+names.length+"条："+arr.join("."));
+			});
+		});
+	</script>
+</head>
+<body>
+<input type="checkbox" name="names" value="roc1" />
+<input type="checkbox" name="names" value="roc2" />
+<input type="checkbox" name="names" value="roc3" />
+<p id="msgName"></p>
+</body>
+</html>

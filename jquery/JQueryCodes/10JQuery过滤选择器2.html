@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>属性过滤选择器&表单对象选择器</title>
+	<script type="text/javascript" src="./../static/js/jquery-1.4.2.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			//属性过滤选择器
+			// $("div[id]").css("background","red");//所有只要有id属性的任何div
+			$("div[title=test]").css("background","red");//所有只要有 title=test 属性的任何div
+			// $("div[title!=test]").css("background","red");//所有只要是 title=!test 属性的任何div  即使没有title属性均可
+
+			//表单对象选择器
+		});
+		
+		$(function(){
+			// $("input[type=button]").click(alert("点中"));//错误的监听方式
+
+			$("input[value=显示选中项]").click(function(){//此处的中文也OK
+			// $("input[type=button]").click(function(){//OK
+				
+				// $("#input checked").text();//error  获取所有选中的checkbox  并选中text的内容
+				// alert($("input checked").text());//此处input前面不能加#   不应该是取text()  而是取value
+				// alert($("input checked").val());//此处不是value()而是val()   需要带上括号     input和checked之间不能有任何空格，使用冒号（：过滤）进行间隔开
+
+				// alert($("input:checked").text());//error
+
+				alert($("input:checked").val());//OK  此处获取所有选中的val
+			});
+		});
+
+
+	</script>
+</head>
+<body>
+<div>没有任何属性的div</div>
+<div id="d1">有id属性的div</div>
+<div title="test">有属性title="test"的div</div>
+<div title="test1">有属性title="test1"的div</div>
+<div title="test2">有属性title="test2"的div</div>
+<div id="d2" title="test">有id="d2" 和 title="test" 的div</div>
+<div id="d3" title="test3">有id="d3" 和 title="test3"的div</div>
+
+<form>
+	<input type="checkbox" value="爱好" />爱好</br>
+	<input type="checkbox" value="兴趣"/>兴趣</br>
+	<input type="checkbox" value="喜好"/>喜好</br>
+	<input type="button" value="显示选中项"/></br></br>
+
+	<input type="radio" value="性别" />男</br>
+	<input type="radio" value="性别" />女</br>
+</form>
+</body>
+</html>

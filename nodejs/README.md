@@ -1,7 +1,125 @@
-# NodeJS
-[移步工程](https://gitee.com/SteveRocket/practice_nodejs)
+# ABOUT
+
+**【关于我们】**
+
+* [Articulate v1.0](https://mp.weixin.qq.com/s/0yqGBPbOI6QxHqK17WxU8Q)
+* [Articulate v2.0](https://mp.weixin.qq.com/s/V5Axn-ZWi22ubh5Jiocb9g)
+
+[![](https://img.shields.io/badge/GitHub-zrf--rocket-blue?logo=gitpod)](https://github.com/zrf-rocket)
+[![](https://img.shields.io/badge/Gitee-SteveRocket-pink)](https://gitee.com/SteveRocket/)
+![CTO Plus](https://img.shields.io/badge/微信公众号：CTO%20Plus-8A2BE2) 🥰
+
+## Contact
+
+![微信公众号](./static/wechat.png)  
+**< 微信公众号 >**
+
+![QQ技术交流群](./static/qq_link.png)  
+**< QQ技术交流群 >**
+
+![联系作者](./static/wechat.jpg)  
+**< 联系作者 >**
+
+## **【代码工程系列】**
+
+* [Python和Go的设计模式](https://github.com/zrf-rocket/DesignPattern)
+    * GitHub：https://github.com/zrf-rocket/DesignPattern
+    * Gitee：https://gitee.com/SteveRocket/design_pattern
+
+* [Python、Go的编码技巧cookbook](https://github.com/zrf-rocket/CookBook)
+    * GitHub：https://github.com/zrf-rocket/CookBook
+    * Gitee：https://gitee.com/SteveRocket/cook-book
+
+* [Go代码示例](https://github.com/zrf-rocket/PracticeGo)
+    * GitHub：https://github.com/zrf-rocket/PracticeGo
+    * Gitee：https://gitee.com/SteveRocket/practice_go
+
+* [Python代码示例](https://github.com/zrf-rocket/PracticePython)
+    * GitHub：https://github.com/zrf-rocket/PracticePython
+    * Gitee：https://gitee.com/SteveRocket/practice_python
+
+* [Python Web框架的示例代码](https://github.com/zrf-rocket/PythonFramework)
+    * GitHub：https://github.com/zrf-rocket/PythonFramework
+    * Gitee：https://gitee.com/SteveRocket/python_framework
+    * Django：https://github.com/zrf-rocket/PythonFramework/tree/master/django_framework
+    * Flask：https://github.com/zrf-rocket/PythonFramework/tree/master/flask_framework
+
+* [Python 爬虫框架和技术](https://github.com/zrf-rocket/PracticeSpider)
+    * GitHub：https://github.com/zrf-rocket/PracticeSpider
+    * Gitee：https://gitee.com/SteveRocket/practice_spider
+
+* [Rust代码示例](https://github.com/zrf-rocket/PracticeRust)
+    * GitHub：https://github.com/zrf-rocket/PracticeRust
+    * Gitee：https://gitee.com/SteveRocket/practice_rust
+
+* [Vue代码示例](https://github.com/zrf-rocket/PracticeVue)
+    * GitHub：https://github.com/zrf-rocket/PracticeVue
+    * Gitee：https://gitee.com/SteveRocket/practice_vue
+
+* [前端代码示例](https://github.com/zrf-rocket/PracticeFronted)
+    * GitHub：https://github.com/zrf-rocket/PracticeFronted
+    * Gitee：https://gitee.com/SteveRocket/practice_fronted
+
+* [Python自动化测试框架](https://github.com/zrf-rocket/PythonTestAutomationFramework)
+    * GitHub：https://github.com/zrf-rocket/PythonTestAutomationFramework
+    * Gitee：https://gitee.com/SteveRocket/python_test_automation_framework
+
+* [Python和Go的算法代码示例](https://github.com/zrf-rocket/Algorithms)
+    * GitHub：https://github.com/zrf-rocket/Algorithms
+    * Gitee：https://gitee.com/SteveRocket/Algorithms
+
+* [Python和Go的数据结构代码示例](https://github.com/zrf-rocket/DataStructure)
+    * GitHub：https://github.com/zrf-rocket/DataStructure
+    * Gitee：https://gitee.com/SteveRocket/data_structure
+
+* [编码规范](https://github.com/zrf-rocket/DevGuide)
+    * GitHub：https://github.com/zrf-rocket/DevGuide
+    * Gitee：https://gitee.com/SteveRocket/develop_guide
+
+* [编码安全规范](https://github.com/zrf-rocket/SecGuide)
+    * GitHub：https://github.com/zrf-rocket/SecGuide
+    * Gitee：https://gitee.com/SteveRocket/security_guide
+
+## **【产品系列】**
+
+* [主机监控系统-日志收集与报警管理系统（SIEM）](https://github.com/zrf-rocket/SIEM)
+    * GitHub：https://github.com/zrf-rocket/SIEM
+    * Gitee：https://gitee.com/SteveRocket/siem
+
+* [安全运营中心（SOC）-终端侦测与响应系统（EDR）](https://github.com/zrf-rocket/EDR_SOC)
+    * GitHub：https://github.com/zrf-rocket/EDR_SOC
+    * Gitee：https://gitee.com/SteveRocket/edr_soc
+
+* [安全运营中心（SOC）-信息资产采集与安全评估系统（ICSA）](https://github.com/zrf-rocket/SOC_ICSA)
+    * GitHub：https://github.com/zrf-rocket/SOC_ICSA
+    * Gitee：https://gitee.com/SteveRocket/SOC_ICSA
+
+* [DevSecTestOps-SDLC-自动化研发安全测试运维一体化平台（DevSecTestOps）](https://github.com/zrf-rocket/DevSecOps-SDLC)
+    * GitHub：https://github.com/zrf-rocket/DevSecOps-SDLC
+    * Gitee：https://gitee.com/SteveRocket/dev-sec-ops-sdlc
+
+* [Penetration Test-自动化渗透测试平台（PT）](https://github.com/zrf-rocket/PenetrationTest)
+    * GitHub：https://github.com/zrf-rocket/PenetrationTest
+    * Gitee：https://gitee.com/SteveRocket/penetration_test
+
+* [cicd-持续集成持续部署系统（CI/CD）](https://github.com/zrf-rocket/CICD)
+    * GitHub：https://github.com/zrf-rocket/CICD
+    * Gitee：https://gitee.com/SteveRocket/cicd
+
+* [AI图像识别-智能缺陷检测系统]()
+    * [基于AI图像识别的工业缺陷检测应用系统（GPU&FPGA）](https://mp.weixin.qq.com/s/04qefQFg-Pg1Gcqq1vBLQQ)
+    * [基于AI图像识别的智能缺陷检测系统，在钢铁行业的应用-技术方案](https://mp.weixin.qq.com/s/dSHbnuOwQZzE4CvPr1JYjg)
+
+# Node.js
+
+Node.js进阶系列博客代码示例[移步工程](https://gitee.com/SteveRocket/practice_nodejs)
 
 <img src="./imgs/wechat.png" width="500px" alt="公众号：CTO Plus"/>
+
+## 目录结构
+* inner_module  [Node.js的内置模块]()
+* third_module  [Node.js的第三方模块]()
+
 
 ## NodeJS是什么
 <pre>
@@ -74,30 +192,32 @@ Node.js 直接在计算机上运行 JavaScript 代码，并且要赋予 JavaScri
 </pre>
 
 ## Node.js博客目录
-Node.js系列文章推荐阅读：
 
--   [JavaScript匿名函数的定义、特性、作用和使用场景详解](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485882%26idx%3D1%26sn%3Daf48efaa958eb7475afb0295a25da656%26chksm%3De81c2abcdf6ba3aa0f0db31c59096eeed6db1394cdebe988821f1b3b3dc38994e734c6ecb9fb%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485882&idx=1&sn=af48efaa958eb7475afb0295a25da656&chksm=e81c2abcdf6ba3aa0f0db31c59096eeed6db1394cdebe988821f1b3b3dc38994e734c6ecb9fb&scene=21#wechat_redirect")
--   [Node.js之正则表达式的使用方法详解和实战](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485880%26idx%3D2%26sn%3D0c40d7063d4f1ca3b0790de1e9f5851f%26chksm%3De81c2abedf6ba3a835270f820672fc6c1f657db746cabd839f176306e884f4bae1617a2bdfab%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485880&idx=2&sn=0c40d7063d4f1ca3b0790de1e9f5851f&chksm=e81c2abedf6ba3a835270f820672fc6c1f657db746cabd839f176306e884f4bae1617a2bdfab&scene=21#wechat_redirect")
--   [Node.js测试之benchmark基准测试详解和代码示例](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485875%26idx%3D1%26sn%3D799a57c6d472960381259ecca213d38b%26chksm%3De81c2ab5df6ba3a3a7b65fa5cab01e03063632ce3fdc3e4529f4cffbb4b075ba644ffe2c2265%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485875&idx=1&sn=799a57c6d472960381259ecca213d38b&chksm=e81c2ab5df6ba3a3a7b65fa5cab01e03063632ce3fdc3e4529f4cffbb4b075ba644ffe2c2265&scene=21#wechat_redirect")
--   [Node.js重点概念之作用域、闭包、this的使用详解和代码示例](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485858%26idx%3D1%26sn%3Dfcd07d51d31af75352b4328161277a89%26chksm%3De81c2aa4df6ba3b2dce5147be2aedf77cffefd692071e3d6799b5e210f531da70121d37ad546%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485858&idx=1&sn=fcd07d51d31af75352b4328161277a89&chksm=e81c2aa4df6ba3b2dce5147be2aedf77cffefd692071e3d6799b5e210f531da70121d37ad546&scene=21#wechat_redirect")
--   [Node.js开发框架Express.js做一个简单的Web应用以及代码详解](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485821%26idx%3D1%26sn%3D8814fb6bff89edea81e15e8ecc7037e7%26chksm%3De81c2a7bdf6ba36d06b8f50c3b991359f49bdd4bd476ea92d974f040dd8875f9cd1a0758a85b%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485821&idx=1&sn=8814fb6bff89edea81e15e8ecc7037e7&chksm=e81c2a7bdf6ba36d06b8f50c3b991359f49bdd4bd476ea92d974f040dd8875f9cd1a0758a85b&scene=21#wechat_redirect")
--   [Node.js高并发编程之promise的基本使用、作用和特点详细介绍以及代码示例](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485799%26idx%3D2%26sn%3D15b3abc7b1508ed521c575133e0c2e7c%26chksm%3De81c2a61df6ba37767843ffefe52da6113f47778b986e5bb78c06baece7dd7d8a4b10d3a451e%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485799&idx=2&sn=15b3abc7b1508ed521c575133e0c2e7c&chksm=e81c2a61df6ba37767843ffefe52da6113f47778b986e5bb78c06baece7dd7d8a4b10d3a451e&scene=21#wechat_redirect")
--   [Node.js数据库开发之Mongodb 与 Mongoose 的使用和详细介绍](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485770%26idx%3D1%26sn%3D944746f3d0c11031b98f449a21b67343%26chksm%3De81c2a4cdf6ba35a75edaf152b14d7edea0e0c465f30cf9c9184c1b289085179457f68322675%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485770&idx=1&sn=944746f3d0c11031b98f449a21b67343&chksm=e81c2a4cdf6ba35a75edaf152b14d7edea0e0c465f30cf9c9184c1b289085179457f68322675&scene=21#wechat_redirect")
--   [Node.js基础之require、exports、module构建模块的基本属性详细介绍](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485761%26idx%3D2%26sn%3D6c7908e1567d096a6f570ba8a4ddb27d%26chksm%3De81c2a47df6ba3518e132603ccf0daaa4f1ffe986b53d88f9471889423dc8cdcf7ef7c18bc57%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485761&idx=2&sn=6c7908e1567d096a6f570ba8a4ddb27d&chksm=e81c2a47df6ba3518e132603ccf0daaa4f1ffe986b53d88f9471889423dc8cdcf7ef7c18bc57&scene=21#wechat_redirect")
--   [Node.js并发编程eventproxy详解与代码示例](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485740%26idx%3D2%26sn%3D63afe6e0a5d55b84b821cfe24eed2e5f%26chksm%3De81c2a2adf6ba33cc0c4af4d7c2d0c6cc34c9b57d504fb0f16952d6e762bf4233dfa64e6b624%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485740&idx=2&sn=63afe6e0a5d55b84b821cfe24eed2e5f&chksm=e81c2a2adf6ba33cc0c4af4d7c2d0c6cc34c9b57d504fb0f16952d6e762bf4233dfa64e6b624&scene=21#wechat_redirect")
--   [Node.js之10个JavaScript的最佳实践技能点（1）](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485707%26idx%3D1%26sn%3De18ca4d669c00b950adfdbffaa765387%26chksm%3De81c2a0ddf6ba31bcdcd1ad93de7a8b9897e5b84d7f526737e3bcd4abae16070761a855ba536%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485707&idx=1&sn=e18ca4d669c00b950adfdbffaa765387&chksm=e81c2a0ddf6ba31bcdcd1ad93de7a8b9897e5b84d7f526737e3bcd4abae16070761a855ba536&scene=21#wechat_redirect")
--   [Node.js的热门框架：Midway.js特点、应用场景和使用方法介绍](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485621%26idx%3D3%26sn%3D510674b14d6f3c40b8b4d6c96830f1dc%26chksm%3De81c2bb3df6ba2a503932d122ddb3f05266a621e9a34a8d0c66b350850c8bde0bb3446073c45%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485621&idx=3&sn=510674b14d6f3c40b8b4d6c96830f1dc&chksm=e81c2bb3df6ba2a503932d122ddb3f05266a621e9a34a8d0c66b350850c8bde0bb3446073c45&scene=21#wechat_redirect")
--   [Node.js的热门框架：Nest.js特性、常用功能和代码示例介绍以及与Midway.js的对比分析](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485569%26idx%3D1%26sn%3Dcd48fe706700ec6381c60f4fddab7b85%26chksm%3De81c2b87df6ba2917b0dcd2164baef58c64a162a0735d9b5ceea54775d06c17f0154afce232a%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485569&idx=1&sn=cd48fe706700ec6381c60f4fddab7b85&chksm=e81c2b87df6ba2917b0dcd2164baef58c64a162a0735d9b5ceea54775d06c17f0154afce232a&scene=21#wechat_redirect")
--   [JavaScript箭头函数的基本使用和高级使用方法详解](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485373%26idx%3D2%26sn%3Dda2b15d1e8037b429f5a568219a082ef%26chksm%3De81c24bbdf6badad3a673ec45fe2ce110486fe15e8292c8381bc1bf6bc79280063d967e4ee61%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485373&idx=2&sn=da2b15d1e8037b429f5a568219a082ef&chksm=e81c24bbdf6badad3a673ec45fe2ce110486fe15e8292c8381bc1bf6bc79280063d967e4ee61&scene=21#wechat_redirect")
--   [开源项目 | 最热门高效的Node.JS开源第三方开发库和特点(持续更新......)](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485372%26idx%3D2%26sn%3Dab176cfef22e73f817a7bd52230e79a5%26chksm%3De81c24badf6badac2fb61910d503294f670f62bf751b78334025d44e79514e7eef85aef9572a%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485372&idx=2&sn=ab176cfef22e73f817a7bd52230e79a5&chksm=e81c24badf6badac2fb61910d503294f670f62bf751b78334025d44e79514e7eef85aef9572a&scene=21#wechat_redirect")
--   [前端开发技术栈（工具篇）：2023最新版nvm的Win/Linux安装和使用（详细） 27.8k stars](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485369%26idx%3D1%26sn%3De333db7ee0fd95b5efec9b33840b1cdf%26chksm%3De81c24bfdf6bada966c7e8a87a4d482c6ae5a0500d62e979f776391a51f4f812da0ebdc5805b%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485369&idx=1&sn=e333db7ee0fd95b5efec9b33840b1cdf&chksm=e81c24bfdf6bada966c7e8a87a4d482c6ae5a0500d62e979f776391a51f4f812da0ebdc5805b&scene=21#wechat_redirect")
--   [弄清楚Node.js的功能特性、运行时、组成和发展趋势分析以及与JavaScript的区别](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485367%26idx%3D1%26sn%3D77c61a12b8795c76bf2d610c45075d6d%26chksm%3De81c24b1df6bada7984da4629fc63b575db1f42d625b94ad99ec91856a0c3d0501f2023f022d%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485367&idx=1&sn=77c61a12b8795c76bf2d610c45075d6d&chksm=e81c24b1df6bada7984da4629fc63b575db1f42d625b94ad99ec91856a0c3d0501f2023f022d&scene=21#wechat_redirect")
--   [学习Node.js的9大理由以及日常开发中的14个高级特性和代码示例分享](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485191%26idx%3D2%26sn%3D1d12b7f053b644456cea64dc90a56e2a%26chksm%3De81c2401df6bad1799ac66e297432c30c1af8b4b562337d25ea3b6fa28186cf626b64c14fb28%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485191&idx=2&sn=1d12b7f053b644456cea64dc90a56e2a&chksm=e81c2401df6bad1799ac66e297432c30c1af8b4b562337d25ea3b6fa28186cf626b64c14fb28&scene=21#wechat_redirect")
--   [Node.js基本概念、特点、用途和常用模块，以及Express框架开发一个web应用](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247485189%26idx%3D2%26sn%3D080e977ad247c50deefe8da1ebc89860%26chksm%3De81c2403df6bad1514a130bd80a237bf9524bd117892d743ca7a5f4c6f9629ff983f164c81aa%26scene%3D21%23wechat_redirect "https://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247485189&idx=2&sn=080e977ad247c50deefe8da1ebc89860&chksm=e81c2403df6bad1514a130bd80a237bf9524bd117892d743ca7a5f4c6f9629ff983f164c81aa&scene=21#wechat_redirect")
--   [开源项目 | JavaScript最热门的25个前端开发插件（库）总结](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247484535%26idx%3D1%26sn%3D0fdf4d2744caf0a6018e07a425dd54af%26chksm%3De81c2771df6bae676a050eb248fdd024f614098e32250451051c4befb6510c9fcc284c5ca344%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247484535&idx=1&sn=0fdf4d2744caf0a6018e07a425dd54af&chksm=e81c2771df6bae676a050eb248fdd024f614098e32250451051c4befb6510c9fcc284c5ca344&scene=21#wechat_redirect")
--   [前端开发技术栈（模板篇）：10款较流行的前端后台管理系统模板](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247484443%26idx%3D1%26sn%3Dbd2c2ba5b68b1d3b4018e34df373ff4d%26chksm%3De81c271ddf6bae0b17a5247fdb5b444e1cf61862d9e1ae5740ae4cadb38b1dd035d73f811c7b%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247484443&idx=1&sn=bd2c2ba5b68b1d3b4018e34df373ff4d&chksm=e81c271ddf6bae0b17a5247fdb5b444e1cf61862d9e1ae5740ae4cadb38b1dd035d73f811c7b&scene=21#wechat_redirect")
--   [50+款前端高效开发辅助工具总结](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247484413%26idx%3D1%26sn%3Debf16b8c1d91a80fdac4b03beaba821f%26chksm%3De81c20fbdf6ba9ed2bb20a0f801505168f66234007c3e405f8d2d947d6b001f07e56cd66a259%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247484413&idx=1&sn=ebf16b8c1d91a80fdac4b03beaba821f&chksm=e81c20fbdf6ba9ed2bb20a0f801505168f66234007c3e405f8d2d947d6b001f07e56cd66a259&scene=21#wechat_redirect")
--   [开源项目 | Vue进阶：总结下日常开发中关于Vue的热门开源项目](https://link.juejin.cn?target=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzQ5MTY4OQ%3D%3D%26mid%3D2247484674%26idx%3D1%26sn%3De44410068490b38dbe647f3b6663f0e7%26chksm%3De81c2604df6baf129ec18f1f49bd19967aa41d4be644023a9e426b74916ba0303e1d004c256b%26scene%3D21%23wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzIyMzQ5MTY4OQ==&mid=2247484674&idx=1&sn=e44410068490b38dbe647f3b6663f0e7&chksm=e81c2604df6baf129ec18f1f49bd19967aa41d4be644023a9e426b74916ba0303e1d004c256b&scene=21#wechat_redirect")
+关注公众号：CTO Plus，参考Node.js系列文章推荐阅读：
+1. 弄清楚Node.js的功能特性、运行时、组成和发展趋势分析以及与JavaScript的区别
+2. Node.js基本概念、特点、用途和常用模块，以及Express框架开发一个web应用
+3. 学习Node.js的9大理由以及日常开发中的14个高级特性和代码示例分享
+4. 最热门高效的Node.JS开源第三方开发库和特点(持续更新......)
+5. JavaScript字符串操作以及常用的一些高效开发方法实践
+6. Node.js之正则表达式的使用方法详解和实战
+7. Node.js测试之benchmark基准测试详解和代码示例
+8. Node.js重点概念之作用域、闭包、this的使用详解和代码示例
+9. Node.js之heroku简化应用部署和管理的利器详细介绍和使用案例
+10. Node.js之持续集成平台travis的详细介绍和使用案例
+11. Node.js之10个JavaScript的最佳实践技能点（1）
+12. Node.js的热门框架：Nest.js特性、常用功能和代码示例介绍以及与Midway.js的对比分析
+13. Node.js的热门框架：Midway.js特点、应用场景、使用方法和代码示例介绍
+14. Node.js基础之require、exports、module构建模块的基本属性详细介绍
+15. Node.js内置标准库fs的文件操作以及异步文件操作的方法案例详解
+16. Node.js框架Connect的源码和原理剖析、异步链式调用和使用以及中间件详解
+17. Node.js数据库开发之Mongodb 与 Mongoose 的使用和详细介绍
+18. Node.js高并发编程之promise的基本使用、作用和特点详细介绍以及代码示例
+19. Node.js进阶之外部依赖模块的使用和代码示例详解
+20. Node.js进阶之使用 superagent 与 cheerio 模块详解，并实现简单的爬虫案例
+21. Node.js并发编程eventproxy详解与代码示例
+22. Node.js异步编程之使用async控制并发详解与实战示例
+23. Node.js后端功能测试之mocha、should、istanbul的功能特性、断言和覆盖率测试实战案例详解
+24. Node.js浏览器端功能测试之mocha、chai、phantomjs的功能特性、断言和覆盖率测试实战案例详解
 
 
 ## 参考链接

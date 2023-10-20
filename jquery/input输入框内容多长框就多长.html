@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./static/js/jquery-3.6.2.min.js"></script>
+</head>
+<body>
+使input的宽度能随着输入的内容而跟着变化,最初用的是change事件,但是change事件要失去焦点之后才会出现效果,但是我要的是能实现边输入边改变宽度的效果。
+
+propertychange(属性改变事件):监听input里面的字符变化,该事件不仅仅会监听到input的value属性，还包括其他标签的属性各种属性发生变化都会发生该事件,
+比如span元素的style属性。在事件发生时还可以用event.propertyName访问到改变的属性名。在网上查到说这个属性是IE专属的,但是我在其他浏览器中,这个属性也是一样起了效果。
+
+<br/>
+<input class="aa" type="text" value id="a" name="ss">来点我1
+<br/>
+<input class="aa" type="text" value id="s" name="ss"/>来点我2
+<br/>
+<input class="aa" type="text" value id="d" name="ss">来点我3
+
+</body>
+<script>
+    $(function () {
+        //propertychange监听input里面的字符变化,属性改变事件
+        $('.aa').bind('input propertychange', function () {
+            var $this = $(this);
+            console.log($this);
+            var text_length = $this.val().length;//获取当前文本框的长度
+            var current_width = parseInt(text_length) * 16;//该16是改变前的宽度除以当前字符串的长度,算出每个字符的长度
+            console.log(current_width)
+            $this.css("width", current_width + "px");
+        });
+    })
+</script>
+</html>

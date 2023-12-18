@@ -1,0 +1,59 @@
+/*公用css*/
+*{margin:0px; padding:0px;}
+body{ font-size:12px; color:#333; background:#fff;}
+body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,big,em,font,img,strong,tt,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,table,caption,tbody,tfoot,thead,tr,th,td,marquee,input,select{ font-family:SimSun; margin:0; padding:0;}
+img{ border:0px;}
+ul{ list-style:none;}
+a{ text-decoration:none; color:#333;}
+a:hover{ color:red;}
+a:active{ color:#900;}
+.floatclear{ clear:both; height:0; font-size:0;}
+.colorred{ color:red;}
+.colorblue{ color:blue;}
+.colorgreen{ color:green;}
+.coloryellow{ color:yellow;}
+.colororange{ color:orange;}
+.bgred{ background-color:red;}
+.bgblue{ background-color:blue;}
+.bggreen{ background-color:green;}
+.bgyellow{ background-color:yellow;}
+.bgorange{ background-color:orange;}
+
+
+body{}
+div,input{ margin:3px; padding:3px;}
+.dome{ padding:10px 0 10px 50px; border-bottom:1px dashed #666; }
+h6{ text-indent:5px;}
+.hide_con,.show_con,.hideshow_con{ width:300px; height:50px; background:#06C; color:#fff;}
+
+/*******************-  -*********************/
+
+marquee{ width:300px; height:100px; border:1px solid #bbb;}
+
+
+/*******************-  -*********************/
+
+.hover-tb{ width:34px; height:34px; padding:0;  border:2px solid #3C9; border-radius:100%; overflow:hidden; cursor:pointer; position:relative;}
+.hover-tb:hover{}
+.hover-tb div{ position:absolute; left:0; top:0; margin:0; padding:0;transition:500ms;}
+.hover-tb:hover div{ top:-34px; transition:500ms;}
+.hover-tb p{ display:block; width:34px; height:34px; border-radius:100%; line-height:34px; text-align:center;}
+.hover-tb p.p1{ background:#ddd; color:#333;}
+.hover-tb p.p2{ background:#F60; color:#fff;}
+
+/*******************-  -*********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

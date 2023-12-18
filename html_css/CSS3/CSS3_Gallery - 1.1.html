@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>例子</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="./../../jquery/static/js/jquery-1.6.1.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(function(){	
+	$(".click_hide").click(function(){
+		$(".hide_con").fadeToggle();//可加"fast" 或毫秒渐显; "slow"展开+渐显
+	});
+});
+</script>
+<h6>01.点击隐藏</h6>
+<div class="dome">
+	<input type="button" class="click_hide" value="点击隐藏" />
+    <div class="hide_con"  >
+    	这里是内容这里是内容这里是内容这里是内容
+    </div>
+</div>
+<!---------------01↑dome_hide--------------->
+<script type="text/javascript">
+$(function(){	
+	$(".click_show").click(function(){
+		$(".show_con").show();//可加"fast" 或毫秒渐显; "slow"展开+渐显
+	});
+});
+</script>
+<h6>02.点击显示</h6>
+<div class="dome">
+	<input type="button" class="click_show" value="点击显示" />
+    <div class="show_con" style="display:none;">
+    	这里是内容这里是内容这里是内容这里是内容
+    </div>
+</div>
+<!---------------02↑dome_show--------------->
+<script type="text/javascript">
+$(function(){	
+	$("#bbb").val($("#aaa").val());
+	//页面加载完成赋值一次
+	
+	$('#aaa').bind('input propertychange', function() {  
+    	$('#bbb').val($(this).val());  
+	}); 
+	 //实时监听#aaa的值变化并传给#bbb
+	
+});
+</script>
+<h6>03.滑块与实时传值演示</h6>
+<div class="dome">
+    <input type="range" id="aaa" min="0" max="10" step="0.1"  />
+    <input type="text" id="bbb" value=""/>
+</div>
+<!-------------------03↑dome_---------------------->
+<script type="text/javascript">
+$(function(){	
+	$(".click_showhide").click(function(){
+		$(".hideshow_con").slideToggle();//可加"fast" 或毫秒渐显; "slow"展开+渐显
+		
+	});
+});
+</script>
+<h6>04.点击展开/收缩</h6>
+<div class="dome">
+	<input type="button" class="click_showhide" value="展开/收缩" />
+    <div class="hideshow_con" style="display:none;">
+    	这里是内容这里是内容这里是内容这里是内容
+    </div>
+</div>
+<!-------------------04↑dome_---------------------->
+<script type="text/javascript">
+$(function(){	
+  $("#bottom-list").find("li").hover(function() {
+     $(this).find(".bottom-list-info").stop().animate({
+        bottom:0
+     });
+  },function() {
+    $(this).find(".bottom-list-info").stop().animate({
+        bottom:"-60px"
+     });
+  });
+});
+</script>
+<h6>05.鼠标经过上划，移开还原</h6>
+<div class="dome">
+    <ul id="bottom-list">
+        <li style="background:blue; width:295px; height:100px; position:relative; overflow:hidden;">
+            <div class="bottom-list-info" style=" margin:0; padding:0; bottom: -60px;  position:absolute; width:295px; height:100px; background:green;">  </div>
+        </li>
+    </ul>
+</div>
+<!-------------------05↑dome_---------------------->
+<h6>06.上传按钮外形包装</h6>
+<div class="dome">	
+	<input id="uploadFile" placeholder="显示默认文字" disabled="disabled" />
+    <div class="fileUpload btn-primary">
+        <span>上传按钮</span>
+        <input type="file" class="upload" id="uploadBtn" />
+	</div>
+    
+    <div class="floatclear"></div>
+</div>
+<script type="text/javascript">
+//js可以把上传文件信息显示在 #uploadFile 里面。
+document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value;
+};
+</script>
+<!-------------------06↑dome_---------------------->
+<h6>07.find遍历ul下面所有li、查找集合下某一个或多个元素</h6>
+<script type="text/javascript">
+$(function(){	
+ 	$(".bl_con ul").find("li").eq(-1).css("background","#09F"); // find 遍历前面元素下面所有后面元素 eq计算第几个
+	//$(".bl_con ul li:nth-child(3n)").css("background","#09F"); 	//div:nth-child(3n) 所有div位置为3倍的元素
+});
+</script>
+<div class="dome">
+    <div class="bl_con">
+    	<ul>
+        	<li>第一条数据</li>
+            <li>第二条数据</li>
+            <li>第三条数据</li>
+            <li>第四条数据</li>
+            <li>第五条数据</li>
+            <li>第六条数据</li>
+        </ul>
+    </div>
+</div>
+<!-------------------07↑dome_---------------------->
+<h6>08.定时器-延迟执行</h6>
+<script type="text/javascript">
+function delayed_box(){	
+ 	setTimeout(function(){alert("123")},1000);
+}
+</script>
+<div class="dome">
+    <input type="button" onclick="delayed_box()" value="点击1s后弹框" />
+</div>
+<!-------------------08↑dome_---------------------->
+<h6>09.点击传值，支持标签里面所有内容（子标签和文本）</h6>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".pass_value li").click(function(){
+  $(".receive_value").html($(this).html());
+  });
+});
+</script>
+<div class="dome">
+    <ul class="pass_value">
+        <li>点击试试</li>
+        <li><input type="button" value="传个按钮试试" /></li>
+        <li><span class="colorred">传个标签试试</span></li>
+        <li><textarea style="width:100%;">传个文本区域看看</textarea></li>
+    </ul>
+    <div class="receive_value">接收左边点击的内容</div>
+    <div class="floatclear"></div>
+</div>
+<!-------------------09↑dome_---------------------->
+<h6>10.CSS3实现渐变、变形、移动</h6>
+<div class="dome">
+    <p class="overimg">
+        <span class="bgblue overimg_con"></span>
+        <i class="light"></i>
+    </p>
+</div>
+<!-------------------10↑dome_---------------------->
+<h6>11.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    <div class="erroe_round">
+    	<div class="round_line_h"></div>
+        <div class="round_line_v"></div>
+    </div>
+</div>
+<!-------------------11↑dome_---------------------->
+<h6>12.</h6>
+
+</script>
+<div class="container">
+
+ 
+</div>
+<!-------------------12↑dome_---------------------->
+<h6>13.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    
+</div>
+<!-------------------13↑dome_---------------------->
+<h6>14.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    
+</div>
+<!-------------------14↑dome_---------------------->
+<h6>15.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    
+</div>
+<!-------------------15↑dome_---------------------->
+<h6>16.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    
+</div>
+<!-------------------16↑dome_---------------------->
+<h6>17.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    
+</div>
+<!-------------------17↑dome_---------------------->
+<h6>18.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    
+</div>
+<!-------------------18↑dome_---------------------->
+<h6>19.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    
+</div>
+<!-------------------19↑dome_---------------------->
+<h6>20.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+    
+</div>
+<!-------------------20↑dome_---------------------->
+<h6>21.</h6>
+<script type="text/javascript">
+$(function(){	
+ 
+});
+</script>
+<div class="dome">
+
+</div>
+<!-------------------21↑dome_---------------------->
+
+
+
+
+
+
+</body>
+</html>

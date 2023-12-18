@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>例子</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="./../../jquery/static/js/jquery-1.6.1.min.js"></script>
+    <style type="text/css">
+        .loading {
+            text-align: center;
+        }
+
+        .loading div {
+            display: inline-block;
+        }
+
+        .loading div strong {
+            float: left;
+            line-height: 30px;
+        }
+
+        .loading div span {
+            float: left;
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+            padding-right: 20px;
+            background: url(images/loading.png) no-repeat center center;
+            background-size: contain;
+            border-radius: 100%;
+            animation: mymove 1s linear infinite;
+            -webkit-animation: mymove 1s linear infinite; /*animation:命名 播放时间 播放曲线 重复播放*/
+        }
+
+        /*.loading div span:hover{ animation-play-state:paused; -webkit-animation-play-state:paused;}*/ /* 鼠标经过停止动画 */
+
+        @keyframes mymove {
+            0% {
+                transform: rotate(0deg) scale(1, 1);
+            }
+            50% {
+                transform: rotate(180deg) scale(1, 1);
+            }
+            100% {
+                transform: rotate(360deg) scale(1, 1);
+            }
+        }
+
+        @-webkit-keyframes mymove /*Safari and Chrome*/
+        {
+            0% {
+                -webkit-transform: rotate(0deg) scale(1, 1);
+            }
+            50% {
+                -webkit-transform: rotate(180deg) scale(1, 1);
+            }
+            100% {
+                -webkit-transform: rotate(360deg) scale(1, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="loading">
+    <div>
+        <span></span>
+        <strong>加载中…</strong>
+    </div>
+</div>
+<div></div>
+</body>
+</html>
